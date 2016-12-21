@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
+    //初始化App的底栏
+    self.tabbar = [BHZhiBoTabbar new];
+    self.window.rootViewController = self.tabbar.tabBarController;
+    self.netProcessor = [NetworkProcessor new];
+    [self.netProcessor initNetWork];
     return YES;
 }
 
