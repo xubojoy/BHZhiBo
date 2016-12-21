@@ -42,18 +42,18 @@
 
 +(void) upLoadTongueDiagnosisImg:(void(^)(NSString *imgUrl, NSError *err))completionBlock tongueImage:(UIImage *)image{
 
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setObject:image forKey:@"image"];
-    [requestFacade asiPost:[NSString stringWithFormat:@"%@/images/upload",[AppStatus sharedInstance].apiUrl] completionBlock:^(NSString *json, NSError *err) {
-        if(err == nil){
-            NSString *imgUrl = json;
-            NSLog(@"更新成功--%@",imgUrl);
-            completionBlock(imgUrl,nil);
-        }else{
-            completionBlock(nil,err);
-        }
-    } params:params];
+//    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
+//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+//    [params setObject:image forKey:@"image"];
+//    [requestFacade asiPost:[NSString stringWithFormat:@"%@/images/upload",[AppStatus sharedInstance].apiUrl] completionBlock:^(NSString *json, NSError *err) {
+//        if(err == nil){
+//            NSString *imgUrl = json;
+//            NSLog(@"更新成功--%@",imgUrl);
+//            completionBlock(imgUrl,nil);
+//        }else{
+//            completionBlock(nil,err);
+//        }
+//    } params:params];
 
 }
 +(void) confirmTongueDiagnosisTest:(void(^)(NSDictionary *dict, NSError *err))completionBlock userTongueUrl:(NSString *)userTongueUrl bodyTagIds:(NSArray *)bodyTagIds userSelectQuestions:(NSArray *)userSelectQuestions isPingHe:(BOOL)isPingHe{

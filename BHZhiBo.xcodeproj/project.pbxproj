@@ -202,14 +202,9 @@
 		1C32CCF11E0A325400182D95 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CC701E0A325400182D95 /* CommonCell.xib */; };
 		1C32CCF21E0A325400182D95 /* CoreMediaFuncManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC721E0A325400182D95 /* CoreMediaFuncManagerVC.m */; };
 		1C32CCF31E0A325400182D95 /* BHZhiBoTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC741E0A325400182D95 /* BHZhiBoTabbar.m */; };
-		1C32CCF41E0A325400182D95 /* CustomCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC771E0A325400182D95 /* CustomCircleView.m */; };
 		1C32CCF51E0A325400182D95 /* CustomEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC791E0A325400182D95 /* CustomEmptyView.m */; };
 		1C32CCF61E0A325400182D95 /* CustomEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CC7A1E0A325400182D95 /* CustomEmptyView.xib */; };
-		1C32CCF71E0A325400182D95 /* CustomProgressLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC7D1E0A325400182D95 /* CustomProgressLineView.m */; };
 		1C32CCF81E0A325400182D95 /* CustomSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC7F1E0A325400182D95 /* CustomSegmentView.m */; };
-		1C32CCF91E0A325400182D95 /* PellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC821E0A325400182D95 /* PellTableViewCell.m */; };
-		1C32CCFA1E0A325400182D95 /* PellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CC831E0A325400182D95 /* PellTableViewCell.xib */; };
-		1C32CCFB1E0A325400182D95 /* PellTableViewSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC851E0A325400182D95 /* PellTableViewSelect.m */; };
 		1C32CCFC1E0A325400182D95 /* DashLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC871E0A325400182D95 /* DashLineView.m */; };
 		1C32CCFD1E0A325400182D95 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CC891E0A325400182D95 /* HeaderView.m */; };
 		1C32CCFE1E0A325400182D95 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CC8A1E0A325400182D95 /* HeaderView.xib */; };
@@ -228,10 +223,6 @@
 		1C32CD0B1E0A325400182D95 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCAB1E0A325400182D95 /* IQUIView+IQKeyboardToolbar.m */; };
 		1C32CD0C1E0A325400182D95 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CCAE1E0A325400182D95 /* IQKeyboardManager.bundle */; };
 		1C32CD0D1E0A325400182D95 /* LBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCB01E0A325400182D95 /* LBorderView.m */; };
-		1C32CD0E1E0A325400182D95 /* CutPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCB31E0A325400182D95 /* CutPicViewController.m */; };
-		1C32CD0F1E0A325400182D95 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCB51E0A325400182D95 /* HomeViewController.m */; };
-		1C32CD101E0A325400182D95 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCB81E0A325400182D95 /* LLSimpleCamera.m */; };
-		1C32CD111E0A325400182D95 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCBA1E0A325400182D95 /* UIImage+FixOrientation.m */; };
 		1C32CD121E0A325400182D95 /* LoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */; };
 		1C32CD131E0A325400182D95 /* LoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */; };
 		1C32CD141E0A325400182D95 /* LQXSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCC01E0A325400182D95 /* LQXSwitch.m */; };
@@ -285,6 +276,7 @@
 		1C32CD8D1E0A673100182D95 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD851E0A673100182D95 /* 6.jpg */; };
 		1C32CD8E1E0A673100182D95 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD861E0A673100182D95 /* 7.jpg */; };
 		1C32CD8F1E0A673100182D95 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD871E0A673100182D95 /* 8.jpg */; };
+		1C32CD921E0A79EA00182D95 /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -681,20 +673,11 @@
 		1C32CC721E0A325400182D95 /* CoreMediaFuncManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreMediaFuncManagerVC.m; sourceTree = "<group>"; };
 		1C32CC731E0A325400182D95 /* BHZhiBoTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHZhiBoTabbar.h; sourceTree = "<group>"; };
 		1C32CC741E0A325400182D95 /* BHZhiBoTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHZhiBoTabbar.m; sourceTree = "<group>"; };
-		1C32CC761E0A325400182D95 /* CustomCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCircleView.h; sourceTree = "<group>"; };
-		1C32CC771E0A325400182D95 /* CustomCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCircleView.m; sourceTree = "<group>"; };
 		1C32CC781E0A325400182D95 /* CustomEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEmptyView.h; sourceTree = "<group>"; };
 		1C32CC791E0A325400182D95 /* CustomEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomEmptyView.m; sourceTree = "<group>"; };
 		1C32CC7A1E0A325400182D95 /* CustomEmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomEmptyView.xib; sourceTree = "<group>"; };
-		1C32CC7C1E0A325400182D95 /* CustomProgressLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomProgressLineView.h; sourceTree = "<group>"; };
-		1C32CC7D1E0A325400182D95 /* CustomProgressLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomProgressLineView.m; sourceTree = "<group>"; };
 		1C32CC7E1E0A325400182D95 /* CustomSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentView.h; sourceTree = "<group>"; };
 		1C32CC7F1E0A325400182D95 /* CustomSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentView.m; sourceTree = "<group>"; };
-		1C32CC811E0A325400182D95 /* PellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PellTableViewCell.h; sourceTree = "<group>"; };
-		1C32CC821E0A325400182D95 /* PellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PellTableViewCell.m; sourceTree = "<group>"; };
-		1C32CC831E0A325400182D95 /* PellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PellTableViewCell.xib; sourceTree = "<group>"; };
-		1C32CC841E0A325400182D95 /* PellTableViewSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PellTableViewSelect.h; sourceTree = "<group>"; };
-		1C32CC851E0A325400182D95 /* PellTableViewSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PellTableViewSelect.m; sourceTree = "<group>"; };
 		1C32CC861E0A325400182D95 /* DashLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashLineView.h; sourceTree = "<group>"; };
 		1C32CC871E0A325400182D95 /* DashLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashLineView.m; sourceTree = "<group>"; };
 		1C32CC881E0A325400182D95 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
@@ -732,14 +715,6 @@
 		1C32CCAE1E0A325400182D95 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		1C32CCAF1E0A325400182D95 /* LBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBorderView.h; sourceTree = "<group>"; };
 		1C32CCB01E0A325400182D95 /* LBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBorderView.m; sourceTree = "<group>"; };
-		1C32CCB21E0A325400182D95 /* CutPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutPicViewController.h; sourceTree = "<group>"; };
-		1C32CCB31E0A325400182D95 /* CutPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutPicViewController.m; sourceTree = "<group>"; };
-		1C32CCB41E0A325400182D95 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		1C32CCB51E0A325400182D95 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		1C32CCB71E0A325400182D95 /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSimpleCamera.h; sourceTree = "<group>"; };
-		1C32CCB81E0A325400182D95 /* LLSimpleCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSimpleCamera.m; sourceTree = "<group>"; };
-		1C32CCB91E0A325400182D95 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
-		1C32CCBA1E0A325400182D95 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		1C32CCBB1E0A325400182D95 /* LoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingStatusView.h; sourceTree = "<group>"; };
 		1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingStatusView.m; sourceTree = "<group>"; };
 		1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingStatusView.xib; sourceTree = "<group>"; };
@@ -826,6 +801,8 @@
 		1C32CD851E0A673100182D95 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		1C32CD861E0A673100182D95 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		1C32CD871E0A673100182D95 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		1C32CD901E0A79EA00182D95 /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
+		1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AoiroSoraLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1603,14 +1580,11 @@
 				1C32CC721E0A325400182D95 /* CoreMediaFuncManagerVC.m */,
 				1C32CC731E0A325400182D95 /* BHZhiBoTabbar.h */,
 				1C32CC741E0A325400182D95 /* BHZhiBoTabbar.m */,
-				1C32CC751E0A325400182D95 /* CustomCircleView */,
 				1C32CC781E0A325400182D95 /* CustomEmptyView.h */,
 				1C32CC791E0A325400182D95 /* CustomEmptyView.m */,
 				1C32CC7A1E0A325400182D95 /* CustomEmptyView.xib */,
-				1C32CC7B1E0A325400182D95 /* CustomProgressView */,
 				1C32CC7E1E0A325400182D95 /* CustomSegmentView.h */,
 				1C32CC7F1E0A325400182D95 /* CustomSegmentView.m */,
-				1C32CC801E0A325400182D95 /* CXPopView */,
 				1C32CC861E0A325400182D95 /* DashLineView.h */,
 				1C32CC871E0A325400182D95 /* DashLineView.m */,
 				1C32CC881E0A325400182D95 /* HeaderView.h */,
@@ -1619,7 +1593,6 @@
 				1C32CC8B1E0A325400182D95 /* IQKeyBoardManager */,
 				1C32CCAF1E0A325400182D95 /* LBorderView.h */,
 				1C32CCB01E0A325400182D95 /* LBorderView.m */,
-				1C32CCB11E0A325400182D95 /* LLSimpleCamera */,
 				1C32CCBB1E0A325400182D95 /* LoadingStatusView.h */,
 				1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */,
 				1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */,
@@ -1644,36 +1617,6 @@
 				1C32CCED1E0A325400182D95 /* XQNewFeatureVC.m */,
 			);
 			path = custom;
-			sourceTree = "<group>";
-		};
-		1C32CC751E0A325400182D95 /* CustomCircleView */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CC761E0A325400182D95 /* CustomCircleView.h */,
-				1C32CC771E0A325400182D95 /* CustomCircleView.m */,
-			);
-			path = CustomCircleView;
-			sourceTree = "<group>";
-		};
-		1C32CC7B1E0A325400182D95 /* CustomProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CC7C1E0A325400182D95 /* CustomProgressLineView.h */,
-				1C32CC7D1E0A325400182D95 /* CustomProgressLineView.m */,
-			);
-			path = CustomProgressView;
-			sourceTree = "<group>";
-		};
-		1C32CC801E0A325400182D95 /* CXPopView */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CC811E0A325400182D95 /* PellTableViewCell.h */,
-				1C32CC821E0A325400182D95 /* PellTableViewCell.m */,
-				1C32CC831E0A325400182D95 /* PellTableViewCell.xib */,
-				1C32CC841E0A325400182D95 /* PellTableViewSelect.h */,
-				1C32CC851E0A325400182D95 /* PellTableViewSelect.m */,
-			);
-			path = CXPopView;
 			sourceTree = "<group>";
 		};
 		1C32CC8B1E0A325400182D95 /* IQKeyBoardManager */ = {
@@ -1751,29 +1694,6 @@
 				1C32CCAE1E0A325400182D95 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1C32CCB11E0A325400182D95 /* LLSimpleCamera */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CCB21E0A325400182D95 /* CutPicViewController.h */,
-				1C32CCB31E0A325400182D95 /* CutPicViewController.m */,
-				1C32CCB41E0A325400182D95 /* HomeViewController.h */,
-				1C32CCB51E0A325400182D95 /* HomeViewController.m */,
-				1C32CCB61E0A325400182D95 /* JBCroppableView */,
-				1C32CCB71E0A325400182D95 /* LLSimpleCamera.h */,
-				1C32CCB81E0A325400182D95 /* LLSimpleCamera.m */,
-				1C32CCB91E0A325400182D95 /* UIImage+FixOrientation.h */,
-				1C32CCBA1E0A325400182D95 /* UIImage+FixOrientation.m */,
-			);
-			path = LLSimpleCamera;
-			sourceTree = "<group>";
-		};
-		1C32CCB61E0A325400182D95 /* JBCroppableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JBCroppableView;
 			sourceTree = "<group>";
 		};
 		1C32CCBE1E0A325400182D95 /* LQX */ = {
@@ -1902,6 +1822,8 @@
 		1C32CD721E0A616900182D95 /* homeView */ = {
 			isa = PBXGroup;
 			children = (
+				1C32CD901E0A79EA00182D95 /* AoiroSoraLayout.h */,
+				1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */,
 				1C32CD731E0A617700182D95 /* CustomCategoryCollectionViewCell.h */,
 				1C32CD741E0A617700182D95 /* CustomCategoryCollectionViewCell.m */,
 				1C32CD751E0A617700182D95 /* CustomCategoryCollectionViewCell.xib */,
@@ -2000,7 +1922,6 @@
 				1C32CD0C1E0A325400182D95 /* IQKeyboardManager.bundle in Resources */,
 				1C32CD191E0A325400182D95 /* MHSheetFoot.xib in Resources */,
 				1C32CCF61E0A325400182D95 /* CustomEmptyView.xib in Resources */,
-				1C32CCFA1E0A325400182D95 /* PellTableViewCell.xib in Resources */,
 				1C32C7ED1E0A2BBE00182D95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2017,7 +1938,6 @@
 				1C32CAAF1E0A2C3600182D95 /* MeridianRecord.m in Sources */,
 				1C32CAB41E0A2C3600182D95 /* Hospital.m in Sources */,
 				1C32CB761E0A2C3600182D95 /* SDWebImageDownloaderOperation.m in Sources */,
-				1C32CD101E0A325400182D95 /* LLSimpleCamera.m in Sources */,
 				1C32CAA61E0A2C3600182D95 /* Page.m in Sources */,
 				1C32CAC21E0A2C3600182D95 /* PtmsCdbasicsick.m in Sources */,
 				1C32CB681E0A2C3600182D95 /* ChineseToPinyinResource.m in Sources */,
@@ -2033,13 +1953,11 @@
 				1C32CA941E0A2C3600182D95 /* Toast+UIView.m in Sources */,
 				1C32CD291E0A325400182D95 /* XbPopView.m in Sources */,
 				1C32CD361E0A34B500182D95 /* IndexViewController.m in Sources */,
-				1C32CD0E1E0A325400182D95 /* CutPicViewController.m in Sources */,
 				1C32CAB01E0A2C3600182D95 /* PainLevelModel.m in Sources */,
 				1C32CAD31E0A2C3600182D95 /* ServicePicture.m in Sources */,
 				1C32CD161E0A325400182D95 /* MHSheetCell.m in Sources */,
 				1C32CB601E0A2C3600182D95 /* MJRefreshStateHeader.m in Sources */,
 				1C32CB801E0A2C3600182D95 /* UIView+WebCacheOperation.m in Sources */,
-				1C32CCF91E0A325400182D95 /* PellTableViewCell.m in Sources */,
 				1C32CB791E0A2C3600182D95 /* SDWebImagePrefetcher.m in Sources */,
 				1C32CB7E1E0A2C3600182D95 /* UIImageView+HighlightedWebCache.m in Sources */,
 				1C32CB9F1E0A2C3600182D95 /* UIImage+utils.m in Sources */,
@@ -2052,7 +1970,6 @@
 				1C32CD1A1E0A325400182D95 /* MHSheetHead.m in Sources */,
 				1C32CB9E1E0A2C3600182D95 /* UIImage+Resize.m in Sources */,
 				1C32CB941E0A2C3600182D95 /* ColorUtils.m in Sources */,
-				1C32CD0F1E0A325400182D95 /* HomeViewController.m in Sources */,
 				1C32CD0B1E0A325400182D95 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C32CB511E0A2C3600182D95 /* JSONKeyMapper.m in Sources */,
 				1C32CAB91E0A2C3600182D95 /* ProjectOrder.m in Sources */,
@@ -2068,18 +1985,17 @@
 				1C32CAEA1E0A2C3600182D95 /* LocalNotificationprocessor.m in Sources */,
 				1C32CB921E0A2C3600182D95 /* RDVTabBarItem.m in Sources */,
 				1C32CAAE1E0A2C3600182D95 /* Meridian.m in Sources */,
+				1C32CD921E0A79EA00182D95 /* AoiroSoraLayout.m in Sources */,
 				1C32CD031E0A325400182D95 /* IQUIViewController+Additions.m in Sources */,
 				1C32CD331E0A34A200182D95 /* FinanceViewController.m in Sources */,
 				1C32CACF1E0A2C3600182D95 /* ExpertFilter.m in Sources */,
 				1C32CD711E0A5B4200182D95 /* UIView+SDExtension.m in Sources */,
 				1C32CD281E0A325400182D95 /* WLZShareItem.m in Sources */,
-				1C32CCF71E0A325400182D95 /* CustomProgressLineView.m in Sources */,
 				1C32CD6B1E0A5B4200182D95 /* TAAbstractDotView.m in Sources */,
 				1C32CB091E0A2C3600182D95 /* AFHTTPSessionManager.m in Sources */,
 				1C32CB171E0A2C3600182D95 /* UIWebView+AFNetworking.m in Sources */,
 				1C32CB0D1E0A2C3600182D95 /* AFURLResponseSerialization.m in Sources */,
 				1C32CB101E0A2C3600182D95 /* AFImageDownloader.m in Sources */,
-				1C32CCFB1E0A325400182D95 /* PellTableViewSelect.m in Sources */,
 				1C32CB0B1E0A2C3600182D95 /* AFSecurityPolicy.m in Sources */,
 				1C32CAD11E0A2C3600182D95 /* PushRecord.m in Sources */,
 				1C32CAA41E0A2C3600182D95 /* Constant.m in Sources */,
@@ -2109,7 +2025,6 @@
 				1C32CCFC1E0A325400182D95 /* DashLineView.m in Sources */,
 				1C32CB5C1E0A2C3600182D95 /* MJRefreshBackNormalFooter.m in Sources */,
 				1C32CB991E0A2C3600182D95 /* ImageUtils.m in Sources */,
-				1C32CD111E0A325400182D95 /* UIImage+FixOrientation.m in Sources */,
 				1C32CD6C1E0A5B4200182D95 /* TAAnimatedDotView.m in Sources */,
 				1C32CABF1E0A2C3600182D95 /* MyPhysiDcdocitemsheet.m in Sources */,
 				1C32CAB81E0A2C3600182D95 /* Project.m in Sources */,
@@ -2181,7 +2096,6 @@
 				1C32CCF51E0A325400182D95 /* CustomEmptyView.m in Sources */,
 				1C32CA9E1E0A2C3600182D95 /* RecommendArticle.m in Sources */,
 				1C32CAD71E0A2C3600182D95 /* User.m in Sources */,
-				1C32CCF41E0A325400182D95 /* CustomCircleView.m in Sources */,
 				1C32CAEF1E0A2C3600182D95 /* URLDispatcher.m in Sources */,
 				1C32CAAB1E0A2C3600182D95 /* Acupoint.m in Sources */,
 				1C32CD781E0A617700182D95 /* CustomCategoryCollectionViewCell.m in Sources */,

@@ -73,10 +73,6 @@ extern NSString* const kJSONModelKeyPath;
  */
 +(id)errorInvalidDataWithMissingKeys:(NSSet*)keys;
 
-/**
- * Creates a JSONModelError instance with code kJSONModelErrorInvalidData = 1
- * @param A description of the type mismatch that was encountered.
- */
 +(id)errorInvalidDataWithTypeMismatch:(NSString*)mismatchDescription;
 
 /**

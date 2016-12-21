@@ -7,11 +7,13 @@
 //
 
 #import "IndexViewController.h"
-
-@interface IndexViewController ()
+#import "CustomCategoryCollectionViewCell.h"
+#import "AoiroSoraLayout.h"
+#define COLLECTVIEW_HEIGHT (screen_height-tabbar_height-140-20-10-screen_width/2);
+@interface IndexViewController ()<AoiroSoraLayoutDelegate>
 
 @end
-
+static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollectionViewCell";
 @implementation IndexViewController
 
 - (void)viewDidLoad {
@@ -22,7 +24,7 @@
     self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
     [self initPageScrollView];
     [self initCategoryView];
-    
+    [self initCollectView];
 }
 
 //初始化自定义导航
@@ -50,6 +52,73 @@
     self.customCategoryView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     self.customCategoryView.delegate = self;
     [self.view addSubview:self.customCategoryView];
+}
+
+- (void)initCollectView{
+    AoiroSoraLayout * layout = [[AoiroSoraLayout alloc]init];
+    layout.interSpace = 5; // 每个item 的间隔
+    layout.edgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    layout.colNum = 2; // 列数;
+    layout.delegate = self;
+    
+    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,self.customCategoryView.frame.size.height+self.customCategoryView.frame.origin.y, screen_width, H) collectionViewLayout:layout];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.showsHorizontalScrollIndicator = NO;
+    self.collectionView.scrollEnabled = NO;
+    
+    self.collectionView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
+    
+    UINib *nib = [UINib nibWithNibName:@"CustomCategoryCollectionViewCell" bundle: nil];
+    [self.collectionView registerNib:nib
+                            forCellWithReuseIdentifier:customCategoryCollectionViewCellId];
+    
+    [self.view addSubview:self.collectionView];
+
+}
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 3;
+}
+
+-(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CustomCategoryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:customCategoryCollectionViewCellId forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [ColorUtils randomColor];
+    return cell;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+    if (indexPath.item == 0) {
+        return CGSizeMake(screen_width/2,H);
+    }else{
+        return CGSizeMake((screen_width/2)-10,H/2);
+    }
+}
+
+#pragma mark -- 返回每个item的高度
+- (CGFloat)itemHeightLayOut:(AoiroSoraLayout *)layOut indexPath:(NSIndexPath *)indexPath
+{
+    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+    if (indexPath.item == 0) {
+        return H;
+    }else{
+        return H/2;
+    }
+}
+
+#pragma mark -- 选中某个cell
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"第 %ld 个cell",(long)indexPath.row);
 }
 
 #pragma mark - SDCycleScrollViewDelegate

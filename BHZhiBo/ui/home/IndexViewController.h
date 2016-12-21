@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
 #import "CustomCategoryView.h"
-@interface IndexViewController : BaseViewController<SDCycleScrollViewDelegate,CustomCategoryViewDelegate>
+@interface IndexViewController : BaseViewController<SDCycleScrollViewDelegate,CustomCategoryViewDelegate,UICollectionViewDataSource , UICollectionViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
 @property (nonatomic ,strong) SDCycleScrollView *cycleScrollView;
 @property (nonatomic ,strong) NSMutableArray *imageArray;
 @property (nonatomic ,strong) CustomCategoryView *customCategoryView;
+@property (nonatomic , strong) UICollectionView *collectionView;
 @end

@@ -39,17 +39,17 @@
 //            completionBlock(nil, err);
 //        }
 //    } jsonString:[newProjectOrder toDictionary]];
-    [requestFacade asiPost:url completionBlock:^(NSString *json, NSError *err) {
-        NSLog(@">>>>>>>>>project>>>>>>>>>%@",json);
-        if (err == nil) {
-//            NSDictionary *dic = [json objectFromJSONString];
-            ProjectOrder *project = [[ProjectOrder alloc] initWithString:json error:nil];
-            NSLog(@">>>>>>>>>添加返回值project>>>>>>>>>%@",project);
-            completionBlock(project, nil);
-        }else if (err != nil){
-            completionBlock(nil, err);
-        }
-    } jsonString:[newProjectOrder toJSONString]];
+//    [requestFacade asiPost:url completionBlock:^(NSString *json, NSError *err) {
+//        NSLog(@">>>>>>>>>project>>>>>>>>>%@",json);
+//        if (err == nil) {
+////            NSDictionary *dic = [json objectFromJSONString];
+//            ProjectOrder *project = [[ProjectOrder alloc] initWithString:json error:nil];
+//            NSLog(@">>>>>>>>>添加返回值project>>>>>>>>>%@",project);
+//            completionBlock(project, nil);
+//        }else if (err != nil){
+//            completionBlock(nil, err);
+//        }
+//    } jsonString:[newProjectOrder toJSONString]];
 }
 
 +(void) getDoctorById:(void(^)(NSDictionary *doctorDict, NSError *err))completionBlock doctorId:(int)doctorId{

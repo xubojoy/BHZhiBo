@@ -193,17 +193,17 @@
     HttpRequestFacade *request = [HttpRequestFacade sharedInstance];
     NSString *url = [NSString stringWithFormat:@"%@/myUserInfo",[AppStatus sharedInstance].apiUrl];
     NSURL *urlStr = [NSURL URLWithString:url];
-    [request asiDoGet:urlStr completionBlock:^(NSString *json, NSError *err) {
-        NSLog(@">>>>>>>>>>>>>>>>游戏币数据json：%@",json);
-        if (err == nil) {
-            NSDictionary *dic = [json objectFromJSONString];
-            User *user = [[User alloc] init];
-            [user readFromJSONDictionary:dic];
-            completionBlock(user, nil);
-        }else if(err != nil){
-            completionBlock(nil, err);
-        }
-    } refresh:NO useCacheIfNetworkFail:NO];
+//    [request asiDoGet:urlStr completionBlock:^(NSString *json, NSError *err) {
+//        NSLog(@">>>>>>>>>>>>>>>>游戏币数据json：%@",json);
+//        if (err == nil) {
+//            NSDictionary *dic = [json objectFromJSONString];
+//            User *user = [[User alloc] init];
+//            [user readFromJSONDictionary:dic];
+//            completionBlock(user, nil);
+//        }else if(err != nil){
+//            completionBlock(nil, err);
+//        }
+//    } refresh:NO useCacheIfNetworkFail:NO];
 }
 
 
@@ -229,37 +229,37 @@
 
 +(void) getMyDoctor:(void(^)(NSDictionary *myDoctorDic, NSError *err))completionBlock medname:(NSString *)medname password:(NSString *)password{
 
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setObject:medname forKey:@"medname"];
-    [params setObject:password forKey:@"password"];
-    [requestFacade asiPost:@"http://218.249.44.54:8080/intelet_middleservice/hisInfo" completionBlock:^(NSString *json, NSError *err) {
-        if(err == nil){
-//            NSLog(@">jsonjsonjsonjson>>>%@",json);
-           
-            NSDictionary *myDoctorDic = [json objectFromJSONString];
-            completionBlock(myDoctorDic ,nil);
-        }else{
-            completionBlock(nil ,err);
-        }
-    } params:params];
+//    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
+//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+//    [params setObject:medname forKey:@"medname"];
+//    [params setObject:password forKey:@"password"];
+//    [requestFacade asiPost:@"http://218.249.44.54:8080/intelet_middleservice/hisInfo" completionBlock:^(NSString *json, NSError *err) {
+//        if(err == nil){
+////            NSLog(@">jsonjsonjsonjson>>>%@",json);
+//           
+//            NSDictionary *myDoctorDic = [json objectFromJSONString];
+//            completionBlock(myDoctorDic ,nil);
+//        }else{
+//            completionBlock(nil ,err);
+//        }
+//    } params:params];
 }
 
 +(void) getMyPhysiotherapy:(void(^)(NSDictionary *myPhysiotherapyDict, NSError *err))completionBlock medname:(NSString *)medname password:(NSString *)password{
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setObject:medname forKey:@"medname"];
-    [params setObject:password forKey:@"password"];
-    [requestFacade asiPost:@"http://218.249.44.54:8080/intelet_middleservice/ptmsInfo" completionBlock:^(NSString *json, NSError *err) {
-        if(err == nil){
-            //            NSLog(@">jsonjsonjsonjson>>>%@",json);
-            
-            NSDictionary *myDoctorDic = [json objectFromJSONString];
-            completionBlock(myDoctorDic ,nil);
-        }else{
-            completionBlock(nil ,err);
-        }
-    } params:params];
+//    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
+//    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+//    [params setObject:medname forKey:@"medname"];
+//    [params setObject:password forKey:@"password"];
+//    [requestFacade asiPost:@"http://218.249.44.54:8080/intelet_middleservice/ptmsInfo" completionBlock:^(NSString *json, NSError *err) {
+//        if(err == nil){
+//            //            NSLog(@">jsonjsonjsonjson>>>%@",json);
+//            
+//            NSDictionary *myDoctorDic = [json objectFromJSONString];
+//            completionBlock(myDoctorDic ,nil);
+//        }else{
+//            completionBlock(nil ,err);
+//        }
+//    } params:params];
 }
 
 +(void) confirmUserUploadRecord:(void(^)(UserUploadRecord *userUploadRecord, NSError *err))completionBlock newUserUploadRecord:(NewUserUploadRecord *)newUserUploadRecord{
@@ -297,16 +297,16 @@
 }
 
 + (void) confirmCollectionArticle:(void(^)(NSDictionary *collectionDict, NSError *err))completionBlock articleId:(int)articleId{
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    [requestFacade asiPost:[NSString stringWithFormat:@"%@/articles/%d/fav",[AppStatus sharedInstance].apiUrl,articleId]  completionBlock:^(NSString *json, NSError *err) {
-        NSLog(@"收藏文章:%@", json);
-        if(json != nil){
-            NSDictionary *dic = [json objectFromJSONString];
-            completionBlock(dic, err);
-        }else if(err != nil){
-            completionBlock(nil, err);
-        }
-    } params:nil];
+//    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
+//    [requestFacade asiPost:[NSString stringWithFormat:@"%@/articles/%d/fav",[AppStatus sharedInstance].apiUrl,articleId]  completionBlock:^(NSString *json, NSError *err) {
+//        NSLog(@"收藏文章:%@", json);
+//        if(json != nil){
+//            NSDictionary *dic = [json objectFromJSONString];
+//            completionBlock(dic, err);
+//        }else if(err != nil){
+//            completionBlock(nil, err);
+//        }
+//    } params:nil];
 }
 
 + (void) checkUserCollectionArticle:(void(^)(NSDictionary *collectionDict, NSError *err))completionBlock articleId:(int)articleId{

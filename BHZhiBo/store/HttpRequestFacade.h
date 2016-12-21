@@ -24,10 +24,6 @@
                 refresh:(BOOL)refresh
   useCacheIfNetworkFail:(BOOL)useCacheIfNetworkFail;
 
--(void)           asiDoGet:(NSURL *)url
-        completionBlock:(void (^)(NSString *json, NSError *err))completionBlock
-                refresh:(BOOL)refresh
-  useCacheIfNetworkFail:(BOOL)useCacheIfNetworkFail;
 
 -(void)          post:(NSString *)urlStr
       completionBlock:(void (^)(id json, NSError *err))completionBlock
@@ -40,14 +36,6 @@
 -(void)          post:(NSString *)urlStr
       completionBlock:(void (^)(id json, NSError *err))completionBlock
            jsonString:(NSDictionary *)jsonString;
-
--(void)          asiPost:(NSString *)urlStr
-      completionBlock:(void (^)(NSString *json, NSError *err))comletionBlock
-               params:(NSDictionary *)params;
-
--(void)          asiPost:(NSString *)urlStr
-      completionBlock:(void (^)(NSString *json, NSError *err))completionBlock
-           jsonString:(NSString *)jsonString;
 
 -(void)        delete:(NSString *)urlStr
 completionBlock:(void (^)(id json, NSError *err))completionBlock

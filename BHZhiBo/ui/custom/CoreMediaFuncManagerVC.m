@@ -43,18 +43,8 @@
     [self removeFromParentViewController];
 }
 
-
-
-
-
-
-
-/**
- *  打电话
- *
- *  @param no                   电话号码
- *  @param inViewController     需要打电话的控制器
- */
+ //需要打电话的控制器
+ 
 +(void)call:(NSString *)no inViewController:(UIViewController *)vc failBlock:(void(^)())failBlock{
     
     //拨打电话
