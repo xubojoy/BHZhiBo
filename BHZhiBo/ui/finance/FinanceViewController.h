@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FinanceViewController : BaseViewController
+@interface FinanceViewController : BaseViewController<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
+@property (strong, nonatomic) UIWebView *webView;
 @end
