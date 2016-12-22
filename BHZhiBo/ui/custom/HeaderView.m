@@ -31,14 +31,15 @@
         
         self.bgImg.image = [UIImage imageNamed:@"top_bar"];
         [self.title setFont:[UIFont boldSystemFontOfSize:bigger_1_font_size]];
-        [self.title setTextColor:[ColorUtils colorWithHexString:common_app_text_color]];
+        [self.title setTextColor:[ColorUtils colorWithHexString:red_default_color]];
         [self.title setTextAlignment:NSTextAlignmentCenter];
-        [self.title setText:[titleStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+//        [self.title setText:[titleStr stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        [self.title setText:titleStr.stringByRemovingPercentEncoding];
         self.title.backgroundColor = [UIColor clearColor];
         
-        [self.backBut setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateNormal];
+        [self.backBut setImage:[UIImage imageNamed:@"arrow_back_icon"] forState:UIControlStateNormal];
         [self.backBut addTarget:self action:@selector(popToFrontViewController:) forControlEvents:UIControlEventTouchUpInside];
-        [self.backBut setTitle:@"返回" forState:UIControlStateNormal];
+//        [self.backBut setTitle:@"返回" forState:UIControlStateNormal];
         self.backBut.titleLabel.font = [UIFont systemFontOfSize:default_font_size];
         self.backBut.backgroundColor = [UIColor clearColor];
         [self.backBut setTitleColor:[ColorUtils colorWithHexString:black_text_color] forState:UIControlStateNormal];

@@ -277,6 +277,7 @@
 		1C32CD8E1E0A673100182D95 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD861E0A673100182D95 /* 7.jpg */; };
 		1C32CD8F1E0A673100182D95 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD871E0A673100182D95 /* 8.jpg */; };
 		1C32CD921E0A79EA00182D95 /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */; };
+		1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -803,6 +804,8 @@
 		1C32CD871E0A673100182D95 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		1C32CD901E0A79EA00182D95 /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
 		1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AoiroSoraLayout.m; sourceTree = "<group>"; };
+		1CC59AAA1E0B8190006769F9 /* CommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonWebViewController.h; sourceTree = "<group>"; };
+		1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1549,6 +1552,7 @@
 		1C32CC671E0A325400182D95 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				1CC59AA91E0B8176006769F9 /* common */,
 				1C32CD2D1E0A32F900182D95 /* finance */,
 				1C32CD2E1E0A32F900182D95 /* home */,
 				1C32CD2F1E0A32F900182D95 /* live */,
@@ -1833,6 +1837,15 @@
 			path = homeView;
 			sourceTree = "<group>";
 		};
+		1CC59AA91E0B8176006769F9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1CC59AAA1E0B8190006769F9 /* CommonWebViewController.h */,
+				1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1943,6 +1956,7 @@
 				1C32CB681E0A2C3600182D95 /* ChineseToPinyinResource.m in Sources */,
 				1C32CAD81E0A2C3600182D95 /* UserAccount.m in Sources */,
 				1C32CD021E0A325400182D95 /* IQUIView+Hierarchy.m in Sources */,
+				1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */,
 				1C32CD0D1E0A325400182D95 /* LBorderView.m in Sources */,
 				1C32CB5E1E0A2C3600182D95 /* MJRefreshGifHeader.m in Sources */,
 				1C32CD701E0A5B4200182D95 /* SDCycleScrollView.m in Sources */,

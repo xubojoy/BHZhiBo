@@ -74,7 +74,7 @@
                                        };
         _selectedTitleAttributes = @{
                                        NSFontAttributeName: [UIFont systemFontOfSize:12],
-                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:brown_common_color],
+                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:red_default_color],
                                        };
     } else {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
