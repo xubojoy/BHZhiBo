@@ -49,7 +49,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 }
 
 - (void)initCategoryView{
-    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, self.cycleScrollView.frame.origin.y+self.cycleScrollView.frame.size.height+general_padding, screen_width, 140)];
+    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, self.cycleScrollView.frame.origin.y+self.cycleScrollView.frame.size.height+general_padding, screen_width, 160)];
     self.customCategoryView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     self.customCategoryView.delegate = self;
     [self.view addSubview:self.customCategoryView];
@@ -61,8 +61,8 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     layout.edgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     layout.colNum = 2; // 列数;
     layout.delegate = self;
-    
-    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+//    screen_height-tabbar_height-140-20-10-
+    float H = screen_width/2;
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,self.customCategoryView.frame.size.height+self.customCategoryView.frame.origin.y, screen_width, H) collectionViewLayout:layout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -97,18 +97,20 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+//    screen_height-tabbar_height-140-20-10-
+    float H = screen_width/2;
     if (indexPath.item == 0) {
         return CGSizeMake(screen_width/2,H);
     }else{
-        return CGSizeMake((screen_width/2)-10,H/2);
+        return CGSizeMake(screen_width/2,H/2);
     }
 }
 
 #pragma mark -- 返回每个item的高度
 - (CGFloat)itemHeightLayOut:(AoiroSoraLayout *)layOut indexPath:(NSIndexPath *)indexPath
 {
-    float H = screen_height-tabbar_height-140-20-10-screen_width/2;
+//    screen_height-tabbar_height-140-20-10-
+    float H = screen_width/2;
     if (indexPath.item == 0) {
         return H;
     }else{
@@ -134,6 +136,16 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     if (item == 4) {
         CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://www.jin10.com/example/jin10.com.html" title:@"财经"];
         [self.navigationController pushViewController:cwvc animated:YES];
+    }else if (item == 0){
+        NSURL * myURL_APP_A = [NSURL URLWithString:@"test://"];
+        if ([[UIApplication sharedApplication] canOpenURL:myURL_APP_A]) {
+            NSLog(@"canOpenURL");
+            [[UIApplication sharedApplication] openURL:myURL_APP_A];
+        }else{
+            NSLog(@"canOpenURL--------------");
+            NSURL * zhongjiangUrl = [NSURL URLWithString:zhongjiang_weipan_app_url];
+            [[UIApplication sharedApplication] openURL:zhongjiangUrl];
+        }
     }
 }
 

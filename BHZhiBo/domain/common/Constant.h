@@ -275,7 +275,7 @@
 
 #define APP_ID 1103686449
 
-#define crazy_doctor_app_url @"https://itunes.apple.com/cn/app/feng-kuang-tai-yi/id1103686449?mt=8"
+#define zhongjiang_weipan_app_url @"https://itunes.apple.com/cn/app/zhong-jiang-wei-pan-sui-shi/id1177967769?mt=8"
 
 
 #define kEveryDay @"http://baobab.wandoujia.com/api/v1/feed?num=10&date=%@&vc=67&u=011f2924aa2cf27aa5dc8066c041fe08116a9a0c&v=1.8.0&f=iphone"

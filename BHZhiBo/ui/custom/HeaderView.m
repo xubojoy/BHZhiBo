@@ -42,7 +42,7 @@
 //        [self.backBut setTitle:@"返回" forState:UIControlStateNormal];
         self.backBut.imageEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
         self.backBut.titleLabel.font = [UIFont systemFontOfSize:default_font_size];
-        self.backBut.backgroundColor = [UIColor purpleColor];
+        self.backBut.backgroundColor = [UIColor clearColor];
         [self.backBut setTitleColor:[ColorUtils colorWithHexString:black_text_color] forState:UIControlStateNormal];
         
         self.line.backgroundColor = [ColorUtils colorWithHexString:splite_line_color];
