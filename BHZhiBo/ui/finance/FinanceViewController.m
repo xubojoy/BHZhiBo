@@ -43,7 +43,7 @@
     self.webView.delegate = self;
     self.webView.scrollView.delegate = self;
     [self.view addSubview:self.webView];
-    [self.webView setBackgroundColor:[UIColor clearColor]];
+    [self.webView setBackgroundColor:[ColorUtils colorWithHexString:common_bg_color]];
 //    [self.view bringSubviewToFront:self.headerView];
 }
 
