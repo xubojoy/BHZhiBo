@@ -22,6 +22,23 @@
     [self initHeadView];
     [self loadWebView];
 }
+
+//加载菊花
+-(void)initActivityIndicatorView{
+    self.activity =[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    //    self.view.userInteractionEnabled = NO;
+    //设置活动指示器的中间位置
+    self.activity.center=CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2-10);
+    [self.activity startAnimating];
+    //添加到视图
+    [self.view addSubview:self.activity];
+}
+
+-(void)initStopActivityIndicatorView{
+    [self.activity stopAnimating];
+    self.activity.hidden = YES;
+}
+
 //初始化自定义导航
 -(void)initHeadView{
     self.headerView = [[HeaderView alloc] initWithTitle:@"财经" navigationController:self.navigationController];
@@ -30,7 +47,9 @@
     [self.view addSubview:self.headerView];
     
     loading = [[LoadingStatusView alloc] initWithFrame:loading_frame];
-    [loading updateStatus:network_status_loading animating:YES];
+    [loading updateStatus:@"" animating:YES];
+    loading.backgroundColor = [UIColor purpleColor];
+    loading.center = self.view.center;
     [self.view addSubview:loading];
 }
 
@@ -43,16 +62,16 @@
     self.webView.delegate = self;
     self.webView.scrollView.delegate = self;
     [self.view addSubview:self.webView];
-    [self.webView setBackgroundColor:[ColorUtils colorWithHexString:common_bg_color]];
-//    [self.view bringSubviewToFront:self.headerView];
+    [self.webView setBackgroundColor:[UIColor clearColor]];
+    [self.view bringSubviewToFront:loading];
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView{
-    [loading updateStatus:network_status_loading animating:YES];
+    [self initActivityIndicatorView];
 }
 
 -(void) webViewDidFinishLoad:(UIWebView *)webView{
-    [loading setHidden:YES];
+    [self initStopActivityIndicatorView];
 }
 
 -(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest   navigationType:(UIWebViewNavigationType)inType
@@ -63,8 +82,7 @@
 
 -(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     NSLog(@">>>> web load error:%@", webView.request.URL);
-    loading.hidden = YES;
-    [loading updateStatus:network_unconnect_note animating:NO];
+    [self initStopActivityIndicatorView];
 }
 
 - (void)didReceiveMemoryWarning {

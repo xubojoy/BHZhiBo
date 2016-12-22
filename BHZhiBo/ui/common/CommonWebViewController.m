@@ -36,7 +36,9 @@
     [self.view addSubview:self.headerView];
     
     loading = [[LoadingStatusView alloc] initWithFrame:loading_frame];
-    [loading updateStatus:network_status_loading animating:YES];
+    [loading updateStatus:@"" animating:YES];
+    loading.backgroundColor = [UIColor clearColor];
+    loading.center = self.view.center;
     [self.view addSubview:loading];
 }
 
@@ -50,11 +52,12 @@
     self.webView.scrollView.delegate = self;
     [self.view addSubview:self.webView];
     [self.webView setBackgroundColor:[UIColor clearColor]];
-    //    [self.view bringSubviewToFront:self.headerView];
+    [self.view bringSubviewToFront:loading];
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView{
-    [loading updateStatus:network_status_loading animating:YES];
+    [loading setHidden:NO];
+    [loading updateStatus:@"" animating:YES];
 }
 
 -(void) webViewDidFinishLoad:(UIWebView *)webView{
@@ -70,7 +73,7 @@
 -(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
     NSLog(@">>>> web load error:%@", webView.request.URL);
     loading.hidden = YES;
-    [loading updateStatus:network_unconnect_note animating:NO];
+    [loading updateStatus:@"" animating:NO];
 }
 
 - (void)didReceiveMemoryWarning {
