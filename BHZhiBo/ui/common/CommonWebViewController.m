@@ -64,9 +64,29 @@
     [loading setHidden:YES];
 }
 
--(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest   navigationType:(UIWebViewNavigationType)inType
+//-(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest   navigationType:(UIWebViewNavigationType)inType
+//{
+//    NSLog(@">>>>> to:%@", inRequest.URL);
+//    return YES;
+//}
+- (BOOL)webView:(UIWebView *)awebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSLog(@">>>>> to:%@", inRequest.URL);
+    NSString* scheme = [[request URL] scheme];
+    NSLog(@"scheme = %@",scheme);
+    //判断是不是https
+//    if ([scheme isEqualToString:@"https"]) {
+//        //如果是https:的话，那么就用NSURLConnection来重发请求。从而在请求的过程当中吧要请求的URL做信任处理。
+//        if (!self.isAuthed) {
+//            originRequest = request;
+//            NSURLConnection* conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//            [conn start];
+//            [awebView stopLoading];
+//            return NO;
+//        }
+//    }
+//    
+//    NSURL *theUrl = [request URL];
+//    self.currenURL = theUrl;
     return YES;
 }
 
@@ -75,6 +95,87 @@
     loading.hidden = YES;
     [loading updateStatus:@"" animating:NO];
 }
+
+
+//#pragma mark ================= NSURLConnectionDelegate <NSObject>
+//
+//- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+//{
+//    
+//}
+//- (BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection
+//{
+//    
+//    return YES;
+//}
+//- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+//{
+//    
+//    if ([challenge previousFailureCount]== 0) {
+//        _authed = YES;
+//        
+//        //NSURLCredential 这个类是表示身份验证凭据不可变对象。凭证的实际类型声明的类的构造函数来确定。
+//        NSURLCredential* cre = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+//        [challenge.sender useCredential:cre forAuthenticationChallenge:challenge];
+//    }
+//    else
+//    {
+//        [challenge.sender cancelAuthenticationChallenge:challenge];
+//    }
+//    
+//}
+//
+//// Deprecated authentication delegates.
+//- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace
+//{
+//    return [protectionSpace.authenticationMethod
+//            isEqualToString:NSURLAuthenticationMethodServerTrust];
+//    
+//    return YES;
+//}
+//- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+//{
+//    
+//    NSLog(@"challenge == %@",challenge);
+//    
+//    //    if (([challenge.protectionSpace.authenticationMethod
+//    //          isEqualToString:NSURLAuthenticationMethodServerTrust])) {
+//    //        if ([challenge.protectionSpace.host isEqualToString:@"111.200.87.69:8443/ccard"]) {
+//    //            NSLog(@"Allowing bypass...");
+//    //            NSURLCredential *credential = [NSURLCredential credentialForTrust:
+//    //                                           challenge.protectionSpace.serverTrust];
+//    //            [challenge.sender useCredential:credential
+//    //                 forAuthenticationChallenge:challenge];
+//    //        }
+//    //    }
+//    [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
+//    
+//}
+//- (void)connection:(NSURLConnection *)connection didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+//{
+//    
+//    
+//}
+//
+//
+//#pragma mark ================= NSURLConnectionDataDelegate <NSURLConnectionDelegate>
+//
+//- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response
+//{
+//    
+//    NSLog(@"%@",request);
+//    return request;
+//    
+//}
+//- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+//{
+//    
+//    self.authed = YES;
+//    //webview 重新加载请求。
+//    [self.webView loadRequest:originRequest];
+//    [connection cancel];
+//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
