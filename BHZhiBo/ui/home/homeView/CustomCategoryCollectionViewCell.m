@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.iconImgView.layer.cornerRadius = 2;
+    self.iconImgView.layer.masksToBounds = YES;
 }
 
 - (void)renderCustomCategoryCollectionViewCellWithItem:(NSInteger)item{

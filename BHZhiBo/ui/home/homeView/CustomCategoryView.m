@@ -62,7 +62,13 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(self.frame.size.width/4,80);
+    float height = 0.0;
+    if (screen_height >= 568) {
+        height = 80;
+    }else{
+        height = 70;
+    }
+    return CGSizeMake(self.frame.size.width/4,height);
 }
 
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath

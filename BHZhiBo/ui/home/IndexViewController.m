@@ -41,7 +41,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 }
 
 - (void)initPageScrollView{
-    float height = screen_width/2;
+    float height = screen_width/3;
     self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 20, screen_width, height) imageNamesGroup:self.imageArray];
     self.cycleScrollView.delegate = self;
     self.cycleScrollView.autoScrollTimeInterval = 2.0;
@@ -49,7 +49,13 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 }
 
 - (void)initCategoryView{
-    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, self.cycleScrollView.frame.origin.y+self.cycleScrollView.frame.size.height+general_padding, screen_width, 160)];
+    float height = 0.0;
+    if (screen_height >= 568) {
+        height = 160;
+    }else{
+        height = 140;
+    }
+    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, self.cycleScrollView.frame.origin.y+self.cycleScrollView.frame.size.height+general_padding, screen_width, height)];
     self.customCategoryView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     self.customCategoryView.delegate = self;
     [self.view addSubview:self.customCategoryView];
