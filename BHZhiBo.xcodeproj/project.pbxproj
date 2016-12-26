@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1650001E11079E00E4EC4C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C164FFF1E11079E00E4EC4C /* logo.png */; };
 		1C32C7E41E0A2BBE00182D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C7E31E0A2BBE00182D95 /* main.m */; };
 		1C32C7E71E0A2BBE00182D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C7E61E0A2BBE00182D95 /* AppDelegate.m */; };
 		1C32C7ED1E0A2BBE00182D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C32C7EB1E0A2BBE00182D95 /* Main.storyboard */; };
@@ -281,6 +282,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C164FFF1E11079E00E4EC4C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		1C32C7DF1E0A2BBE00182D95 /* BHZhiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHZhiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32C7E31E0A2BBE00182D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C32C7E51E0A2BBE00182D95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1130,6 +1132,7 @@
 		1C32C8CB1E0A2C3500182D95 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				1C164FFF1E11079E00E4EC4C /* logo.png */,
 				1C32CD801E0A673100182D95 /* 1.jpg */,
 				1C32CD811E0A673100182D95 /* 2.jpg */,
 				1C32CD821E0A673100182D95 /* 3.jpg */,
@@ -1917,6 +1920,7 @@
 				1C32CD131E0A325400182D95 /* LoadingStatusView.xib in Resources */,
 				1C32CD201E0A325400182D95 /* PopUpView.xib in Resources */,
 				1C32CD8E1E0A673100182D95 /* 7.jpg in Resources */,
+				1C1650001E11079E00E4EC4C /* logo.png in Resources */,
 				1C32CD8B1E0A673100182D95 /* 4.jpg in Resources */,
 				1C32CD221E0A325400182D95 /* RefreshUIView.xib in Resources */,
 				1C32CD1D1E0A325400182D95 /* MHSheetView.xib in Resources */,
