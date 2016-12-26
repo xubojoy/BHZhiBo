@@ -92,7 +92,7 @@
     
   //  _selectedTitleAttributes = [_unselectedTitleAttributes copy];
     _badgeBackgroundColor = [UIColor redColor];
-    _badgeTextColor = [UIColor blackColor];
+    _badgeTextColor = [UIColor whiteColor];
     _badgeTextFont = [UIFont systemFontOfSize:12];
     _badgePositionAdjustment = UIOffsetMake(-8,-1);
 }

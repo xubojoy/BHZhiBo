@@ -23,6 +23,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     self.view.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     [self initHeadView];
     self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
+    [self initMainScrollVew];
     [self initPageScrollView];
     [self initCategoryView];
     [self initCollectView];
@@ -30,22 +31,32 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 
 //初始化自定义导航
 -(void)initHeadView{
-//    self.headerView = [[HeaderView alloc] initWithTitle:@"首页" navigationController:self.navigationController];
-//    self.headerView.backBut.hidden = YES;
-//    self.headerView.userInteractionEnabled = YES;
-//    [self.view addSubview:self.headerView];
+    self.headerView = [[HeaderView alloc] initWithTitle:@"中江微盘直播" navigationController:self.navigationController];
+    self.headerView.backBut.hidden = YES;
+    self.headerView.userInteractionEnabled = YES;
+    [self.view addSubview:self.headerView];
     
-    UIView *statusView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen_width, 20)];
-    statusView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:statusView];
+//    UIView *statusView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen_width, 20)];
+//    statusView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:statusView];
 }
+
+//初始化scrollview容器
+-(void)initMainScrollVew{
+    self.mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height)];
+    self.mainScrollView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
+    self.mainScrollView.showsVerticalScrollIndicator = NO;
+    self.mainScrollView.userInteractionEnabled = YES;
+    [self.view addSubview:self.mainScrollView];
+}
+
 
 - (void)initPageScrollView{
     float height = screen_width/3;
-    self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 20, screen_width, height) imageNamesGroup:self.imageArray];
+    self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, screen_width, height) imageNamesGroup:self.imageArray];
     self.cycleScrollView.delegate = self;
     self.cycleScrollView.autoScrollTimeInterval = 2.0;
-    [self.view addSubview:self.cycleScrollView];
+    [self.mainScrollView addSubview:self.cycleScrollView];
 }
 
 - (void)initCategoryView{
@@ -55,10 +66,10 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     }else{
         height = 140;
     }
-    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, self.cycleScrollView.frame.origin.y+self.cycleScrollView.frame.size.height+general_padding, screen_width, height)];
+    self.customCategoryView = [[CustomCategoryView alloc] initWithFrame:CGRectMake(0, screen_width/3+general_padding, screen_width, height)];
     self.customCategoryView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     self.customCategoryView.delegate = self;
-    [self.view addSubview:self.customCategoryView];
+    [self.mainScrollView addSubview:self.customCategoryView];
 }
 
 - (void)initCollectView{
@@ -69,7 +80,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     layout.delegate = self;
 //    screen_height-tabbar_height-140-20-10-
     float H = screen_width/2;
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,self.customCategoryView.frame.size.height+self.customCategoryView.frame.origin.y, screen_width, H) collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,self.customCategoryView.frame.size.height+screen_width/3+general_padding, screen_width, H) collectionViewLayout:layout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     self.collectionView.showsHorizontalScrollIndicator = NO;
@@ -81,8 +92,9 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     [self.collectionView registerNib:nib
                             forCellWithReuseIdentifier:customCategoryCollectionViewCellId];
     
-    [self.view addSubview:self.collectionView];
-
+    [self.mainScrollView addSubview:self.collectionView];
+    float scrollewH = screen_width/3+general_padding+H+self.customCategoryView.frame.size.height;
+    self.mainScrollView.contentSize = CGSizeMake(screen_width, scrollewH);
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView

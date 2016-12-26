@@ -127,7 +127,6 @@
         
         for (UIViewController *viewController in viewControllers) {
             RDVTabBarItem *tabBarItem = [[RDVTabBarItem alloc] init];
-            tabBarItem.backgroundColor = [ColorUtils colorWithHexString:bar_common_color];
             [tabBarItem setTitle:viewController.title];
             [tabBarItems addObject:tabBarItem];
             [viewController rdv_setTabBarController:self];
@@ -154,8 +153,7 @@
 - (RDVTabBar *)tabBar {
     if (!_tabBar) {
         _tabBar = [[RDVTabBar alloc] init];
-//        [_tabBar setBackgroundColor:[UIColor clearColor]];
-        [_tabBar setBackgroundColor:[ColorUtils colorWithHexString:bar_common_color]];
+        [_tabBar setBackgroundColor:[UIColor clearColor]];
         [_tabBar setAutoresizingMask:(UIViewAutoresizingFlexibleWidth|
                                       UIViewAutoresizingFlexibleTopMargin|
                                       UIViewAutoresizingFlexibleLeftMargin|

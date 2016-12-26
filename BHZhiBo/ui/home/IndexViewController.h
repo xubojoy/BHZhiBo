@@ -11,6 +11,7 @@
 #import "CustomCategoryView.h"
 @interface IndexViewController : BaseViewController<SDCycleScrollViewDelegate,CustomCategoryViewDelegate,UICollectionViewDataSource , UICollectionViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
+@property (nonatomic ,strong) UIScrollView *mainScrollView;
 @property (nonatomic ,strong) SDCycleScrollView *cycleScrollView;
 @property (nonatomic ,strong) NSMutableArray *imageArray;
 @property (nonatomic ,strong) CustomCategoryView *customCategoryView;

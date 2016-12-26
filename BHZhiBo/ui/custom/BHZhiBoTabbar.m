@@ -57,13 +57,13 @@
 }
 
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
-    UIImage *finishedImage = [UIImage imageNamed:@"under_bar"];
-    UIImage *unfinishedImage = [UIImage imageNamed:@"under_bar"];
+//    UIImage *finishedImage = [UIImage imageNamed:@"under_bar"];
+//    UIImage *unfinishedImage = [UIImage imageNamed:@"under_bar"];
     NSArray *tabBarItemImages = @[@"home_fill",@"sponsor_fill",@"mark_fill",@"rank_fill"];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
-        item.backgroundColor = [ColorUtils colorWithHexString:black_text_color];
-        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+//        item.backgroundColor = [ColorUtils colorWithHexString:black_text_color];
+//        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
         UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_select",
                                                       [tabBarItemImages objectAtIndex:index]]];
         UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_default",

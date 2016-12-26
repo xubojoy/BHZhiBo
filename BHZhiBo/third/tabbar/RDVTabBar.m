@@ -166,12 +166,14 @@
 - (void)setTranslucent:(BOOL)translucent {
     _translucent = translucent;
     
-    CGFloat alpha = (translucent ? 0.9 : 1.0);
+//    CGFloat alpha = (translucent ? 0.9 : 1.0);
     
-    [_backgroundView setBackgroundColor:[UIColor colorWithRed:245/255.0
-                                                        green:245/255.0
-                                                         blue:245/255.0
-                                                        alpha:alpha]];
+//    [_backgroundView setBackgroundColor:[UIColor colorWithRed:245/255.0
+//                                                        green:245/255.0
+//                                                         blue:245/255.0
+//                                                        alpha:alpha]];
+    
+    [_backgroundView setBackgroundColor:[ColorUtils colorWithHexString:bar_common_color]];
 }
 
 @end
