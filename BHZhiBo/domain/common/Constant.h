@@ -112,6 +112,9 @@
 #define lighter_2_brown_color     @"#ca7e5c"
 #define light_line_colr           @"#9e826b"
 #define placeholer_color          @"#bbbbbb"
+#define bar_common_color          @"#343434"
+#define tabbar_text_color         @"#cb3d3c"
+#define tabbar_default_color      @"#c8c8c8"
 
 
 //绿色＃7cbb73

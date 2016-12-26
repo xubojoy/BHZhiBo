@@ -62,6 +62,7 @@
     NSArray *tabBarItemImages = @[@"home_fill",@"sponsor_fill",@"mark_fill",@"rank_fill"];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        item.backgroundColor = [ColorUtils colorWithHexString:black_text_color];
         [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
         UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_select",
                                                       [tabBarItemImages objectAtIndex:index]]];

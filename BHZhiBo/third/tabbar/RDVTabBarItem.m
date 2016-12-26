@@ -62,36 +62,37 @@
 - (void)commonInitialization {
     // Setup defaults
     
-    [self setBackgroundColor:[UIColor clearColor]];
-    
+//    [self setBackgroundColor:[UIColor clearColor]];
+    [self setBackgroundColor:[ColorUtils colorWithHexString:bar_common_color]];
+    self.backgroundColor =[ColorUtils colorWithHexString:bar_common_color];
     _title = @"";
     _titlePositionAdjustment = UIOffsetZero;
     
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
         _unselectedTitleAttributes = @{
                                        NSFontAttributeName: [UIFont systemFontOfSize:12],
-                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:unselect_title_color],
+                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:tabbar_default_color],
                                        };
         _selectedTitleAttributes = @{
                                        NSFontAttributeName: [UIFont systemFontOfSize:12],
-                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:red_default_color],
+                                       NSForegroundColorAttributeName: [ColorUtils colorWithHexString:tabbar_text_color],
                                        };
     } else {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
         _unselectedTitleAttributes = @{
                                        UITextAttributeFont: [UIFont systemFontOfSize:12],
-                                       UITextAttributeTextColor: [ColorUtils colorWithHexString:unselect_title_color],
+                                       UITextAttributeTextColor: [ColorUtils colorWithHexString:tabbar_default_color],
                                        };
         _selectedTitleAttributes = @{
                                      NSFontAttributeName: [UIFont systemFontOfSize:12],
-                                     NSForegroundColorAttributeName: [ColorUtils  colorWithHexString:brown_common_color],
+                                     NSForegroundColorAttributeName: [ColorUtils  colorWithHexString:tabbar_text_color],
                                      };
 #endif
     }
     
   //  _selectedTitleAttributes = [_unselectedTitleAttributes copy];
     _badgeBackgroundColor = [UIColor redColor];
-    _badgeTextColor = [UIColor whiteColor];
+    _badgeTextColor = [UIColor blackColor];
     _badgeTextFont = [UIFont systemFontOfSize:12];
     _badgePositionAdjustment = UIOffsetMake(-8,-1);
 }
