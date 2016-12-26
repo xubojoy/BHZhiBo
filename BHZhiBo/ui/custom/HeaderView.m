@@ -38,7 +38,7 @@
         [self.title setText:titleStr.stringByRemovingPercentEncoding];
         self.title.backgroundColor = [UIColor clearColor];
         
-        [self.backBut setImage:[UIImage imageNamed:@"arrow_back_icon"] forState:UIControlStateNormal];
+        [self.backBut setImage:[UIImage imageNamed:@"button_arrow_white_icon"] forState:UIControlStateNormal];
         [self.backBut addTarget:self action:@selector(popToFrontViewController:) forControlEvents:UIControlEventTouchUpInside];
 //        [self.backBut setTitle:@"返回" forState:UIControlStateNormal];
         self.backBut.imageEdgeInsets = UIEdgeInsetsMake(0, -30, 0, 0);
