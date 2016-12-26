@@ -20,6 +20,8 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     self.view.autoresizesSubviews = NO;
+//    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     [self initHeadView];
     self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];

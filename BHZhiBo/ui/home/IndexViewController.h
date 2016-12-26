@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
 #import "CustomCategoryView.h"
-@interface IndexViewController : BaseViewController<SDCycleScrollViewDelegate,CustomCategoryViewDelegate,UICollectionViewDataSource , UICollectionViewDelegate>
+@interface IndexViewController : UIViewController<SDCycleScrollViewDelegate,CustomCategoryViewDelegate,UICollectionViewDataSource , UICollectionViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
 @property (nonatomic ,strong) UIScrollView *mainScrollView;
 @property (nonatomic ,strong) SDCycleScrollView *cycleScrollView;

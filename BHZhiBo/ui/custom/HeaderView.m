@@ -16,7 +16,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-       
+//        NSLog(@"会不会走着");
+        
     }
     return self;
 }
@@ -27,6 +28,7 @@
     if (self) {
         self = [[[NSBundle mainBundle]loadNibNamed:@"HeaderView" owner:self options:nil] objectAtIndex:0];
         self.backgroundColor = [UIColor whiteColor];
+        
         self.nc = navigationController;
         
 //        self.bgImg.image = [UIImage imageNamed:@"top_bar"];

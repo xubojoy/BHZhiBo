@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.view.autoresizesSubviews = NO;
     [self initHeadView];
     [self loadWebView];
 }
@@ -46,11 +47,11 @@
     self.headerView.userInteractionEnabled = YES;
     [self.view addSubview:self.headerView];
     
-    loading = [[LoadingStatusView alloc] initWithFrame:loading_frame];
-    [loading updateStatus:@"" animating:YES];
-    loading.backgroundColor = [UIColor purpleColor];
-    loading.center = self.view.center;
-    [self.view addSubview:loading];
+//    loading = [[LoadingStatusView alloc] initWithFrame:loading_frame];
+//    [loading updateStatus:@"" animating:YES];
+//    loading.backgroundColor = [UIColor purpleColor];
+//    loading.center = self.view.center;
+//    [self.view addSubview:loading];
 }
 
 -(void)loadWebView{
