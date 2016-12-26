@@ -226,7 +226,6 @@
 		1C32CD0D1E0A325400182D95 /* LBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCB01E0A325400182D95 /* LBorderView.m */; };
 		1C32CD121E0A325400182D95 /* LoadingStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */; };
 		1C32CD131E0A325400182D95 /* LoadingStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */; };
-		1C32CD141E0A325400182D95 /* LQXSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCC01E0A325400182D95 /* LQXSwitch.m */; };
 		1C32CD151E0A325400182D95 /* MHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCC31E0A325400182D95 /* MHActionSheet.m */; };
 		1C32CD161E0A325400182D95 /* MHSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CCC51E0A325400182D95 /* MHSheetCell.m */; };
 		1C32CD171E0A325400182D95 /* MHSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CCC61E0A325400182D95 /* MHSheetCell.xib */; };
@@ -721,8 +720,6 @@
 		1C32CCBB1E0A325400182D95 /* LoadingStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingStatusView.h; sourceTree = "<group>"; };
 		1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingStatusView.m; sourceTree = "<group>"; };
 		1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingStatusView.xib; sourceTree = "<group>"; };
-		1C32CCBF1E0A325400182D95 /* LQXSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQXSwitch.h; sourceTree = "<group>"; };
-		1C32CCC01E0A325400182D95 /* LQXSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQXSwitch.m; sourceTree = "<group>"; };
 		1C32CCC21E0A325400182D95 /* MHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHActionSheet.h; sourceTree = "<group>"; };
 		1C32CCC31E0A325400182D95 /* MHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHActionSheet.m; sourceTree = "<group>"; };
 		1C32CCC41E0A325400182D95 /* MHSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSheetCell.h; sourceTree = "<group>"; };
@@ -1603,7 +1600,6 @@
 				1C32CCBB1E0A325400182D95 /* LoadingStatusView.h */,
 				1C32CCBC1E0A325400182D95 /* LoadingStatusView.m */,
 				1C32CCBD1E0A325400182D95 /* LoadingStatusView.xib */,
-				1C32CCBE1E0A325400182D95 /* LQX */,
 				1C32CCC11E0A325400182D95 /* MHActionSheet */,
 				1C32CCD01E0A325400182D95 /* PlaceholderTextView.h */,
 				1C32CCD11E0A325400182D95 /* PlaceholderTextView.m */,
@@ -1701,15 +1697,6 @@
 				1C32CCAE1E0A325400182D95 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1C32CCBE1E0A325400182D95 /* LQX */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CCBF1E0A325400182D95 /* LQXSwitch.h */,
-				1C32CCC01E0A325400182D95 /* LQXSwitch.m */,
-			);
-			path = LQX;
 			sourceTree = "<group>";
 		};
 		1C32CCC11E0A325400182D95 /* MHActionSheet */ = {
@@ -2098,7 +2085,6 @@
 				1C32CAA81E0A2C3600182D95 /* TimeUtils.m in Sources */,
 				1C32CAAA1E0A2C3600182D95 /* Pathology.m in Sources */,
 				1C32CD2C1E0A325400182D95 /* XQNewFeatureVC.m in Sources */,
-				1C32CD141E0A325400182D95 /* LQXSwitch.m in Sources */,
 				1C32CB4D1E0A2C3600182D95 /* NSArray+JSONModel.m in Sources */,
 				1C32CAA01E0A2C3600182D95 /* Area.m in Sources */,
 				1C32CB541E0A2C3600182D95 /* MJRefreshBackFooter.m in Sources */,
