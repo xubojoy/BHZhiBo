@@ -19,7 +19,26 @@
     // Do any additional setup after loading the view.
 //    self.view.autoresizesSubviews = NO;
     [self initHeadView];
+    [self loadWebView];
 }
+
+//加载菊花
+-(void)initActivityIndicatorView{
+    self.activity =[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    //    self.view.userInteractionEnabled = NO;
+    //设置活动指示器的中间位置
+    self.activity.center=CGPointMake(self.view.bounds.size.width/2, self.view.bounds.size.height/2-10);
+    [self.activity startAnimating];
+    //添加到视图
+    [self.view addSubview:self.activity];
+}
+
+-(void)initStopActivityIndicatorView{
+    [self.activity stopAnimating];
+    self.activity.hidden = YES;
+}
+
+
 
 -(void)initHeadView{
     self.headerView = [[HeaderView alloc] initWithTitle:@"交易" navigationController:self.navigationController];
@@ -28,6 +47,39 @@
     [self.view addSubview:self.headerView];
     
 }
+
+-(void)loadWebView{
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height)];
+    NSURL *nsurl =[NSURL URLWithString:@"http://shipan.zhongjiangguoji.com/Home/Login"];
+    NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
+    [self.webView loadRequest:request];
+    
+    self.webView.delegate = self;
+    self.webView.scrollView.delegate = self;
+    [self.view addSubview:self.webView];
+    [self.webView setBackgroundColor:[UIColor clearColor]];
+//    [self.view bringSubviewToFront:loading];
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [self initActivityIndicatorView];
+}
+
+-(void) webViewDidFinishLoad:(UIWebView *)webView{
+    [self initStopActivityIndicatorView];
+}
+
+-(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)inRequest   navigationType:(UIWebViewNavigationType)inType
+{
+    NSLog(@">>>>> to:%@", inRequest.URL);
+    return YES;
+}
+
+-(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    NSLog(@">>>> web load error:%@", webView.request.URL);
+    [self initStopActivityIndicatorView];
+}
+
 
 
 - (void)didReceiveMemoryWarning {

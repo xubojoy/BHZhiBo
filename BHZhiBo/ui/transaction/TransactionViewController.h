@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TransactionViewController : BaseViewController
+@interface TransactionViewController : BaseViewController<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
+@property (strong, nonatomic) UIWebView *webView;
+@property (nonatomic, strong) UIActivityIndicatorView *activity;
 @end

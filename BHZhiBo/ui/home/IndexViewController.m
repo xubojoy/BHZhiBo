@@ -156,7 +156,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     if (item == 4) {
         CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://www.jin10.com/example/jin10.com.html" title:@"财经"];
         [self.navigationController pushViewController:cwvc animated:YES];
-    }else if (item == 0){
+    }else if (item == 5){
+        CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://192.168.1.128:8080/site/userInfo" title:@"注册"];
+        [self.navigationController pushViewController:cwvc animated:YES];
+    }
+    else if (item == 0){
         NSURL * myURL_APP_A = [NSURL URLWithString:@"test://"];
         if ([[UIApplication sharedApplication] canOpenURL:myURL_APP_A]) {
             NSLog(@"canOpenURL");
