@@ -55,7 +55,7 @@
 
 -(void)loadWebView{
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height)];
-    NSURL *nsurl =[NSURL URLWithString:@"http://www.jin10.com/example/jin10.com.html"];
+    NSURL *nsurl =[NSURL URLWithString:@"https://www.jin10.com/example/jin10.com.html"];
     NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
     [self.webView loadRequest:request];
     
