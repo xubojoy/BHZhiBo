@@ -13,11 +13,14 @@
 @end
 
 @implementation LiveViewController
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self loadWeixinUserInfo];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initHeadView];
-    [self loadWeixinUserInfo];
+    
 }
 
 - (void)loadWeixinUserInfo{
