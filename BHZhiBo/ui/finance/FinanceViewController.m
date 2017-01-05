@@ -41,20 +41,17 @@
 
 //初始化自定义导航
 -(void)initHeadView{
-    self.headerView = [[HeaderView alloc] initWithTitle:@"财经" navigationController:self.navigationController];
-    self.headerView.backBut.hidden = YES;
-    self.headerView.userInteractionEnabled = YES;
-    [self.view addSubview:self.headerView];
-    
-//    loading = [[LoadingStatusView alloc] initWithFrame:loading_frame];
-//    [loading updateStatus:@"" animating:YES];
-//    loading.backgroundColor = [UIColor purpleColor];
-//    loading.center = self.view.center;
-//    [self.view addSubview:loading];
+//    self.headerView = [[HeaderView alloc] initWithTitle:@"财经" navigationController:self.navigationController];
+//    self.headerView.backBut.hidden = YES;
+//    self.headerView.userInteractionEnabled = YES;
+//    [self.view addSubview:self.headerView];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen_width, 20)];
+    topView.backgroundColor = [ColorUtils colorWithHexString:bar_common_color];
+    [self.view addSubview:topView];
 }
 
 -(void)loadWebView{
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, screen_width, screen_height-20-tabbar_height)];
     NSURL *nsurl =[NSURL URLWithString:@"https://www.jin10.com/example/jin10.com.html"];
     NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
     [self.webView loadRequest:request];

@@ -41,15 +41,17 @@
 
 
 -(void)initHeadView{
-    self.headerView = [[HeaderView alloc] initWithTitle:@"交易" navigationController:self.navigationController];
-    self.headerView.backBut.hidden = YES;
-    self.headerView.userInteractionEnabled = YES;
-    [self.view addSubview:self.headerView];
-    
+//    self.headerView = [[HeaderView alloc] initWithTitle:@"交易" navigationController:self.navigationController];
+//    self.headerView.backBut.hidden = YES;
+//    self.headerView.userInteractionEnabled = YES;
+//    [self.view addSubview:self.headerView];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screen_width, 20)];
+    topView.backgroundColor = [ColorUtils colorWithHexString:bar_common_color];
+    [self.view addSubview:topView];
 }
 
 -(void)loadWebView{
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height+splite_line_height, screen_width, screen_height-self.headerView.frame.size.height-tabbar_height)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, screen_width, screen_height-20-tabbar_height)];
     NSURL *nsurl =[NSURL URLWithString:@"http://shipan.zhongjiangguoji.com/Home/Login"];
     NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
     [self.webView loadRequest:request];

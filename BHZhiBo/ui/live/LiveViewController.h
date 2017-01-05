@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LiveViewController : BaseViewController
+@interface LiveViewController : BaseViewController<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic, strong) HeaderView *headerView;
+@property (strong, nonatomic) UIWebView *webView;
+@property (nonatomic, strong) UIActivityIndicatorView *activity;
 @end

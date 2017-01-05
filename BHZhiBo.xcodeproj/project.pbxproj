@@ -26,6 +26,7 @@
 		1C23557D1E1DE247000897B0 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C23557C1E1DE247000897B0 /* libstdc++.tbd */; };
 		1C23557F1E1DE253000897B0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C23557E1E1DE253000897B0 /* JavaScriptCore.framework */; };
 		1C2355811E1DE26C000897B0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2355801E1DE26C000897B0 /* libsqlite3.tbd */; };
+		1C2355841E1E37AC000897B0 /* BIDObjectToNsDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2355831E1E37AC000897B0 /* BIDObjectToNsDictionary.m */; };
 		1C32C7E41E0A2BBE00182D95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C7E31E0A2BBE00182D95 /* main.m */; };
 		1C32C7E71E0A2BBE00182D95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C7E61E0A2BBE00182D95 /* AppDelegate.m */; };
 		1C32C7ED1E0A2BBE00182D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C32C7EB1E0A2BBE00182D95 /* Main.storyboard */; };
@@ -43,7 +44,6 @@
 		1C32CA991E0A2C3600182D95 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C80D1E0A2C3500182D95 /* UIView+Custom.m */; };
 		1C32CA9A1E0A2C3600182D95 /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C80F1E0A2C3500182D95 /* UIView+KGViewExtend.m */; };
 		1C32CA9B1E0A2C3600182D95 /* UIViewController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8111E0A2C3500182D95 /* UIViewController+Custom.m */; };
-		1C32CA9C1E0A2C3600182D95 /* UIWebView+custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8131E0A2C3500182D95 /* UIWebView+custom.m */; };
 		1C32CA9D1E0A2C3600182D95 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8171E0A2C3500182D95 /* Article.m */; };
 		1C32CA9E1E0A2C3600182D95 /* RecommendArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8191E0A2C3500182D95 /* RecommendArticle.m */; };
 		1C32CA9F1E0A2C3600182D95 /* UserFavArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C81B1E0A2C3500182D95 /* UserFavArticle.m */; };
@@ -321,6 +321,8 @@
 		1C23557C1E1DE247000897B0 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		1C23557E1E1DE253000897B0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		1C2355801E1DE26C000897B0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1C2355821E1E37AC000897B0 /* BIDObjectToNsDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDObjectToNsDictionary.h; sourceTree = "<group>"; };
+		1C2355831E1E37AC000897B0 /* BIDObjectToNsDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDObjectToNsDictionary.m; sourceTree = "<group>"; };
 		1C32C7DF1E0A2BBE00182D95 /* BHZhiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHZhiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C32C7E31E0A2BBE00182D95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1C32C7E51E0A2BBE00182D95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -353,8 +355,6 @@
 		1C32C80F1E0A2C3500182D95 /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
 		1C32C8101E0A2C3500182D95 /* UIViewController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Custom.h"; sourceTree = "<group>"; };
 		1C32C8111E0A2C3500182D95 /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Custom.m"; sourceTree = "<group>"; };
-		1C32C8121E0A2C3500182D95 /* UIWebView+custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+custom.h"; sourceTree = "<group>"; };
-		1C32C8131E0A2C3500182D95 /* UIWebView+custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+custom.m"; sourceTree = "<group>"; };
 		1C32C8161E0A2C3500182D95 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		1C32C8171E0A2C3500182D95 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		1C32C8181E0A2C3500182D95 /* RecommendArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendArticle.h; sourceTree = "<group>"; };
@@ -1030,8 +1030,6 @@
 				1C32C80F1E0A2C3500182D95 /* UIView+KGViewExtend.m */,
 				1C32C8101E0A2C3500182D95 /* UIViewController+Custom.h */,
 				1C32C8111E0A2C3500182D95 /* UIViewController+Custom.m */,
-				1C32C8121E0A2C3500182D95 /* UIWebView+custom.h */,
-				1C32C8131E0A2C3500182D95 /* UIWebView+custom.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -1684,6 +1682,8 @@
 				1C32CA8D1E0A2C3600182D95 /* UIImage+utils.m */,
 				1C32CA8E1E0A2C3600182D95 /* ViewUtils.h */,
 				1C32CA8F1E0A2C3600182D95 /* ViewUtils.m */,
+				1C2355821E1E37AC000897B0 /* BIDObjectToNsDictionary.h */,
+				1C2355831E1E37AC000897B0 /* BIDObjectToNsDictionary.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -2237,7 +2237,6 @@
 				1C32CADA1E0A2C3600182D95 /* UserAccountRecharge.m in Sources */,
 				1C32CADF1E0A2C3600182D95 /* EyePosition.m in Sources */,
 				1C32CCF31E0A325400182D95 /* BHZhiBoTabbar.m in Sources */,
-				1C32CA9C1E0A2C3600182D95 /* UIWebView+custom.m in Sources */,
 				1C32CB141E0A2C3600182D95 /* UIImageView+AFNetworking.m in Sources */,
 				1C32CB4E1E0A2C3600182D95 /* JSONAPI.m in Sources */,
 				1C32CB031E0A2C3600182D95 /* EyesDiagnosisStore.m in Sources */,
@@ -2293,6 +2292,7 @@
 				1C32CB111E0A2C3600182D95 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				1C32CAA91E0A2C3600182D95 /* CommonDisease.m in Sources */,
 				1C32CB691E0A2C3600182D95 /* HanyuPinyinOutputFormat.m in Sources */,
+				1C2355841E1E37AC000897B0 /* BIDObjectToNsDictionary.m in Sources */,
 				1C32CB531E0A2C3600182D95 /* MJRefreshAutoFooter.m in Sources */,
 				1C32CB011E0A2C3600182D95 /* ArticleStore.m in Sources */,
 				1C32CABA1E0A2C3600182D95 /* Cdbasicsick.m in Sources */,

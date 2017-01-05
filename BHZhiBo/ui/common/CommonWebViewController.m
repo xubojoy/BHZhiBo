@@ -20,6 +20,7 @@
     if (self) {
         self.branchUrl = url;
         self.titleName = title;
+        NSLog(@">>>>>>self.branchUrl>>>>>>>>>%@",self.branchUrl);
     }
     return self;
 }
