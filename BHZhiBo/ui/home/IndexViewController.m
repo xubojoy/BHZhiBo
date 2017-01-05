@@ -10,6 +10,8 @@
 #import "CustomCategoryCollectionViewCell.h"
 #import "AoiroSoraLayout.h"
 #import "CommonWebViewController.h"
+#import <ShareSDK/ShareSDK.h>
+//#import <ShareSDKConnector/ShareSDKConnector.h>
 #define COLLECTVIEW_HEIGHT (screen_height-tabbar_height-140-20-10-screen_width/2);
 @interface IndexViewController ()<AoiroSoraLayoutDelegate>
 
@@ -153,7 +155,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 - (void)didSelectedCustomCategoryViewItem:(NSInteger)item{
 
     NSLog(@">>>>>>>>>itemitemitem>>>>>点击了第%d",(int)item);
-    if (item == 4) {
+    if (item == 1) {
+        [ShareSDK getUserInfo:SSDKPlatformTypeWechat onStateChanged:^(SSDKResponseState state, SSDKUser *user, NSError *error) {
+            NSLog(@">>>>>>货物信息>>>>>>--------%@",user);
+        }];
+    }else if (item == 4) {
         CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://www.jin10.com/example/jin10.com.html" title:@"财经"];
         [self.navigationController pushViewController:cwvc animated:YES];
     }else if (item == 5){

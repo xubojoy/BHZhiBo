@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import <ShareSDK/ShareSDK.h>
+//#import <ShareSDKConnector/ShareSDKConnector.h>
+//微信SDK头文件
+#import "WXApi.h"
 @interface AppDelegate ()
 
 @end
@@ -20,13 +23,48 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
+    [self initShareSDK];
     //初始化App的底栏
     self.tabbar = [BHZhiBoTabbar new];
 //    self.tabbar.tabBarController.statusBarStyle = UIStatusBarStyleLightContent;
     self.window.rootViewController = self.tabbar.tabBarController;
     self.netProcessor = [NetworkProcessor new];
     [self.netProcessor initNetWork];
+    
+    
+    
     return YES;
+}
+
+- (void)initShareSDK{
+    [ShareSDK registerApp:@"1a883cbe8ab00"
+     
+          activePlatforms:@[@(SSDKPlatformTypeWechat)]
+                 onImport:^(SSDKPlatformType platformType)
+     {
+//         switch (platformType)
+//         {
+//             case SSDKPlatformTypeWechat:
+//                 [ShareSDKConnector connectWeChat:[WXApi class]];
+//                 break;
+//             default:
+//                 break;
+//         }
+     }
+          onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo)
+     {
+         
+         switch (platformType)
+         {
+             case SSDKPlatformTypeWechat:
+                 [appInfo SSDKSetupWeChatByAppId:@"wxb5013066f2cd67a4"
+                                       appSecret:@"40b584338d7f50f0f1568165efcc09b6"];
+                 break;
+             default:
+                 break;
+         }
+     }];
+
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
