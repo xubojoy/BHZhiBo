@@ -61,16 +61,16 @@
 }
 
 -(void)loadWebView:(NSString *)url{
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, screen_width, screen_height-20-tabbar_height)];
+    if (self.webView == nil) {
+        self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, screen_width, screen_height-20-tabbar_height)];
+        self.webView.delegate = self;
+        self.webView.scrollView.delegate = self;
+        [self.view addSubview:self.webView];
+        [self.webView setBackgroundColor:[UIColor clearColor]];
+    }
     NSURL *nsurl =[NSURL URLWithString:url];
     NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
     [self.webView loadRequest:request];
-    
-    self.webView.delegate = self;
-    self.webView.scrollView.delegate = self;
-    [self.view addSubview:self.webView];
-    [self.webView setBackgroundColor:[UIColor clearColor]];
-    //    [self.view bringSubviewToFront:loading];
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView{
