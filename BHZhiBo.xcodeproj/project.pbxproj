@@ -45,83 +45,27 @@
 		1C32CA9A1E0A2C3600182D95 /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C80F1E0A2C3500182D95 /* UIView+KGViewExtend.m */; };
 		1C32CA9B1E0A2C3600182D95 /* UIViewController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8111E0A2C3500182D95 /* UIViewController+Custom.m */; };
 		1C32CA9D1E0A2C3600182D95 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8171E0A2C3500182D95 /* Article.m */; };
-		1C32CA9E1E0A2C3600182D95 /* RecommendArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8191E0A2C3500182D95 /* RecommendArticle.m */; };
-		1C32CA9F1E0A2C3600182D95 /* UserFavArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C81B1E0A2C3500182D95 /* UserFavArticle.m */; };
-		1C32CAA01E0A2C3600182D95 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C81E1E0A2C3500182D95 /* Area.m */; };
-		1C32CAA11E0A2C3600182D95 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8201E0A2C3500182D95 /* City.m */; };
-		1C32CAA21E0A2C3600182D95 /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8221E0A2C3500182D95 /* Province.m */; };
 		1C32CAA31E0A2C3600182D95 /* CommonItemTxt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8251E0A2C3500182D95 /* CommonItemTxt.m */; };
 		1C32CAA41E0A2C3600182D95 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8271E0A2C3500182D95 /* Constant.m */; };
 		1C32CAA51E0A2C3600182D95 /* LBSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8291E0A2C3500182D95 /* LBSUtils.m */; };
 		1C32CAA61E0A2C3600182D95 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C82B1E0A2C3500182D95 /* Page.m */; };
 		1C32CAA71E0A2C3600182D95 /* SortType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C82D1E0A2C3500182D95 /* SortType.m */; };
 		1C32CAA81E0A2C3600182D95 /* TimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C82F1E0A2C3500182D95 /* TimeUtils.m */; };
-		1C32CAA91E0A2C3600182D95 /* CommonDisease.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8321E0A2C3500182D95 /* CommonDisease.m */; };
-		1C32CAAA1E0A2C3600182D95 /* Pathology.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8341E0A2C3500182D95 /* Pathology.m */; };
-		1C32CAAB1E0A2C3600182D95 /* Acupoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8371E0A2C3500182D95 /* Acupoint.m */; };
-		1C32CAAC1E0A2C3600182D95 /* LocalAcupoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8391E0A2C3500182D95 /* LocalAcupoint.m */; };
-		1C32CAAD1E0A2C3600182D95 /* LocalMeridian.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C83B1E0A2C3500182D95 /* LocalMeridian.m */; };
-		1C32CAAE1E0A2C3600182D95 /* Meridian.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C83D1E0A2C3500182D95 /* Meridian.m */; };
-		1C32CAAF1E0A2C3600182D95 /* MeridianRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C83F1E0A2C3500182D95 /* MeridianRecord.m */; };
-		1C32CAB01E0A2C3600182D95 /* PainLevelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8411E0A2C3500182D95 /* PainLevelModel.m */; };
-		1C32CAB11E0A2C3600182D95 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8441E0A2C3500182D95 /* Department.m */; };
-		1C32CAB21E0A2C3600182D95 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8461E0A2C3500182D95 /* Doctor.m */; };
-		1C32CAB31E0A2C3600182D95 /* DoctorOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8481E0A2C3500182D95 /* DoctorOrder.m */; };
-		1C32CAB41E0A2C3600182D95 /* Hospital.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C84A1E0A2C3500182D95 /* Hospital.m */; };
-		1C32CAB51E0A2C3600182D95 /* NewDoctorOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C84C1E0A2C3500182D95 /* NewDoctorOrder.m */; };
-		1C32CAB61E0A2C3600182D95 /* NewProjectOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C84E1E0A2C3500182D95 /* NewProjectOrder.m */; };
-		1C32CAB71E0A2C3600182D95 /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8501E0A2C3500182D95 /* Organization.m */; };
-		1C32CAB81E0A2C3600182D95 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8521E0A2C3500182D95 /* Project.m */; };
-		1C32CAB91E0A2C3600182D95 /* ProjectOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8541E0A2C3500182D95 /* ProjectOrder.m */; };
-		1C32CABA1E0A2C3600182D95 /* Cdbasicsick.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8571E0A2C3500182D95 /* Cdbasicsick.m */; };
-		1C32CABB1E0A2C3600182D95 /* Dcdocitemsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8591E0A2C3500182D95 /* Dcdocitemsheet.m */; };
-		1C32CABC1E0A2C3600182D95 /* Detailid.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C85B1E0A2C3500182D95 /* Detailid.m */; };
-		1C32CABD1E0A2C3600182D95 /* DiagnoseLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C85D1E0A2C3500182D95 /* DiagnoseLog.m */; };
-		1C32CABE1E0A2C3600182D95 /* MyDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C85F1E0A2C3500182D95 /* MyDoctor.m */; };
-		1C32CABF1E0A2C3600182D95 /* MyPhysiDcdocitemsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8611E0A2C3500182D95 /* MyPhysiDcdocitemsheet.m */; };
-		1C32CAC01E0A2C3600182D95 /* MyPhysiotherapy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8631E0A2C3500182D95 /* MyPhysiotherapy.m */; };
-		1C32CAC11E0A2C3600182D95 /* NewUserUploadRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8651E0A2C3500182D95 /* NewUserUploadRecord.m */; };
-		1C32CAC21E0A2C3600182D95 /* PtmsCdbasicsick.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8671E0A2C3500182D95 /* PtmsCdbasicsick.m */; };
-		1C32CAC31E0A2C3600182D95 /* PtmsDocitemdetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8691E0A2C3500182D95 /* PtmsDocitemdetail.m */; };
-		1C32CAC41E0A2C3600182D95 /* SBArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C86B1E0A2C3500182D95 /* SBArchive.m */; };
-		1C32CAC51E0A2C3600182D95 /* UserUploadRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C86D1E0A2C3500182D95 /* UserUploadRecord.m */; };
 		1C32CACD1E0A2C3600182D95 /* AppStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8811E0A2C3500182D95 /* AppStatus.m */; };
 		1C32CACE1E0A2C3600182D95 /* ExceptionMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8831E0A2C3500182D95 /* ExceptionMsg.m */; };
 		1C32CACF1E0A2C3600182D95 /* ExpertFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8851E0A2C3500182D95 /* ExpertFilter.m */; };
 		1C32CAD01E0A2C3600182D95 /* Notice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8881E0A2C3500182D95 /* Notice.m */; };
-		1C32CAD11E0A2C3600182D95 /* PushRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C88A1E0A2C3500182D95 /* PushRecord.m */; };
-		1C32CAD21E0A2C3600182D95 /* RedEnvelope.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C88C1E0A2C3500182D95 /* RedEnvelope.m */; };
 		1C32CAD31E0A2C3600182D95 /* ServicePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C88E1E0A2C3500182D95 /* ServicePicture.m */; };
 		1C32CAD41E0A2C3600182D95 /* SessionMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8901E0A2C3500182D95 /* SessionMsg.m */; };
-		1C32CAD51E0A2C3600182D95 /* SharkeyLocal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8921E0A2C3500182D95 /* SharkeyLocal.m */; };
 		1C32CAD61E0A2C3600182D95 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8941E0A2C3500182D95 /* Tag.m */; };
 		1C32CAD71E0A2C3600182D95 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8961E0A2C3500182D95 /* User.m */; };
-		1C32CAD81E0A2C3600182D95 /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8981E0A2C3500182D95 /* UserAccount.m */; };
-		1C32CAD91E0A2C3600182D95 /* UserAccountCash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C89A1E0A2C3500182D95 /* UserAccountCash.m */; };
-		1C32CADA1E0A2C3600182D95 /* UserAccountRecharge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C89C1E0A2C3500182D95 /* UserAccountRecharge.m */; };
-		1C32CADB1E0A2C3600182D95 /* UserNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C89E1E0A2C3500182D95 /* UserNew.m */; };
-		1C32CADC1E0A2C3600182D95 /* BodyTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8A11E0A2C3500182D95 /* BodyTag.m */; };
-		1C32CADD1E0A2C3600182D95 /* DiagnoseQaRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8A31E0A2C3500182D95 /* DiagnoseQaRecord.m */; };
-		1C32CADE1E0A2C3600182D95 /* EyeDiagnoseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8A51E0A2C3500182D95 /* EyeDiagnoseRecord.m */; };
-		1C32CADF1E0A2C3600182D95 /* EyePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8A71E0A2C3500182D95 /* EyePosition.m */; };
-		1C32CAE01E0A2C3600182D95 /* EyePositionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8A91E0A2C3500182D95 /* EyePositionModel.m */; };
-		1C32CAE11E0A2C3600182D95 /* MedicalRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8AB1E0A2C3500182D95 /* MedicalRecordModel.m */; };
-		1C32CAE21E0A2C3600182D95 /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8AD1E0A2C3500182D95 /* ModelBase.m */; };
-		1C32CAE31E0A2C3600182D95 /* ModelGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8AF1E0A2C3500182D95 /* ModelGroups.m */; };
-		1C32CAE41E0A2C3600182D95 /* TongueDiagnoseRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8B11E0A2C3500182D95 /* TongueDiagnoseRecord.m */; };
-		1C32CAE51E0A2C3600182D95 /* TongueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8B31E0A2C3500182D95 /* TongueList.m */; };
 		1C32CAE61E0A2C3600182D95 /* AccountSessionSpringBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8B61E0A2C3500182D95 /* AccountSessionSpringBoard.m */; };
 		1C32CAEA1E0A2C3600182D95 /* LocalNotificationprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8BE1E0A2C3500182D95 /* LocalNotificationprocessor.m */; };
 		1C32CAEB1E0A2C3600182D95 /* NetworkProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8C01E0A2C3500182D95 /* NetworkProcessor.m */; };
 		1C32CAEF1E0A2C3600182D95 /* URLDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8C81E0A2C3500182D95 /* URLDispatcher.m */; };
 		1C32CB001E0A2C3600182D95 /* AppClientStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8DE1E0A2C3500182D95 /* AppClientStore.m */; };
 		1C32CB011E0A2C3600182D95 /* ArticleStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E01E0A2C3500182D95 /* ArticleStore.m */; };
-		1C32CB021E0A2C3600182D95 /* CityStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E21E0A2C3500182D95 /* CityStore.m */; };
-		1C32CB031E0A2C3600182D95 /* EyesDiagnosisStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E41E0A2C3500182D95 /* EyesDiagnosisStore.m */; };
 		1C32CB041E0A2C3600182D95 /* HttpRequestFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E61E0A2C3500182D95 /* HttpRequestFacade.m */; };
-		1C32CB051E0A2C3600182D95 /* MeridianStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E81E0A2C3500182D95 /* MeridianStore.m */; };
-		1C32CB061E0A2C3600182D95 /* OrderStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8EA1E0A2C3500182D95 /* OrderStore.m */; };
-		1C32CB071E0A2C3600182D95 /* TongueDiagnosisStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8EC1E0A2C3500182D95 /* TongueDiagnosisStore.m */; };
 		1C32CB081E0A2C3600182D95 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8EE1E0A2C3500182D95 /* UserStore.m */; };
 		1C32CB091E0A2C3600182D95 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8F31E0A2C3500182D95 /* AFHTTPSessionManager.m */; };
 		1C32CB0A1E0A2C3600182D95 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8F61E0A2C3500182D95 /* AFNetworkReachabilityManager.m */; };
@@ -357,16 +301,6 @@
 		1C32C8111E0A2C3500182D95 /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Custom.m"; sourceTree = "<group>"; };
 		1C32C8161E0A2C3500182D95 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		1C32C8171E0A2C3500182D95 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
-		1C32C8181E0A2C3500182D95 /* RecommendArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendArticle.h; sourceTree = "<group>"; };
-		1C32C8191E0A2C3500182D95 /* RecommendArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendArticle.m; sourceTree = "<group>"; };
-		1C32C81A1E0A2C3500182D95 /* UserFavArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFavArticle.h; sourceTree = "<group>"; };
-		1C32C81B1E0A2C3500182D95 /* UserFavArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFavArticle.m; sourceTree = "<group>"; };
-		1C32C81D1E0A2C3500182D95 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
-		1C32C81E1E0A2C3500182D95 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
-		1C32C81F1E0A2C3500182D95 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
-		1C32C8201E0A2C3500182D95 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
-		1C32C8211E0A2C3500182D95 /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
-		1C32C8221E0A2C3500182D95 /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
 		1C32C8241E0A2C3500182D95 /* CommonItemTxt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonItemTxt.h; sourceTree = "<group>"; };
 		1C32C8251E0A2C3500182D95 /* CommonItemTxt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonItemTxt.m; sourceTree = "<group>"; };
 		1C32C8261E0A2C3500182D95 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -379,64 +313,6 @@
 		1C32C82D1E0A2C3500182D95 /* SortType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortType.m; sourceTree = "<group>"; };
 		1C32C82E1E0A2C3500182D95 /* TimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtils.h; sourceTree = "<group>"; };
 		1C32C82F1E0A2C3500182D95 /* TimeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtils.m; sourceTree = "<group>"; };
-		1C32C8311E0A2C3500182D95 /* CommonDisease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDisease.h; sourceTree = "<group>"; };
-		1C32C8321E0A2C3500182D95 /* CommonDisease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDisease.m; sourceTree = "<group>"; };
-		1C32C8331E0A2C3500182D95 /* Pathology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pathology.h; sourceTree = "<group>"; };
-		1C32C8341E0A2C3500182D95 /* Pathology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pathology.m; sourceTree = "<group>"; };
-		1C32C8361E0A2C3500182D95 /* Acupoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acupoint.h; sourceTree = "<group>"; };
-		1C32C8371E0A2C3500182D95 /* Acupoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acupoint.m; sourceTree = "<group>"; };
-		1C32C8381E0A2C3500182D95 /* LocalAcupoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAcupoint.h; sourceTree = "<group>"; };
-		1C32C8391E0A2C3500182D95 /* LocalAcupoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAcupoint.m; sourceTree = "<group>"; };
-		1C32C83A1E0A2C3500182D95 /* LocalMeridian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalMeridian.h; sourceTree = "<group>"; };
-		1C32C83B1E0A2C3500182D95 /* LocalMeridian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalMeridian.m; sourceTree = "<group>"; };
-		1C32C83C1E0A2C3500182D95 /* Meridian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meridian.h; sourceTree = "<group>"; };
-		1C32C83D1E0A2C3500182D95 /* Meridian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meridian.m; sourceTree = "<group>"; };
-		1C32C83E1E0A2C3500182D95 /* MeridianRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeridianRecord.h; sourceTree = "<group>"; };
-		1C32C83F1E0A2C3500182D95 /* MeridianRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeridianRecord.m; sourceTree = "<group>"; };
-		1C32C8401E0A2C3500182D95 /* PainLevelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainLevelModel.h; sourceTree = "<group>"; };
-		1C32C8411E0A2C3500182D95 /* PainLevelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PainLevelModel.m; sourceTree = "<group>"; };
-		1C32C8431E0A2C3500182D95 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
-		1C32C8441E0A2C3500182D95 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
-		1C32C8451E0A2C3500182D95 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
-		1C32C8461E0A2C3500182D95 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
-		1C32C8471E0A2C3500182D95 /* DoctorOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorOrder.h; sourceTree = "<group>"; };
-		1C32C8481E0A2C3500182D95 /* DoctorOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorOrder.m; sourceTree = "<group>"; };
-		1C32C8491E0A2C3500182D95 /* Hospital.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hospital.h; sourceTree = "<group>"; };
-		1C32C84A1E0A2C3500182D95 /* Hospital.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hospital.m; sourceTree = "<group>"; };
-		1C32C84B1E0A2C3500182D95 /* NewDoctorOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDoctorOrder.h; sourceTree = "<group>"; };
-		1C32C84C1E0A2C3500182D95 /* NewDoctorOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDoctorOrder.m; sourceTree = "<group>"; };
-		1C32C84D1E0A2C3500182D95 /* NewProjectOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewProjectOrder.h; sourceTree = "<group>"; };
-		1C32C84E1E0A2C3500182D95 /* NewProjectOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewProjectOrder.m; sourceTree = "<group>"; };
-		1C32C84F1E0A2C3500182D95 /* Organization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Organization.h; sourceTree = "<group>"; };
-		1C32C8501E0A2C3500182D95 /* Organization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Organization.m; sourceTree = "<group>"; };
-		1C32C8511E0A2C3500182D95 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		1C32C8521E0A2C3500182D95 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
-		1C32C8531E0A2C3500182D95 /* ProjectOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectOrder.h; sourceTree = "<group>"; };
-		1C32C8541E0A2C3500182D95 /* ProjectOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectOrder.m; sourceTree = "<group>"; };
-		1C32C8561E0A2C3500182D95 /* Cdbasicsick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cdbasicsick.h; sourceTree = "<group>"; };
-		1C32C8571E0A2C3500182D95 /* Cdbasicsick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cdbasicsick.m; sourceTree = "<group>"; };
-		1C32C8581E0A2C3500182D95 /* Dcdocitemsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dcdocitemsheet.h; sourceTree = "<group>"; };
-		1C32C8591E0A2C3500182D95 /* Dcdocitemsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dcdocitemsheet.m; sourceTree = "<group>"; };
-		1C32C85A1E0A2C3500182D95 /* Detailid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detailid.h; sourceTree = "<group>"; };
-		1C32C85B1E0A2C3500182D95 /* Detailid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detailid.m; sourceTree = "<group>"; };
-		1C32C85C1E0A2C3500182D95 /* DiagnoseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagnoseLog.h; sourceTree = "<group>"; };
-		1C32C85D1E0A2C3500182D95 /* DiagnoseLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnoseLog.m; sourceTree = "<group>"; };
-		1C32C85E1E0A2C3500182D95 /* MyDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDoctor.h; sourceTree = "<group>"; };
-		1C32C85F1E0A2C3500182D95 /* MyDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDoctor.m; sourceTree = "<group>"; };
-		1C32C8601E0A2C3500182D95 /* MyPhysiDcdocitemsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhysiDcdocitemsheet.h; sourceTree = "<group>"; };
-		1C32C8611E0A2C3500182D95 /* MyPhysiDcdocitemsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhysiDcdocitemsheet.m; sourceTree = "<group>"; };
-		1C32C8621E0A2C3500182D95 /* MyPhysiotherapy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhysiotherapy.h; sourceTree = "<group>"; };
-		1C32C8631E0A2C3500182D95 /* MyPhysiotherapy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhysiotherapy.m; sourceTree = "<group>"; };
-		1C32C8641E0A2C3500182D95 /* NewUserUploadRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserUploadRecord.h; sourceTree = "<group>"; };
-		1C32C8651E0A2C3500182D95 /* NewUserUploadRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserUploadRecord.m; sourceTree = "<group>"; };
-		1C32C8661E0A2C3500182D95 /* PtmsCdbasicsick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtmsCdbasicsick.h; sourceTree = "<group>"; };
-		1C32C8671E0A2C3500182D95 /* PtmsCdbasicsick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtmsCdbasicsick.m; sourceTree = "<group>"; };
-		1C32C8681E0A2C3500182D95 /* PtmsDocitemdetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PtmsDocitemdetail.h; sourceTree = "<group>"; };
-		1C32C8691E0A2C3500182D95 /* PtmsDocitemdetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PtmsDocitemdetail.m; sourceTree = "<group>"; };
-		1C32C86A1E0A2C3500182D95 /* SBArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBArchive.h; sourceTree = "<group>"; };
-		1C32C86B1E0A2C3500182D95 /* SBArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBArchive.m; sourceTree = "<group>"; };
-		1C32C86C1E0A2C3500182D95 /* UserUploadRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUploadRecord.h; sourceTree = "<group>"; };
-		1C32C86D1E0A2C3500182D95 /* UserUploadRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUploadRecord.m; sourceTree = "<group>"; };
 		1C32C87F1E0A2C3500182D95 /* AppActiveScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppActiveScene.h; sourceTree = "<group>"; };
 		1C32C8801E0A2C3500182D95 /* AppStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStatus.h; sourceTree = "<group>"; };
 		1C32C8811E0A2C3500182D95 /* AppStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStatus.m; sourceTree = "<group>"; };
@@ -447,48 +323,14 @@
 		1C32C8861E0A2C3500182D95 /* JSONSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSerializable.h; sourceTree = "<group>"; };
 		1C32C8871E0A2C3500182D95 /* Notice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notice.h; sourceTree = "<group>"; };
 		1C32C8881E0A2C3500182D95 /* Notice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notice.m; sourceTree = "<group>"; };
-		1C32C8891E0A2C3500182D95 /* PushRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushRecord.h; sourceTree = "<group>"; };
-		1C32C88A1E0A2C3500182D95 /* PushRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushRecord.m; sourceTree = "<group>"; };
-		1C32C88B1E0A2C3500182D95 /* RedEnvelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedEnvelope.h; sourceTree = "<group>"; };
-		1C32C88C1E0A2C3500182D95 /* RedEnvelope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedEnvelope.m; sourceTree = "<group>"; };
 		1C32C88D1E0A2C3500182D95 /* ServicePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicePicture.h; sourceTree = "<group>"; };
 		1C32C88E1E0A2C3500182D95 /* ServicePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicePicture.m; sourceTree = "<group>"; };
 		1C32C88F1E0A2C3500182D95 /* SessionMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionMsg.h; sourceTree = "<group>"; };
 		1C32C8901E0A2C3500182D95 /* SessionMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionMsg.m; sourceTree = "<group>"; };
-		1C32C8911E0A2C3500182D95 /* SharkeyLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharkeyLocal.h; sourceTree = "<group>"; };
-		1C32C8921E0A2C3500182D95 /* SharkeyLocal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharkeyLocal.m; sourceTree = "<group>"; };
 		1C32C8931E0A2C3500182D95 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
 		1C32C8941E0A2C3500182D95 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		1C32C8951E0A2C3500182D95 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		1C32C8961E0A2C3500182D95 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		1C32C8971E0A2C3500182D95 /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
-		1C32C8981E0A2C3500182D95 /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
-		1C32C8991E0A2C3500182D95 /* UserAccountCash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccountCash.h; sourceTree = "<group>"; };
-		1C32C89A1E0A2C3500182D95 /* UserAccountCash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccountCash.m; sourceTree = "<group>"; };
-		1C32C89B1E0A2C3500182D95 /* UserAccountRecharge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccountRecharge.h; sourceTree = "<group>"; };
-		1C32C89C1E0A2C3500182D95 /* UserAccountRecharge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccountRecharge.m; sourceTree = "<group>"; };
-		1C32C89D1E0A2C3500182D95 /* UserNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNew.h; sourceTree = "<group>"; };
-		1C32C89E1E0A2C3500182D95 /* UserNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNew.m; sourceTree = "<group>"; };
-		1C32C8A01E0A2C3500182D95 /* BodyTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyTag.h; sourceTree = "<group>"; };
-		1C32C8A11E0A2C3500182D95 /* BodyTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyTag.m; sourceTree = "<group>"; };
-		1C32C8A21E0A2C3500182D95 /* DiagnoseQaRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiagnoseQaRecord.h; sourceTree = "<group>"; };
-		1C32C8A31E0A2C3500182D95 /* DiagnoseQaRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnoseQaRecord.m; sourceTree = "<group>"; };
-		1C32C8A41E0A2C3500182D95 /* EyeDiagnoseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeDiagnoseRecord.h; sourceTree = "<group>"; };
-		1C32C8A51E0A2C3500182D95 /* EyeDiagnoseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeDiagnoseRecord.m; sourceTree = "<group>"; };
-		1C32C8A61E0A2C3500182D95 /* EyePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyePosition.h; sourceTree = "<group>"; };
-		1C32C8A71E0A2C3500182D95 /* EyePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyePosition.m; sourceTree = "<group>"; };
-		1C32C8A81E0A2C3500182D95 /* EyePositionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyePositionModel.h; sourceTree = "<group>"; };
-		1C32C8A91E0A2C3500182D95 /* EyePositionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyePositionModel.m; sourceTree = "<group>"; };
-		1C32C8AA1E0A2C3500182D95 /* MedicalRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicalRecordModel.h; sourceTree = "<group>"; };
-		1C32C8AB1E0A2C3500182D95 /* MedicalRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicalRecordModel.m; sourceTree = "<group>"; };
-		1C32C8AC1E0A2C3500182D95 /* ModelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
-		1C32C8AD1E0A2C3500182D95 /* ModelBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
-		1C32C8AE1E0A2C3500182D95 /* ModelGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGroups.h; sourceTree = "<group>"; };
-		1C32C8AF1E0A2C3500182D95 /* ModelGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGroups.m; sourceTree = "<group>"; };
-		1C32C8B01E0A2C3500182D95 /* TongueDiagnoseRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongueDiagnoseRecord.h; sourceTree = "<group>"; };
-		1C32C8B11E0A2C3500182D95 /* TongueDiagnoseRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongueDiagnoseRecord.m; sourceTree = "<group>"; };
-		1C32C8B21E0A2C3500182D95 /* TongueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongueList.h; sourceTree = "<group>"; };
-		1C32C8B31E0A2C3500182D95 /* TongueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongueList.m; sourceTree = "<group>"; };
 		1C32C8B51E0A2C3500182D95 /* AccountSessionSpringBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSessionSpringBoard.h; sourceTree = "<group>"; };
 		1C32C8B61E0A2C3500182D95 /* AccountSessionSpringBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSessionSpringBoard.m; sourceTree = "<group>"; };
 		1C32C8BD1E0A2C3500182D95 /* LocalNotificationprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationprocessor.h; sourceTree = "<group>"; };
@@ -501,18 +343,8 @@
 		1C32C8DE1E0A2C3500182D95 /* AppClientStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppClientStore.m; sourceTree = "<group>"; };
 		1C32C8DF1E0A2C3500182D95 /* ArticleStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleStore.h; sourceTree = "<group>"; };
 		1C32C8E01E0A2C3500182D95 /* ArticleStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleStore.m; sourceTree = "<group>"; };
-		1C32C8E11E0A2C3500182D95 /* CityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityStore.h; sourceTree = "<group>"; };
-		1C32C8E21E0A2C3500182D95 /* CityStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityStore.m; sourceTree = "<group>"; };
-		1C32C8E31E0A2C3500182D95 /* EyesDiagnosisStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyesDiagnosisStore.h; sourceTree = "<group>"; };
-		1C32C8E41E0A2C3500182D95 /* EyesDiagnosisStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesDiagnosisStore.m; sourceTree = "<group>"; };
 		1C32C8E51E0A2C3500182D95 /* HttpRequestFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestFacade.h; sourceTree = "<group>"; };
 		1C32C8E61E0A2C3500182D95 /* HttpRequestFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestFacade.m; sourceTree = "<group>"; };
-		1C32C8E71E0A2C3500182D95 /* MeridianStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeridianStore.h; sourceTree = "<group>"; };
-		1C32C8E81E0A2C3500182D95 /* MeridianStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeridianStore.m; sourceTree = "<group>"; };
-		1C32C8E91E0A2C3500182D95 /* OrderStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderStore.h; sourceTree = "<group>"; };
-		1C32C8EA1E0A2C3500182D95 /* OrderStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderStore.m; sourceTree = "<group>"; };
-		1C32C8EB1E0A2C3500182D95 /* TongueDiagnosisStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TongueDiagnosisStore.h; sourceTree = "<group>"; };
-		1C32C8EC1E0A2C3500182D95 /* TongueDiagnosisStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TongueDiagnosisStore.m; sourceTree = "<group>"; };
 		1C32C8ED1E0A2C3500182D95 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
 		1C32C8EE1E0A2C3500182D95 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
 		1C32C8F21E0A2C3500182D95 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -1038,14 +870,8 @@
 			isa = PBXGroup;
 			children = (
 				1C32C8151E0A2C3500182D95 /* article */,
-				1C32C81C1E0A2C3500182D95 /* city */,
 				1C32C8231E0A2C3500182D95 /* common */,
-				1C32C8301E0A2C3500182D95 /* CommonDisease */,
-				1C32C8351E0A2C3500182D95 /* meridian */,
-				1C32C8421E0A2C3500182D95 /* order */,
-				1C32C8551E0A2C3500182D95 /* record */,
 				1C32C87E1E0A2C3500182D95 /* system */,
-				1C32C89F1E0A2C3500182D95 /* TongueDiagnosis */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -1055,25 +881,8 @@
 			children = (
 				1C32C8161E0A2C3500182D95 /* Article.h */,
 				1C32C8171E0A2C3500182D95 /* Article.m */,
-				1C32C8181E0A2C3500182D95 /* RecommendArticle.h */,
-				1C32C8191E0A2C3500182D95 /* RecommendArticle.m */,
-				1C32C81A1E0A2C3500182D95 /* UserFavArticle.h */,
-				1C32C81B1E0A2C3500182D95 /* UserFavArticle.m */,
 			);
 			path = article;
-			sourceTree = "<group>";
-		};
-		1C32C81C1E0A2C3500182D95 /* city */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C81D1E0A2C3500182D95 /* Area.h */,
-				1C32C81E1E0A2C3500182D95 /* Area.m */,
-				1C32C81F1E0A2C3500182D95 /* City.h */,
-				1C32C8201E0A2C3500182D95 /* City.m */,
-				1C32C8211E0A2C3500182D95 /* Province.h */,
-				1C32C8221E0A2C3500182D95 /* Province.m */,
-			);
-			path = city;
 			sourceTree = "<group>";
 		};
 		1C32C8231E0A2C3500182D95 /* common */ = {
@@ -1095,92 +904,6 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		1C32C8301E0A2C3500182D95 /* CommonDisease */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C8311E0A2C3500182D95 /* CommonDisease.h */,
-				1C32C8321E0A2C3500182D95 /* CommonDisease.m */,
-				1C32C8331E0A2C3500182D95 /* Pathology.h */,
-				1C32C8341E0A2C3500182D95 /* Pathology.m */,
-			);
-			path = CommonDisease;
-			sourceTree = "<group>";
-		};
-		1C32C8351E0A2C3500182D95 /* meridian */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C8361E0A2C3500182D95 /* Acupoint.h */,
-				1C32C8371E0A2C3500182D95 /* Acupoint.m */,
-				1C32C8381E0A2C3500182D95 /* LocalAcupoint.h */,
-				1C32C8391E0A2C3500182D95 /* LocalAcupoint.m */,
-				1C32C83A1E0A2C3500182D95 /* LocalMeridian.h */,
-				1C32C83B1E0A2C3500182D95 /* LocalMeridian.m */,
-				1C32C83C1E0A2C3500182D95 /* Meridian.h */,
-				1C32C83D1E0A2C3500182D95 /* Meridian.m */,
-				1C32C83E1E0A2C3500182D95 /* MeridianRecord.h */,
-				1C32C83F1E0A2C3500182D95 /* MeridianRecord.m */,
-				1C32C8401E0A2C3500182D95 /* PainLevelModel.h */,
-				1C32C8411E0A2C3500182D95 /* PainLevelModel.m */,
-			);
-			path = meridian;
-			sourceTree = "<group>";
-		};
-		1C32C8421E0A2C3500182D95 /* order */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C8431E0A2C3500182D95 /* Department.h */,
-				1C32C8441E0A2C3500182D95 /* Department.m */,
-				1C32C8451E0A2C3500182D95 /* Doctor.h */,
-				1C32C8461E0A2C3500182D95 /* Doctor.m */,
-				1C32C8471E0A2C3500182D95 /* DoctorOrder.h */,
-				1C32C8481E0A2C3500182D95 /* DoctorOrder.m */,
-				1C32C8491E0A2C3500182D95 /* Hospital.h */,
-				1C32C84A1E0A2C3500182D95 /* Hospital.m */,
-				1C32C84B1E0A2C3500182D95 /* NewDoctorOrder.h */,
-				1C32C84C1E0A2C3500182D95 /* NewDoctorOrder.m */,
-				1C32C84D1E0A2C3500182D95 /* NewProjectOrder.h */,
-				1C32C84E1E0A2C3500182D95 /* NewProjectOrder.m */,
-				1C32C84F1E0A2C3500182D95 /* Organization.h */,
-				1C32C8501E0A2C3500182D95 /* Organization.m */,
-				1C32C8511E0A2C3500182D95 /* Project.h */,
-				1C32C8521E0A2C3500182D95 /* Project.m */,
-				1C32C8531E0A2C3500182D95 /* ProjectOrder.h */,
-				1C32C8541E0A2C3500182D95 /* ProjectOrder.m */,
-			);
-			path = order;
-			sourceTree = "<group>";
-		};
-		1C32C8551E0A2C3500182D95 /* record */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C8561E0A2C3500182D95 /* Cdbasicsick.h */,
-				1C32C8571E0A2C3500182D95 /* Cdbasicsick.m */,
-				1C32C8581E0A2C3500182D95 /* Dcdocitemsheet.h */,
-				1C32C8591E0A2C3500182D95 /* Dcdocitemsheet.m */,
-				1C32C85A1E0A2C3500182D95 /* Detailid.h */,
-				1C32C85B1E0A2C3500182D95 /* Detailid.m */,
-				1C32C85C1E0A2C3500182D95 /* DiagnoseLog.h */,
-				1C32C85D1E0A2C3500182D95 /* DiagnoseLog.m */,
-				1C32C85E1E0A2C3500182D95 /* MyDoctor.h */,
-				1C32C85F1E0A2C3500182D95 /* MyDoctor.m */,
-				1C32C8601E0A2C3500182D95 /* MyPhysiDcdocitemsheet.h */,
-				1C32C8611E0A2C3500182D95 /* MyPhysiDcdocitemsheet.m */,
-				1C32C8621E0A2C3500182D95 /* MyPhysiotherapy.h */,
-				1C32C8631E0A2C3500182D95 /* MyPhysiotherapy.m */,
-				1C32C8641E0A2C3500182D95 /* NewUserUploadRecord.h */,
-				1C32C8651E0A2C3500182D95 /* NewUserUploadRecord.m */,
-				1C32C8661E0A2C3500182D95 /* PtmsCdbasicsick.h */,
-				1C32C8671E0A2C3500182D95 /* PtmsCdbasicsick.m */,
-				1C32C8681E0A2C3500182D95 /* PtmsDocitemdetail.h */,
-				1C32C8691E0A2C3500182D95 /* PtmsDocitemdetail.m */,
-				1C32C86A1E0A2C3500182D95 /* SBArchive.h */,
-				1C32C86B1E0A2C3500182D95 /* SBArchive.m */,
-				1C32C86C1E0A2C3500182D95 /* UserUploadRecord.h */,
-				1C32C86D1E0A2C3500182D95 /* UserUploadRecord.m */,
-			);
-			path = record;
-			sourceTree = "<group>";
-		};
 		1C32C87E1E0A2C3500182D95 /* system */ = {
 			isa = PBXGroup;
 			children = (
@@ -1194,57 +917,16 @@
 				1C32C8861E0A2C3500182D95 /* JSONSerializable.h */,
 				1C32C8871E0A2C3500182D95 /* Notice.h */,
 				1C32C8881E0A2C3500182D95 /* Notice.m */,
-				1C32C8891E0A2C3500182D95 /* PushRecord.h */,
-				1C32C88A1E0A2C3500182D95 /* PushRecord.m */,
-				1C32C88B1E0A2C3500182D95 /* RedEnvelope.h */,
-				1C32C88C1E0A2C3500182D95 /* RedEnvelope.m */,
 				1C32C88D1E0A2C3500182D95 /* ServicePicture.h */,
 				1C32C88E1E0A2C3500182D95 /* ServicePicture.m */,
 				1C32C88F1E0A2C3500182D95 /* SessionMsg.h */,
 				1C32C8901E0A2C3500182D95 /* SessionMsg.m */,
-				1C32C8911E0A2C3500182D95 /* SharkeyLocal.h */,
-				1C32C8921E0A2C3500182D95 /* SharkeyLocal.m */,
 				1C32C8931E0A2C3500182D95 /* Tag.h */,
 				1C32C8941E0A2C3500182D95 /* Tag.m */,
 				1C32C8951E0A2C3500182D95 /* User.h */,
 				1C32C8961E0A2C3500182D95 /* User.m */,
-				1C32C8971E0A2C3500182D95 /* UserAccount.h */,
-				1C32C8981E0A2C3500182D95 /* UserAccount.m */,
-				1C32C8991E0A2C3500182D95 /* UserAccountCash.h */,
-				1C32C89A1E0A2C3500182D95 /* UserAccountCash.m */,
-				1C32C89B1E0A2C3500182D95 /* UserAccountRecharge.h */,
-				1C32C89C1E0A2C3500182D95 /* UserAccountRecharge.m */,
-				1C32C89D1E0A2C3500182D95 /* UserNew.h */,
-				1C32C89E1E0A2C3500182D95 /* UserNew.m */,
 			);
 			path = system;
-			sourceTree = "<group>";
-		};
-		1C32C89F1E0A2C3500182D95 /* TongueDiagnosis */ = {
-			isa = PBXGroup;
-			children = (
-				1C32C8A01E0A2C3500182D95 /* BodyTag.h */,
-				1C32C8A11E0A2C3500182D95 /* BodyTag.m */,
-				1C32C8A21E0A2C3500182D95 /* DiagnoseQaRecord.h */,
-				1C32C8A31E0A2C3500182D95 /* DiagnoseQaRecord.m */,
-				1C32C8A41E0A2C3500182D95 /* EyeDiagnoseRecord.h */,
-				1C32C8A51E0A2C3500182D95 /* EyeDiagnoseRecord.m */,
-				1C32C8A61E0A2C3500182D95 /* EyePosition.h */,
-				1C32C8A71E0A2C3500182D95 /* EyePosition.m */,
-				1C32C8A81E0A2C3500182D95 /* EyePositionModel.h */,
-				1C32C8A91E0A2C3500182D95 /* EyePositionModel.m */,
-				1C32C8AA1E0A2C3500182D95 /* MedicalRecordModel.h */,
-				1C32C8AB1E0A2C3500182D95 /* MedicalRecordModel.m */,
-				1C32C8AC1E0A2C3500182D95 /* ModelBase.h */,
-				1C32C8AD1E0A2C3500182D95 /* ModelBase.m */,
-				1C32C8AE1E0A2C3500182D95 /* ModelGroups.h */,
-				1C32C8AF1E0A2C3500182D95 /* ModelGroups.m */,
-				1C32C8B01E0A2C3500182D95 /* TongueDiagnoseRecord.h */,
-				1C32C8B11E0A2C3500182D95 /* TongueDiagnoseRecord.m */,
-				1C32C8B21E0A2C3500182D95 /* TongueList.h */,
-				1C32C8B31E0A2C3500182D95 /* TongueList.m */,
-			);
-			path = TongueDiagnosis;
 			sourceTree = "<group>";
 		};
 		1C32C8B41E0A2C3500182D95 /* processor */ = {
@@ -1289,18 +971,8 @@
 				1C32C8DE1E0A2C3500182D95 /* AppClientStore.m */,
 				1C32C8DF1E0A2C3500182D95 /* ArticleStore.h */,
 				1C32C8E01E0A2C3500182D95 /* ArticleStore.m */,
-				1C32C8E11E0A2C3500182D95 /* CityStore.h */,
-				1C32C8E21E0A2C3500182D95 /* CityStore.m */,
-				1C32C8E31E0A2C3500182D95 /* EyesDiagnosisStore.h */,
-				1C32C8E41E0A2C3500182D95 /* EyesDiagnosisStore.m */,
 				1C32C8E51E0A2C3500182D95 /* HttpRequestFacade.h */,
 				1C32C8E61E0A2C3500182D95 /* HttpRequestFacade.m */,
-				1C32C8E71E0A2C3500182D95 /* MeridianStore.h */,
-				1C32C8E81E0A2C3500182D95 /* MeridianStore.m */,
-				1C32C8E91E0A2C3500182D95 /* OrderStore.h */,
-				1C32C8EA1E0A2C3500182D95 /* OrderStore.m */,
-				1C32C8EB1E0A2C3500182D95 /* TongueDiagnosisStore.h */,
-				1C32C8EC1E0A2C3500182D95 /* TongueDiagnosisStore.m */,
 				1C32C8ED1E0A2C3500182D95 /* UserStore.h */,
 				1C32C8EE1E0A2C3500182D95 /* UserStore.m */,
 			);
@@ -2083,13 +1755,9 @@
 			files = (
 				1C32CD211E0A325400182D95 /* RefreshUIView.m in Sources */,
 				1C32CD051E0A325400182D95 /* IQKeyboardManager.m in Sources */,
-				1C32CAAF1E0A2C3600182D95 /* MeridianRecord.m in Sources */,
-				1C32CAB41E0A2C3600182D95 /* Hospital.m in Sources */,
 				1C32CB761E0A2C3600182D95 /* SDWebImageDownloaderOperation.m in Sources */,
 				1C32CAA61E0A2C3600182D95 /* Page.m in Sources */,
-				1C32CAC21E0A2C3600182D95 /* PtmsCdbasicsick.m in Sources */,
 				1C32CB681E0A2C3600182D95 /* ChineseToPinyinResource.m in Sources */,
-				1C32CAD81E0A2C3600182D95 /* UserAccount.m in Sources */,
 				1C32CD021E0A325400182D95 /* IQUIView+Hierarchy.m in Sources */,
 				1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */,
 				1C32CD0D1E0A325400182D95 /* LBorderView.m in Sources */,
@@ -2102,7 +1770,6 @@
 				1C32CA941E0A2C3600182D95 /* Toast+UIView.m in Sources */,
 				1C32CD291E0A325400182D95 /* XbPopView.m in Sources */,
 				1C32CD361E0A34B500182D95 /* IndexViewController.m in Sources */,
-				1C32CAB01E0A2C3600182D95 /* PainLevelModel.m in Sources */,
 				1C32CAD31E0A2C3600182D95 /* ServicePicture.m in Sources */,
 				1C32CD161E0A325400182D95 /* MHSheetCell.m in Sources */,
 				1C32CB601E0A2C3600182D95 /* MJRefreshStateHeader.m in Sources */,
@@ -2114,26 +1781,20 @@
 				1C32CD071E0A325400182D95 /* IQTextView.m in Sources */,
 				1C32CCFD1E0A325400182D95 /* HeaderView.m in Sources */,
 				1C32CD6F1E0A5B4200182D95 /* SDCollectionViewCell.m in Sources */,
-				1C32CB051E0A2C3600182D95 /* MeridianStore.m in Sources */,
 				1C32CD081E0A325400182D95 /* IQBarButtonItem.m in Sources */,
 				1C32CD1A1E0A325400182D95 /* MHSheetHead.m in Sources */,
 				1C32CB9E1E0A2C3600182D95 /* UIImage+Resize.m in Sources */,
 				1C32CB941E0A2C3600182D95 /* ColorUtils.m in Sources */,
 				1C32CD0B1E0A325400182D95 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C32CB511E0A2C3600182D95 /* JSONKeyMapper.m in Sources */,
-				1C32CAB91E0A2C3600182D95 /* ProjectOrder.m in Sources */,
 				1C32CA9B1E0A2C3600182D95 /* UIViewController+Custom.m in Sources */,
-				1C32CAC31E0A2C3600182D95 /* PtmsDocitemdetail.m in Sources */,
 				1C32CA961E0A2C3600182D95 /* UILabel+Block.m in Sources */,
-				1C32CAA11E0A2C3600182D95 /* City.m in Sources */,
-				1C32CB061E0A2C3600182D95 /* OrderStore.m in Sources */,
 				1C32CAA31E0A2C3600182D95 /* CommonItemTxt.m in Sources */,
 				1C32CD151E0A325400182D95 /* MHActionSheet.m in Sources */,
 				1C32CB5F1E0A2C3600182D95 /* MJRefreshNormalHeader.m in Sources */,
 				1C32CB901E0A2C3600182D95 /* RDVTabBar.m in Sources */,
 				1C32CAEA1E0A2C3600182D95 /* LocalNotificationprocessor.m in Sources */,
 				1C32CB921E0A2C3600182D95 /* RDVTabBarItem.m in Sources */,
-				1C32CAAE1E0A2C3600182D95 /* Meridian.m in Sources */,
 				1C32CD921E0A79EA00182D95 /* AoiroSoraLayout.m in Sources */,
 				1C32CD031E0A325400182D95 /* IQUIViewController+Additions.m in Sources */,
 				1C32CD331E0A34A200182D95 /* FinanceViewController.m in Sources */,
@@ -2146,11 +1807,9 @@
 				1C32CB0D1E0A2C3600182D95 /* AFURLResponseSerialization.m in Sources */,
 				1C32CB101E0A2C3600182D95 /* AFImageDownloader.m in Sources */,
 				1C32CB0B1E0A2C3600182D95 /* AFSecurityPolicy.m in Sources */,
-				1C32CAD11E0A2C3600182D95 /* PushRecord.m in Sources */,
 				1C32CAA41E0A2C3600182D95 /* Constant.m in Sources */,
 				1C32CB981E0A2C3600182D95 /* FunctionUtils.m in Sources */,
 				1C32CB751E0A2C3600182D95 /* SDWebImageDownloader.m in Sources */,
-				1C32CABE1E0A2C3600182D95 /* MyDoctor.m in Sources */,
 				1C32CB471E0A2C3600182D95 /* JSONKit.m in Sources */,
 				1C32CB7D1E0A2C3600182D95 /* UIImage+WebP.m in Sources */,
 				1C32CB951E0A2C3600182D95 /* DataMD5.m in Sources */,
@@ -2159,9 +1818,6 @@
 				1C32CB001E0A2C3600182D95 /* AppClientStore.m in Sources */,
 				1C32CB9B1E0A2C3600182D95 /* NSNumber+Utils.m in Sources */,
 				1C32CB781E0A2C3600182D95 /* SDWebImageManager.m in Sources */,
-				1C32CAB21E0A2C3600182D95 /* Doctor.m in Sources */,
-				1C32CADD1E0A2C3600182D95 /* DiagnoseQaRecord.m in Sources */,
-				1C32CAC11E0A2C3600182D95 /* NewUserUploadRecord.m in Sources */,
 				1C32CD391E0A34C800182D95 /* LiveViewController.m in Sources */,
 				1C32CB621E0A2C3600182D95 /* MJRefreshConst.m in Sources */,
 				1C32CB701E0A2C3600182D95 /* MKAnnotationView+WebCache.m in Sources */,
@@ -2169,30 +1825,23 @@
 				1C32CB4B1E0A2C3600182D95 /* JSONModelClassProperty.m in Sources */,
 				1C32CAD01E0A2C3600182D95 /* Notice.m in Sources */,
 				1C32CAEB1E0A2C3600182D95 /* NetworkProcessor.m in Sources */,
-				1C32CAB51E0A2C3600182D95 /* NewDoctorOrder.m in Sources */,
 				1C32CD6E1E0A5B4200182D95 /* TAPageControl.m in Sources */,
 				1C32CCFC1E0A325400182D95 /* DashLineView.m in Sources */,
 				1C32CB5C1E0A2C3600182D95 /* MJRefreshBackNormalFooter.m in Sources */,
 				1C32CB991E0A2C3600182D95 /* ImageUtils.m in Sources */,
 				1C32CD6C1E0A5B4200182D95 /* TAAnimatedDotView.m in Sources */,
-				1C32CABF1E0A2C3600182D95 /* MyPhysiDcdocitemsheet.m in Sources */,
-				1C32CAB81E0A2C3600182D95 /* Project.m in Sources */,
 				1C32CD2B1E0A325400182D95 /* XQNewFeatureBaseVc.m in Sources */,
-				1C32CAB61E0A2C3600182D95 /* NewProjectOrder.m in Sources */,
 				1C32CB0E1E0A2C3600182D95 /* AFURLSessionManager.m in Sources */,
 				1C32CB7A1E0A2C3600182D95 /* UIButton+WebCache.m in Sources */,
 				1C32CB591E0A2C3600182D95 /* MJRefreshAutoNormalFooter.m in Sources */,
 				1C32CA931E0A2C3600182D95 /* NSString+stringPlus.m in Sources */,
-				1C32CAE11E0A2C3600182D95 /* MedicalRecordModel.m in Sources */,
 				1C32CA901E0A2C3600182D95 /* CALayer+LayerShape.m in Sources */,
 				1C32CB911E0A2C3600182D95 /* RDVTabBarController.m in Sources */,
 				1C32CB6C1E0A2C3600182D95 /* PinYinForObjc.m in Sources */,
 				1C32CCEF1E0A325400182D95 /* AQTool.m in Sources */,
 				1C32CB6D1E0A2C3600182D95 /* PinyinHelper.m in Sources */,
-				1C32CAE01E0A2C3600182D95 /* EyePositionModel.m in Sources */,
 				1C32CD6D1E0A5B4200182D95 /* TADotView.m in Sources */,
 				1C32CB661E0A2C3600182D95 /* OpenUDID.m in Sources */,
-				1C32CABD1E0A2C3600182D95 /* DiagnoseLog.m in Sources */,
 				1C32CB961E0A2C3600182D95 /* DateUtils.m in Sources */,
 				1C32CB151E0A2C3600182D95 /* UIProgressView+AFNetworking.m in Sources */,
 				1C32CB8F1E0A2C3600182D95 /* SVProgressHUD.m in Sources */,
@@ -2203,11 +1852,8 @@
 				1C32CB641E0A2C3600182D95 /* UIScrollView+MJRefresh.m in Sources */,
 				1C32CB0C1E0A2C3600182D95 /* AFURLRequestSerialization.m in Sources */,
 				1C32CD271E0A325400182D95 /* WLZShareController.m in Sources */,
-				1C32CADE1E0A2C3600182D95 /* EyeDiagnoseRecord.m in Sources */,
 				1C32CD1C1E0A325400182D95 /* MHSheetView.m in Sources */,
-				1C32CAD51E0A2C3600182D95 /* SharkeyLocal.m in Sources */,
 				1C32CB8D1E0A2C3600182D95 /* SVIndefiniteAnimatedView.m in Sources */,
-				1C32CAE41E0A2C3600182D95 /* TongueDiagnoseRecord.m in Sources */,
 				1C32CD3C1E0A350700182D95 /* TransactionViewController.m in Sources */,
 				1C32CD1F1E0A325400182D95 /* PopUpView.m in Sources */,
 				1C32CB9A1E0A2C3600182D95 /* NSNull+JSON.m in Sources */,
@@ -2215,43 +1861,29 @@
 				1C32CB5A1E0A2C3600182D95 /* MJRefreshAutoStateFooter.m in Sources */,
 				1C32CA9A1E0A2C3600182D95 /* UIView+KGViewExtend.m in Sources */,
 				1C32CB491E0A2C3600182D95 /* JSONModel.m in Sources */,
-				1C32CAE21E0A2C3600182D95 /* ModelBase.m in Sources */,
-				1C32CAAD1E0A2C3600182D95 /* LocalMeridian.m in Sources */,
-				1C32CADB1E0A2C3600182D95 /* UserNew.m in Sources */,
 				1C32CA911E0A2C3600182D95 /* NSDate+TimeCategory.m in Sources */,
 				1C32CB651E0A2C3600182D95 /* UIView+MJExtension.m in Sources */,
 				1C32CB7B1E0A2C3600182D95 /* UIImage+GIF.m in Sources */,
-				1C32CAC51E0A2C3600182D95 /* UserUploadRecord.m in Sources */,
-				1C32CAD21E0A2C3600182D95 /* RedEnvelope.m in Sources */,
 				1C32CCEE1E0A325400182D95 /* BaseViewController.m in Sources */,
 				1C32CB551E0A2C3600182D95 /* MJRefreshComponent.m in Sources */,
 				1C32CB481E0A2C3600182D95 /* JSONModel+CoreData.m in Sources */,
 				1C32CAA81E0A2C3600182D95 /* TimeUtils.m in Sources */,
-				1C32CAAA1E0A2C3600182D95 /* Pathology.m in Sources */,
 				1C32CD2C1E0A325400182D95 /* XQNewFeatureVC.m in Sources */,
 				1C32CB4D1E0A2C3600182D95 /* NSArray+JSONModel.m in Sources */,
-				1C32CAA01E0A2C3600182D95 /* Area.m in Sources */,
 				1C32CB541E0A2C3600182D95 /* MJRefreshBackFooter.m in Sources */,
 				1C32CD061E0A325400182D95 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				1C32CD261E0A325400182D95 /* WLZBlockButton.m in Sources */,
-				1C32CADA1E0A2C3600182D95 /* UserAccountRecharge.m in Sources */,
-				1C32CADF1E0A2C3600182D95 /* EyePosition.m in Sources */,
 				1C32CCF31E0A325400182D95 /* BHZhiBoTabbar.m in Sources */,
 				1C32CB141E0A2C3600182D95 /* UIImageView+AFNetworking.m in Sources */,
 				1C32CB4E1E0A2C3600182D95 /* JSONAPI.m in Sources */,
-				1C32CB031E0A2C3600182D95 /* EyesDiagnosisStore.m in Sources */,
 				1C32CCF51E0A325400182D95 /* CustomEmptyView.m in Sources */,
-				1C32CA9E1E0A2C3600182D95 /* RecommendArticle.m in Sources */,
 				1C32CAD71E0A2C3600182D95 /* User.m in Sources */,
 				1C32CAEF1E0A2C3600182D95 /* URLDispatcher.m in Sources */,
-				1C32CAAB1E0A2C3600182D95 /* Acupoint.m in Sources */,
 				1C32CD781E0A617700182D95 /* CustomCategoryCollectionViewCell.m in Sources */,
 				1C32CB671E0A2C3600182D95 /* ChineseInclude.m in Sources */,
 				1C32CA981E0A2C3600182D95 /* UINavigationController+Autorotate.m in Sources */,
-				1C32CAC41E0A2C3600182D95 /* SBArchive.m in Sources */,
 				1C32CAE61E0A2C3600182D95 /* AccountSessionSpringBoard.m in Sources */,
 				1C32CD0A1E0A325400182D95 /* IQToolbar.m in Sources */,
-				1C32CA9F1E0A2C3600182D95 /* UserFavArticle.m in Sources */,
 				1C32CB081E0A2C3600182D95 /* UserStore.m in Sources */,
 				1C32CB4C1E0A2C3600182D95 /* JSONModelError.m in Sources */,
 				1C32CB501E0A2C3600182D95 /* JSONModel+networking.m in Sources */,
@@ -2260,46 +1892,31 @@
 				1C32CA921E0A2C3600182D95 /* NSNull+JSON.m in Sources */,
 				1C32CB131E0A2C3600182D95 /* UIButton+AFNetworking.m in Sources */,
 				1C32CCF01E0A325400182D95 /* CommonCell.m in Sources */,
-				1C32CAD91E0A2C3600182D95 /* UserAccountCash.m in Sources */,
 				1C32CAA51E0A2C3600182D95 /* LBSUtils.m in Sources */,
-				1C32CAAC1E0A2C3600182D95 /* LocalAcupoint.m in Sources */,
 				1C32CB521E0A2C3600182D95 /* JSONValueTransformer.m in Sources */,
-				1C32CADC1E0A2C3600182D95 /* BodyTag.m in Sources */,
 				1C32CB6B1E0A2C3600182D95 /* PinyinFormatter.m in Sources */,
 				1C32CAA71E0A2C3600182D95 /* SortType.m in Sources */,
-				1C32CAA21E0A2C3600182D95 /* Province.m in Sources */,
-				1C32CABC1E0A2C3600182D95 /* Detailid.m in Sources */,
 				1C32CA971E0A2C3600182D95 /* UILabel+Custom.m in Sources */,
-				1C32CAE31E0A2C3600182D95 /* ModelGroups.m in Sources */,
 				1C32C7E71E0A2BBE00182D95 /* AppDelegate.m in Sources */,
 				1C32CB571E0A2C3600182D95 /* MJRefreshHeader.m in Sources */,
 				1C32CCF81E0A325400182D95 /* CustomSegmentView.m in Sources */,
 				1C32CB731E0A2C3600182D95 /* SDWebImageCompat.m in Sources */,
-				1C32CB021E0A2C3600182D95 /* CityStore.m in Sources */,
 				1C32CB121E0A2C3600182D95 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				1C32CAB31E0A2C3600182D95 /* DoctorOrder.m in Sources */,
 				1C32CB5D1E0A2C3600182D95 /* MJRefreshBackStateFooter.m in Sources */,
 				1C32CB4A1E0A2C3600182D95 /* JSONModelArray.m in Sources */,
 				1C32CBA01E0A2C3600182D95 /* ViewUtils.m in Sources */,
 				1C32CB561E0A2C3600182D95 /* MJRefreshFooter.m in Sources */,
-				1C32CAB71E0A2C3600182D95 /* Organization.m in Sources */,
 				1C32CA9D1E0A2C3600182D95 /* Article.m in Sources */,
 				1C32CB4F1E0A2C3600182D95 /* JSONHTTPClient.m in Sources */,
 				1C32CB711E0A2C3600182D95 /* NSData+ImageContentType.m in Sources */,
-				1C32CABB1E0A2C3600182D95 /* Dcdocitemsheet.m in Sources */,
-				1C32CAC01E0A2C3600182D95 /* MyPhysiotherapy.m in Sources */,
 				1C32CD041E0A325400182D95 /* IQUIWindow+Hierarchy.m in Sources */,
 				1C32CB111E0A2C3600182D95 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				1C32CAA91E0A2C3600182D95 /* CommonDisease.m in Sources */,
 				1C32CB691E0A2C3600182D95 /* HanyuPinyinOutputFormat.m in Sources */,
 				1C2355841E1E37AC000897B0 /* BIDObjectToNsDictionary.m in Sources */,
 				1C32CB531E0A2C3600182D95 /* MJRefreshAutoFooter.m in Sources */,
 				1C32CB011E0A2C3600182D95 /* ArticleStore.m in Sources */,
-				1C32CABA1E0A2C3600182D95 /* Cdbasicsick.m in Sources */,
-				1C32CAB11E0A2C3600182D95 /* Department.m in Sources */,
 				1C32CD001E0A325400182D95 /* IQUIScrollView+Additions.m in Sources */,
 				1C32CB0F1E0A2C3600182D95 /* AFAutoPurgingImageCache.m in Sources */,
-				1C32CAE51E0A2C3600182D95 /* TongueList.m in Sources */,
 				1C32CB041E0A2C3600182D95 /* HttpRequestFacade.m in Sources */,
 				1C32CB771E0A2C3600182D95 /* SDWebImageManager+MJ.m in Sources */,
 				1C32CB7F1E0A2C3600182D95 /* UIImageView+WebCache.m in Sources */,
@@ -2311,7 +1928,6 @@
 				1C32CB6A1E0A2C3600182D95 /* NSString+PinYin4Cocoa.m in Sources */,
 				1C32CD181E0A325400182D95 /* MHSheetFoot.m in Sources */,
 				1C32CB741E0A2C3600182D95 /* SDWebImageDecoder.m in Sources */,
-				1C32CB071E0A2C3600182D95 /* TongueDiagnosisStore.m in Sources */,
 				1C32CB7C1E0A2C3600182D95 /* UIImage+MultiFormat.m in Sources */,
 				1C32CB721E0A2C3600182D95 /* SDImageCache.m in Sources */,
 				1C32CAD61E0A2C3600182D95 /* Tag.m in Sources */,

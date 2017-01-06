@@ -10,7 +10,7 @@
 
 @protocol CustomCategoryViewDelegate <NSObject>
 
-- (void)didSelectedCustomCategoryViewItem:(NSInteger)item;
+- (void)didSelectedCustomCategoryViewItem:(NSInteger)item categoryTitle:(NSString *)categoryTitle;
 
 @end
 

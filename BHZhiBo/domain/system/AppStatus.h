@@ -10,8 +10,6 @@
 #import <Foundation/Foundation.h>
 #import "AppActiveScene.h"
 #import "Reachability.h"
-#import "LocalMeridian.h"
-#import "SharkeyLocal.h"
 @interface AppStatus : NSObject<NSCoding>
 
 @property (nonatomic, strong) NSString *currentLocation;
@@ -21,9 +19,6 @@
 @property double lastLng;//经度
 @property (nonatomic, strong) NSString *cityName;
 @property (nonatomic, strong) User *user;
-@property (nonatomic ,strong) LocalMeridian *localMeridian;
-@property (nonatomic ,strong) SharkeyLocal *sharkey;
-//@property (nonatomic ,strong) Sharkey *saveSharkey;
 @property (nonatomic ,strong) NSString *targetNum;
 @property (nonatomic, strong) NSString *apiUrl;
 @property (nonatomic, retain) NSString *searcherUrl;

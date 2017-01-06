@@ -10,10 +10,6 @@
 #import "Page.h"
 @interface ArticleStore : NSObject
 
-+ (void)getAllRecommendArticles:(void(^)(Page *page ,NSError *error))completionBlock city:(NSString *)city age:(int)age userGender:(NSString *)userGender bodyTags:(NSString *)bodyTags eyeTagNames:(NSString *)eyeTagNames session:(NSString *)session pageNo:(int)pageNo pageSize:(int)pageSize;
-+ (void)getAllIOSRecommendArticles:(void(^)(Page *page ,NSError *error))completionBlock city:(NSString *)city pageNo:(int)pageNo pageSize:(int)pageSize;
-
-+ (void) updateArticleReadCount:(void(^)(NSDictionary *dict, NSError *err))completionBlock articleId:(int)articleId;
-///ios/recommendArticles/search
++ (void)getRecommendArticles:(void(^)(Page *page ,NSError *error))completionBlock pageSize:(int)pageSize;
 
 @end

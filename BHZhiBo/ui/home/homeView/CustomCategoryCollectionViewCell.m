@@ -19,7 +19,6 @@
 
 - (void)updateConstraints{
     [super updateConstraints];
-    NSLog(@">>>>>>>>>>>测试是否会通过>>>>>>>>");
 }
 
 - (void)renderCustomCategoryCollectionViewCellWithItem:(NSInteger)item{

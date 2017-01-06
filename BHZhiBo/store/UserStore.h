@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "Page.h"
-#import "UserUploadRecord.h"
-#import "NewUserUploadRecord.h"
-#import "UserAccount.h"
-#import "UserAccountRecharge.h"
-#import "UserAccountCash.h"
 
 @interface UserStore : NSObject
 + (UserStore *) sharedStore;
@@ -71,8 +66,6 @@
 +(void) getMyPhysiotherapy:(void(^)(NSDictionary *myPhysiotherapyDict, NSError *err))completionBlock medname:(NSString *)medname password:(NSString *)password;
 
 
-+(void) confirmUserUploadRecord:(void(^)(UserUploadRecord *userUploadRecord, NSError *err))completionBlock newUserUploadRecord:(NewUserUploadRecord *)newUserUploadRecord;
-
 + (void)getOtherHospitalRecordList:(void(^)(Page *page ,NSError *error))completionBlock userId:(int)userId pageNo:(int)pageNo pageSize:(int)pageSize;
 
 
@@ -87,11 +80,6 @@
 
 + (void) getAllCommonDisease:(void(^)(NSArray *diseaseArray, NSError *err))completionBlock;
 
-
-+ (void) getUserAccount:(void(^)(UserAccount *userAccount, NSError *err))completionBlock;
-
-+ (void) userAccountRecharges:(void(^)(UserAccountRecharge *userAccountRecharge, NSError *err))completionBlock price:(float)price;
-+ (void) userAccountCashs:(void(^)(UserAccountCash *userAccountCash, NSError *err))completionBlock price:(float)price accountNo:(NSString *)accountNo accountName:(NSString *)accountName;
 
 +(void) weiXinPayOrderClub:(void(^)(NSDictionary *weixinPayInfo, NSError *err))completionBlock payAmount:(float)payAmount orderNum:(NSString *)orderNum buyer:(NSString *)buyer desc:(NSString *)desc tradeType:(NSString *)tradeType type:(NSString *)type;
 

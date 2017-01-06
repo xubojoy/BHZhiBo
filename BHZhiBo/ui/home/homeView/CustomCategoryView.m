@@ -74,8 +74,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>>>%ld",(long)indexPath.item);
-    if ([self.delegate respondsToSelector:@selector(didSelectedCustomCategoryViewItem:)]) {
-        [self.delegate didSelectedCustomCategoryViewItem:indexPath.item];
+    
+    CustomCategoryCollectionViewCell *cell = (CustomCategoryCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    NSLog(@">>>>>>>>>>>>>>>>>分类名>>>>>>>>>>%@",cell.categoryTitleLabel.text);
+    if ([self.delegate respondsToSelector:@selector(didSelectedCustomCategoryViewItem:categoryTitle:)]) {
+        [self.delegate didSelectedCustomCategoryViewItem:indexPath.item categoryTitle:cell.categoryTitleLabel.text];
     }
     
 }

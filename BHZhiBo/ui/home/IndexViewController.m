@@ -13,6 +13,7 @@
 #import "JSONModel.h"
 #import "BIDObjectToNsDictionary.h"
 #import "BHZhiBoTabbar.h"
+#import "ArticleStore.h"
 //#import <ShareSDKConnector/ShareSDKConnector.h>
 #define COLLECTVIEW_HEIGHT (screen_height-tabbar_height-140-20-10-screen_width/2);
 @interface IndexViewController ()<AoiroSoraLayoutDelegate>
@@ -28,11 +29,35 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 //    self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     [self initHeadView];
-    self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
+//    self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
+    self.imageArray = [NSMutableArray new];
+    self.articleArray = [NSMutableArray new];
     [self initMainScrollVew];
     [self initPageScrollView];
     [self initCategoryView];
     [self initCollectView];
+    [self loadAppData];
+}
+
+- (void)loadAppData{
+    [ArticleStore getRecommendArticles:^(Page *page, NSError *error) {
+        if (page != nil) {
+            for (NSDictionary *articleDic in page.items) {
+                self.article = [[Article alloc] initWithDictionary:articleDic error:nil];
+                if (self.article != nil) {
+                    if ([self.article.articleType isEqualToString:@"轮播图"]) {
+                        [self.imageArray addObject:self.article.articleLogo];
+                    }
+                    
+                    
+                    [self.articleArray addObject:self.article];
+                }
+            }
+        }
+        NSLog(@">>>>>>>>>>所有文章>>>>>>>%@",self.articleArray);
+        [self refreshUI];
+    } pageSize:100];
+
 }
 
 //初始化自定义导航
@@ -59,10 +84,14 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 
 - (void)initPageScrollView{
     float height = screen_width/3;
-    self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, screen_width, height) imageNamesGroup:self.imageArray];
-    self.cycleScrollView.delegate = self;
+    self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, screen_width, height) delegate:self placeholderImage:nil];
     self.cycleScrollView.autoScrollTimeInterval = 2.0;
     [self.mainScrollView addSubview:self.cycleScrollView];
+}
+
+- (void)refreshUI{
+    self.cycleScrollView.imageURLStringsGroup = self.imageArray;
+
 }
 
 - (void)initCategoryView{
@@ -154,13 +183,12 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     NSLog(@">>>>>>>>>>>>>>点击了第%d",(int)index);
 }
 
-- (void)didSelectedCustomCategoryViewItem:(NSInteger)item{
+- (void)didSelectedCustomCategoryViewItem:(NSInteger)item categoryTitle:(NSString *)categoryTitle{
 
     NSLog(@">>>>>>>>>itemitemitem>>>>>点击了第%d",(int)item);
     if (item == 0) {
         BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
         [tabBar.tabBarController setSelectedIndex:1];
-        
     }else if (item == 1) {
         BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
         [tabBar.tabBarController setSelectedIndex:2];
@@ -169,21 +197,66 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
         BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
         [tabBar.tabBarController setSelectedIndex:3];
 
-    }else if (item == 5){
-        CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://192.168.1.128:8080/site/userInfo" title:@"注册"];
-        [self.navigationController pushViewController:cwvc animated:YES];
-    }
-    else if (item == 0){
-        NSURL * myURL_APP_A = [NSURL URLWithString:@"test://"];
-        if ([[UIApplication sharedApplication] canOpenURL:myURL_APP_A]) {
-            NSLog(@"canOpenURL");
-            [[UIApplication sharedApplication] openURL:myURL_APP_A];
-        }else{
-            NSLog(@"canOpenURL--------------");
-            NSURL * zhongjiangUrl = [NSURL URLWithString:zhongjiang_weipan_app_url];
-            [[UIApplication sharedApplication] openURL:zhongjiangUrl];
+    }else{
+        if (self.articleArray.count > 0) {
+            for (Article *article in self.articleArray) {
+                if ([article.title isEqualToString:categoryTitle]) {
+                        CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:[NSString stringWithFormat:@"%@/articles/%d",[AppStatus sharedInstance].apiUrl,article.id] title:categoryTitle];
+                        [self.navigationController pushViewController:cwvc animated:YES];
+                }
+            }
         }
     }
+    
+//    CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://192.168.1.128:8080/site/userInfo" title:@"注册"];
+//    [self.navigationController pushViewController:cwvc animated:YES];
+
+//    switch (item) {
+//        case 0:
+//        {
+//            
+//        }
+//            break;
+//        case 1:{
+//        
+//        }
+//            
+//            break;
+//        case 2:{
+//        
+//        }
+//            
+//            break;
+//        case 3:{
+//        
+//        }
+//            
+//            break;
+//        case 4:{
+//        
+//        }
+//            
+//            break;
+//        case 5:{
+//        
+//        }
+//            
+//            break;
+//        case 6:{
+//        
+//        }
+//            
+//            break;
+//        case 7:{
+//        
+//        }
+//            
+//            break;
+//        default:
+//            break;
+//    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

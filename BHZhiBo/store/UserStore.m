@@ -262,22 +262,6 @@
 //    } params:params];
 }
 
-+(void) confirmUserUploadRecord:(void(^)(UserUploadRecord *userUploadRecord, NSError *err))completionBlock newUserUploadRecord:(NewUserUploadRecord *)newUserUploadRecord{
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSString *url = [NSString stringWithFormat:@"%@/userUploadRecords",[AppStatus sharedInstance].apiUrl];
-    [requestFacade post:url completionBlock:^(id json, NSError *err) {
-        NSLog(@">>>>>>>>>doctor>>>>>>>>>%@",json);
-        if (err == nil) {
-            NSDictionary *dic = json;
-            UserUploadRecord *userUploadRecord = [[UserUploadRecord alloc] initWithDictionary:dic error:nil];
-            NSLog(@">>>>>>>>>添加返回值userUploadRecord>>>>>>>>>%@",userUploadRecord);
-            completionBlock(userUploadRecord, nil);
-        }else if (err != nil){
-            completionBlock(nil, err);
-        }
-    } jsonString:[newUserUploadRecord toDictionary]];
-}
-
 + (void)getOtherHospitalRecordList:(void(^)(Page *page ,NSError *error))completionBlock userId:(int)userId pageNo:(int)pageNo pageSize:(int)pageSize{
     HttpRequestFacade *request = [HttpRequestFacade sharedInstance];
     NSString *url = [NSString stringWithFormat:@"%@/userUploadRecords?userId=%d&pageNo=%d&pageSize=%d",[AppStatus sharedInstance].apiUrl,userId,pageNo,pageSize];
@@ -370,56 +354,6 @@
     } refresh:NO useCacheIfNetworkFail:NO];
 }
 
-+ (void) getUserAccount:(void(^)(UserAccount *userAccount, NSError *err))completionBlock{
-    HttpRequestFacade *request = [HttpRequestFacade sharedInstance];
-    NSString *url = [NSString stringWithFormat:@"%@/userAccount",[AppStatus sharedInstance].apiUrl];
-    NSURL *urlStr = [NSURL URLWithString:url];
-    [request doGet:urlStr completionBlock:^(id json, NSError *err) {
-        NSLog(@">>>>>>>>>用户账户json：%@",json);
-        if (err == nil) {
-            NSDictionary *userAccountDict = json;
-            UserAccount *userAccount = [[UserAccount alloc] initWithDictionary:userAccountDict error:nil];
-            completionBlock(userAccount, nil);
-        }else if(err != nil){
-            completionBlock(nil, err);
-        }
-    } refresh:NO useCacheIfNetworkFail:NO];
-}
-
-+ (void) userAccountRecharges:(void(^)(UserAccountRecharge *userAccountRecharge, NSError *err))completionBlock price:(float)price{
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setObject:@(price) forKey:@"price"];
-    [requestFacade post:[NSString stringWithFormat:@"%@/userAccountRecharges",[AppStatus sharedInstance].apiUrl] completionBlock:^(id json, NSError *err) {
-        if(err == nil){
-            NSLog(@">>>>>>>>>充值json：%@",json);
-            NSDictionary *userAccountDict = json;
-            UserAccountRecharge *userAccountRecharge = [[UserAccountRecharge alloc] initWithDictionary:userAccountDict error:nil];
-            completionBlock(userAccountRecharge,nil);
-        }else{
-            completionBlock(nil,err);
-        }
-    } params:params];
-}
-
-
-+ (void) userAccountCashs:(void(^)(UserAccountCash *userAccountCash, NSError *err))completionBlock price:(float)price accountNo:(NSString *)accountNo accountName:(NSString *)accountName{
-    HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setObject:@(price) forKey:@"price"];
-    [params setObject:accountNo forKey:@"accountNo"];
-    [params setObject:accountName forKey:@"accountName"];
-    [requestFacade post:[NSString stringWithFormat:@"%@/userAccountCashs",[AppStatus sharedInstance].apiUrl] completionBlock:^(id json, NSError *err) {
-        NSLog(@">>>>>>>>提现json：%@",json);
-        if(err == nil){
-            NSDictionary *userAccountDict = json;
-            UserAccountCash *userAccountCash = [[UserAccountCash alloc] initWithDictionary:userAccountDict error:nil];
-            completionBlock(userAccountCash,nil);
-        }else{
-            completionBlock(nil,err);
-        }
-    } params:params];
-}
 
 +(void) weiXinPayOrderClub:(void(^)(NSDictionary *weixinPayInfo, NSError *err))completionBlock payAmount:(float)payAmount orderNum:(NSString *)orderNum buyer:(NSString *)buyer desc:(NSString *)desc tradeType:(NSString *)tradeType type:(NSString *)type{
     HttpRequestFacade *requestFacade = [HttpRequestFacade sharedInstance];

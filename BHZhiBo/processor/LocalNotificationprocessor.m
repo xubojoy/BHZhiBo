@@ -7,9 +7,6 @@
 //
 
 #import "LocalNotificationprocessor.h"
-#import "MeridianStore.h"
-#import "Meridian.h"
-#import "Acupoint.h"
 #import "BHZhiBoTabbar.h"
 #import "AppDelegate.h"
 @implementation LocalNotificationprocessor

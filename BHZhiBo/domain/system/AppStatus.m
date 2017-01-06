@@ -159,10 +159,7 @@
     [aCoder encodeObject:self.currentLocation forKey:@"currentLocation"];
     [aCoder encodeObject:self.deviceToken forKey:@"deviceToken"];
     [aCoder encodeObject:self.user forKey:@"user"];
-    [aCoder encodeObject:self.sharkey forKey:@"sharkey"];
-//    [aCoder encodeObject:self.saveSharkey forKey:@"saveSharkey"];
     [aCoder encodeObject:self.targetNum forKey:@"targetNum"];
-    [aCoder encodeObject:self.localMeridian forKey:@"localMeridian"];
     [aCoder encodeObject:self.saveDate forKey:@"saveDate"];
     [aCoder encodeInt:self.didIndexPathRow forKey:@"didIndexPathRow"];
     [aCoder encodeObject:self.recentCityArray forKey:@"recentCityArray"];
@@ -189,10 +186,7 @@
         self.currentLocation = [aDecoder decodeObjectForKey:@"currentLocation"];
         self.deviceToken = [aDecoder decodeObjectForKey:@"deviceToken"];
         self.user = [aDecoder decodeObjectForKey:@"user"];
-        self.sharkey = [aDecoder decodeObjectForKey:@"sharkey"];
-//        self.saveSharkey = [aDecoder decodeObjectForKey:@"saveSharkey"];
         self.targetNum = [aDecoder decodeObjectForKey:@"targetNum"];
-        self.localMeridian = [aDecoder decodeObjectForKey:@"localMeridian"];
         self.saveDate = [aDecoder decodeObjectForKey:@"saveDate"];
         self.didIndexPathRow = [aDecoder decodeIntForKey:@"didIndexPathRow"];
         self.recentCityArray = [aDecoder decodeObjectForKey:@"recentCityArray"];
@@ -258,12 +252,11 @@
     self.hasReadArticleIds = [NSMutableSet new];
     self.meridianDict = [NSMutableDictionary new];
     self.user = nil;
-    self.sharkey = nil;
 }
 
 
 -(NSString *) description{
-    return [NSString stringWithFormat:@"deviceToken:%@, user:%@, lastLat:%f, lastLng:%f sharkey:%@", self.deviceToken, self.user.description, self.lastLat, self.lastLng,self.sharkey];
+    return [NSString stringWithFormat:@"deviceToken:%@, user:%@, lastLat:%f, lastLng:%f", self.deviceToken, self.user.description, self.lastLat, self.lastLng];
 }
 
 @end

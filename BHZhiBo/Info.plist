@@ -76,5 +76,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>apiUrl</key>
+	<string>http://www.zjwepan.com/baihongapp</string>
 </dict>
 </plist>
