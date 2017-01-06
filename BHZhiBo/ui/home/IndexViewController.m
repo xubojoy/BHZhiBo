@@ -146,7 +146,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 -(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:customCategoryCollectionViewCellId forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [ColorUtils randomColor];
+//    cell.contentView.backgroundColor = [ColorUtils randomColor];
     if (self.articleArray.count > 0) {
         [cell renderCustomCategoryCollectionViewCellWithItem:indexPath.item withArticleArray:self.articleArray];
     }
