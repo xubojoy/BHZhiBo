@@ -17,4 +17,6 @@
 
 - (void)renderCustomCategoryCollectionViewCellWithItem:(NSInteger)item;
 
+
+
 @end

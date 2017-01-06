@@ -239,6 +239,9 @@
 		1C32CD8E1E0A673100182D95 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD861E0A673100182D95 /* 7.jpg */; };
 		1C32CD8F1E0A673100182D95 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CD871E0A673100182D95 /* 8.jpg */; };
 		1C32CD921E0A79EA00182D95 /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */; };
+		1C3AF8881E1F6C9B00BB7214 /* CommonContentWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3AF8871E1F6C9B00BB7214 /* CommonContentWebController.m */; };
+		1C3AF88C1E1F724A00BB7214 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3AF88A1E1F724A00BB7214 /* CustomCollectionViewCell.m */; };
+		1C3AF88D1E1F724A00BB7214 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3AF88B1E1F724A00BB7214 /* CustomCollectionViewCell.xib */; };
 		1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -676,6 +679,11 @@
 		1C32CD911E0A79EA00182D95 /* AoiroSoraLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AoiroSoraLayout.m; sourceTree = "<group>"; };
 		1C366E051E1B922200059EE3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		1C366E061E1B922200059EE3 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1C3AF8861E1F6C9B00BB7214 /* CommonContentWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonContentWebController.h; sourceTree = "<group>"; };
+		1C3AF8871E1F6C9B00BB7214 /* CommonContentWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonContentWebController.m; sourceTree = "<group>"; };
+		1C3AF8891E1F724A00BB7214 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		1C3AF88A1E1F724A00BB7214 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		1C3AF88B1E1F724A00BB7214 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		1CC59AAA1E0B8190006769F9 /* CommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonWebViewController.h; sourceTree = "<group>"; };
 		1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1634,6 +1642,9 @@
 				1C32CD751E0A617700182D95 /* CustomCategoryCollectionViewCell.xib */,
 				1C32CD761E0A617700182D95 /* CustomCategoryView.h */,
 				1C32CD771E0A617700182D95 /* CustomCategoryView.m */,
+				1C3AF8891E1F724A00BB7214 /* CustomCollectionViewCell.h */,
+				1C3AF88A1E1F724A00BB7214 /* CustomCollectionViewCell.m */,
+				1C3AF88B1E1F724A00BB7214 /* CustomCollectionViewCell.xib */,
 			);
 			path = homeView;
 			sourceTree = "<group>";
@@ -1643,6 +1654,8 @@
 			children = (
 				1CC59AAA1E0B8190006769F9 /* CommonWebViewController.h */,
 				1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */,
+				1C3AF8861E1F6C9B00BB7214 /* CommonContentWebController.h */,
+				1C3AF8871E1F6C9B00BB7214 /* CommonContentWebController.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1725,6 +1738,7 @@
 				1C32CD221E0A325400182D95 /* RefreshUIView.xib in Resources */,
 				1C32CD1D1E0A325400182D95 /* MHSheetView.xib in Resources */,
 				1C32CD891E0A673100182D95 /* 2.jpg in Resources */,
+				1C3AF88D1E1F724A00BB7214 /* CustomCollectionViewCell.xib in Resources */,
 				1C32CCF11E0A325400182D95 /* CommonCell.xib in Resources */,
 				1C32C7F21E0A2BBE00182D95 /* LaunchScreen.storyboard in Resources */,
 				1C32CB611E0A2C3600182D95 /* MJRefresh.bundle in Resources */,
@@ -1758,6 +1772,7 @@
 				1C32CB761E0A2C3600182D95 /* SDWebImageDownloaderOperation.m in Sources */,
 				1C32CAA61E0A2C3600182D95 /* Page.m in Sources */,
 				1C32CB681E0A2C3600182D95 /* ChineseToPinyinResource.m in Sources */,
+				1C3AF8881E1F6C9B00BB7214 /* CommonContentWebController.m in Sources */,
 				1C32CD021E0A325400182D95 /* IQUIView+Hierarchy.m in Sources */,
 				1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */,
 				1C32CD0D1E0A325400182D95 /* LBorderView.m in Sources */,
@@ -1866,6 +1881,7 @@
 				1C32CB7B1E0A2C3600182D95 /* UIImage+GIF.m in Sources */,
 				1C32CCEE1E0A325400182D95 /* BaseViewController.m in Sources */,
 				1C32CB551E0A2C3600182D95 /* MJRefreshComponent.m in Sources */,
+				1C3AF88C1E1F724A00BB7214 /* CustomCollectionViewCell.m in Sources */,
 				1C32CB481E0A2C3600182D95 /* JSONModel+CoreData.m in Sources */,
 				1C32CAA81E0A2C3600182D95 /* TimeUtils.m in Sources */,
 				1C32CD2C1E0A325400182D95 /* XQNewFeatureVC.m in Sources */,

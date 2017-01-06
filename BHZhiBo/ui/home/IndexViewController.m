@@ -7,19 +7,20 @@
 //
 
 #import "IndexViewController.h"
-#import "CustomCategoryCollectionViewCell.h"
+#import "CustomCollectionViewCell.h"
 #import "AoiroSoraLayout.h"
 #import "CommonWebViewController.h"
 #import "JSONModel.h"
 #import "BIDObjectToNsDictionary.h"
 #import "BHZhiBoTabbar.h"
 #import "ArticleStore.h"
+#import "CommonContentWebController.h"
 //#import <ShareSDKConnector/ShareSDKConnector.h>
 #define COLLECTVIEW_HEIGHT (screen_height-tabbar_height-140-20-10-screen_width/2);
 @interface IndexViewController ()<AoiroSoraLayoutDelegate>
 
 @end
-static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollectionViewCell";
+static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell";
 @implementation IndexViewController
 
 - (void)viewDidLoad {
@@ -48,14 +49,13 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
                     if ([self.article.articleType isEqualToString:@"轮播图"]) {
                         [self.imageArray addObject:self.article.articleLogo];
                     }
-                    
-                    
                     [self.articleArray addObject:self.article];
                 }
             }
         }
         NSLog(@">>>>>>>>>>所有文章>>>>>>>%@",self.articleArray);
         [self refreshUI];
+        [self.collectionView reloadData];
     } pageSize:100];
 
 }
@@ -123,7 +123,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
     
     self.collectionView.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     
-    UINib *nib = [UINib nibWithNibName:@"CustomCategoryCollectionViewCell" bundle: nil];
+    UINib *nib = [UINib nibWithNibName:@"CustomCollectionViewCell" bundle: nil];
     [self.collectionView registerNib:nib
                             forCellWithReuseIdentifier:customCategoryCollectionViewCellId];
     
@@ -143,8 +143,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 
 -(UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomCategoryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:customCategoryCollectionViewCellId forIndexPath:indexPath];
+    CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:customCategoryCollectionViewCellId forIndexPath:indexPath];
     cell.contentView.backgroundColor = [ColorUtils randomColor];
+    if (self.articleArray.count > 0) {
+        [cell renderCustomCategoryCollectionViewCellWithItem:indexPath.item withArticleArray:self.articleArray];
+    }
     return cell;
 }
 
@@ -175,6 +178,30 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"第 %ld 个cell",(long)indexPath.row);
+    if (self.articleArray.count > 0) {
+        for (Article *article in self.articleArray) {
+            if (indexPath.item == 0) {
+                if ([article.title isEqualToString:@"下左图片"]) {
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                    
+                }
+            }else if (indexPath.item == 1){
+                if ([article.title isEqualToString:@"下右上图片"]){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                    
+                }
+            }else{
+                if ([article.title isEqualToString:@"下右下图片"]){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                    
+                }
+            }
+        }
+    }
+
 }
 
 #pragma mark - SDCycleScrollViewDelegate
@@ -201,7 +228,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCategoryCollection
         if (self.articleArray.count > 0) {
             for (Article *article in self.articleArray) {
                 if ([article.title isEqualToString:categoryTitle]) {
-                        CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:[NSString stringWithFormat:@"%@/articles/%d",[AppStatus sharedInstance].apiUrl,article.id] title:categoryTitle];
+                        CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
                         [self.navigationController pushViewController:cwvc animated:YES];
                 }
             }
