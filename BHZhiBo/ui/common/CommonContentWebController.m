@@ -25,6 +25,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setRightSwipeGestureAndAdaptive];
     [self initHeadView];
     [self loadWebView];
 }

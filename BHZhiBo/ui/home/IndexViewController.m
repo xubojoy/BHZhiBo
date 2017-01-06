@@ -33,6 +33,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 //    self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
     self.imageArray = [NSMutableArray new];
     self.articleArray = [NSMutableArray new];
+    self.bannerArray = [NSMutableArray new];
     [self initMainScrollVew];
     [self initPageScrollView];
     [self initCategoryView];
@@ -48,6 +49,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
                 if (self.article != nil) {
                     if ([self.article.articleType isEqualToString:@"轮播图"]) {
                         [self.imageArray addObject:self.article.articleLogo];
+                        [self.bannerArray addObject:self.article];
                     }
                     [self.articleArray addObject:self.article];
                 }
@@ -208,6 +210,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     NSLog(@">>>>>>>>>>>>>>点击了第%d",(int)index);
+    if (self.bannerArray.count > 0) {
+        Article *article = self.bannerArray[index];
+        CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+        [self.navigationController pushViewController:cwvc animated:YES];
+    }
 }
 
 - (void)didSelectedCustomCategoryViewItem:(NSInteger)item categoryTitle:(NSString *)categoryTitle{

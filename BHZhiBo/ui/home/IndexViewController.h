@@ -19,4 +19,5 @@
 @property (nonatomic , strong) UICollectionView *collectionView;
 @property (nonatomic ,strong) Article *article;
 @property (nonatomic ,strong) NSMutableArray *articleArray;
+@property (nonatomic ,strong) NSMutableArray *bannerArray;
 @end
