@@ -154,7 +154,6 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    screen_height-tabbar_height-140-20-10-
     float H = screen_width/2;
     if (indexPath.item == 0) {
         return CGSizeMake(screen_width/2,H);
@@ -183,19 +182,19 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
         for (Article *article in self.articleArray) {
             if (indexPath.item == 0) {
                 if (article.id == 7) {
-                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:article.title];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
                 }
             }else if (indexPath.item == 1){
                 if (article.id == 8){
-                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:article.title];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
                 }
             }else{
                 if (article.id == 9){
-                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:article.title];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
                 }
@@ -211,7 +210,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
     NSLog(@">>>>>>>>>>>>>>点击了第%d",(int)index);
     if (self.bannerArray.count > 0) {
         Article *article = self.bannerArray[index];
-        CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
+        CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:article.title];
         [self.navigationController pushViewController:cwvc animated:YES];
     }
 }
@@ -252,56 +251,6 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
             }
         }
     }
-    
-//    CommonWebViewController *cwvc = [[CommonWebViewController alloc] initWithUrl:@"http://192.168.1.128:8080/site/userInfo" title:@"注册"];
-//    [self.navigationController pushViewController:cwvc animated:YES];
-
-//    switch (item) {
-//        case 0:
-//        {
-//            
-//        }
-//            break;
-//        case 1:{
-//        
-//        }
-//            
-//            break;
-//        case 2:{
-//        
-//        }
-//            
-//            break;
-//        case 3:{
-//        
-//        }
-//            
-//            break;
-//        case 4:{
-//        
-//        }
-//            
-//            break;
-//        case 5:{
-//        
-//        }
-//            
-//            break;
-//        case 6:{
-//        
-//        }
-//            
-//            break;
-//        case 7:{
-//        
-//        }
-//            
-//            break;
-//        default:
-//            break;
-//    }
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
