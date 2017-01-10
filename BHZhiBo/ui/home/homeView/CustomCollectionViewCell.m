@@ -20,15 +20,15 @@
     
     for (Article *article in articleArray) {
         if (item == 0) {
-            if ([article.title isEqualToString:@"下左图片"]) {
+            if (article.id == 7) {
                 [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:article.articleLogo] placeholderImage:nil];
             }
         }else if (item == 1){
-            if ([article.title isEqualToString:@"下右上图片"]){
+            if (article.id == 8){
                 [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:article.articleLogo] placeholderImage:nil];
             }
         }else{
-            if ([article.title isEqualToString:@"下右下图片"]){
+            if (article.id == 9){
                 [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:article.articleLogo] placeholderImage:nil];
             }
         }

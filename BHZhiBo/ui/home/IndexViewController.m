@@ -87,13 +87,12 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 - (void)initPageScrollView{
     float height = screen_width/3;
     self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, screen_width, height) delegate:self placeholderImage:nil];
-    self.cycleScrollView.autoScrollTimeInterval = 2.0;
+    self.cycleScrollView.autoScrollTimeInterval = 6.0;
     [self.mainScrollView addSubview:self.cycleScrollView];
 }
 
 - (void)refreshUI{
     self.cycleScrollView.imageURLStringsGroup = self.imageArray;
-
 }
 
 - (void)initCategoryView{
@@ -183,19 +182,19 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
     if (self.articleArray.count > 0) {
         for (Article *article in self.articleArray) {
             if (indexPath.item == 0) {
-                if ([article.title isEqualToString:@"下左图片"]) {
+                if (article.id == 7) {
                     CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
                 }
             }else if (indexPath.item == 1){
-                if ([article.title isEqualToString:@"下右上图片"]){
+                if (article.id == 8){
                     CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
                 }
             }else{
-                if ([article.title isEqualToString:@"下右下图片"]){
+                if (article.id == 9){
                     CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:nil];
                     [self.navigationController pushViewController:cwvc animated:YES];
                     
@@ -234,9 +233,21 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
     }else{
         if (self.articleArray.count > 0) {
             for (Article *article in self.articleArray) {
-                if ([article.title isEqualToString:categoryTitle]) {
+                if (article.id == 2 && item == 2) {
                         CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
                         [self.navigationController pushViewController:cwvc animated:YES];
+                }else if (article.id == 3 && item == 3){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                }else if (article.id == 4 && item == 5){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                }else if (article.id == 5 && item == 6){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
+                    [self.navigationController pushViewController:cwvc animated:YES];
+                }else if (article.id == 6 && item == 7){
+                    CommonContentWebController *cwvc = [[CommonContentWebController alloc] initWithArticle:article title:categoryTitle];
+                    [self.navigationController pushViewController:cwvc animated:YES];
                 }
             }
         }
