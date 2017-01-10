@@ -13,6 +13,12 @@
 @end
 
 @implementation TransactionViewController
+    
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+//     BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
+//    [tabBar.tabBarController.tabBar setFrame:CGRectMake(0, 20, screen_width, 51)];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,7 +57,7 @@
 }
 
 -(void)loadWebView{
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, screen_width, screen_height-20-tabbar_height)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, screen_width, screen_height-20-tabbar_height)];
     NSURL *nsurl =[NSURL URLWithString:@"http://shipan.zhongjiangguoji.com/Home/Login"];
     NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];
     [self.webView loadRequest:request];
