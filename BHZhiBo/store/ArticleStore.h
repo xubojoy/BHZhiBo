@@ -12,4 +12,6 @@
 
 + (void)getRecommendArticles:(void(^)(Page *page ,NSError *error))completionBlock pageSize:(int)pageSize;
 
++ (void)getSwitchFlag:(void(^)(NSString *flagStr ,NSError *error))completionBlock;
+
 @end

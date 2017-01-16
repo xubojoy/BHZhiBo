@@ -30,4 +30,21 @@
     } refresh:NO useCacheIfNetworkFail:NO];
 }
 
++ (void)getSwitchFlag:(void(^)(NSString *flagStr ,NSError *error))completionBlock{
+    HttpRequestFacade *request = [HttpRequestFacade sharedInstance];
+    NSString *url = [NSString stringWithFormat:@"%@/sysFlag",[AppStatus sharedInstance].apiUrl];
+    
+    NSString *encoded = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *urlStr = [NSURL URLWithString:encoded];
+    [request doIOSGet:urlStr completionBlock:^(id json, NSError *err) {
+        NSLog(@">>>>>>>>>>>>>>>>开关json：%@",json);
+        if (err == nil) {
+            NSString *jsonDict = json;
+            completionBlock(jsonDict, nil);
+        }else if(err != nil){
+            completionBlock(nil, err);
+        }
+    } refresh:NO useCacheIfNetworkFail:NO];
+}
+
 @end

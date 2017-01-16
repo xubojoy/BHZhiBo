@@ -28,7 +28,7 @@
             UINavigationController *secondNavigationController = [[UINavigationController alloc]
                                                                   initWithRootViewController:secondViewController];
             secondNavigationController.delegate = self;
-            secondNavigationController.title = @"交易";
+            secondNavigationController.title = @"登录";
             [secondNavigationController.navigationBar setHidden:YES];
             
             UIViewController *thirdViewController = [[LiveViewController alloc] init];

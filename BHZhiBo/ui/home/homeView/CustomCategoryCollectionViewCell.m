@@ -27,7 +27,7 @@
 
     if (item == 0){
         self.iconImgView.image = [UIImage imageNamed:@"1.jpg"];
-        self.categoryTitleLabel.text = @"交易";
+        self.categoryTitleLabel.text = @"登录";
     }else if (item == 1){
         self.iconImgView.image = [UIImage imageNamed:@"2.jpg"];
         self.categoryTitleLabel.text = @"直播";

@@ -13,4 +13,5 @@
 @property (strong, nonatomic) UIWebView *webView;
 @property (nonatomic, strong) UIActivityIndicatorView *activity;
 @property (nonatomic ,strong) BHZhiBoTabbar *tabbar;
+@property (nonatomic ,strong) NSString *flagStr;
 @end
