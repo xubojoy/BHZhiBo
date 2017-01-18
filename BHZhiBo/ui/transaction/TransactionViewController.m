@@ -42,10 +42,13 @@
 
 
 - (void)loadSwitchData{
-    [ArticleStore getSwitchFlag:^(NSString *flagStr, NSError *error) {
-        if ([NSStringUtils isNotBlank:flagStr]) {
-            NSLog(@">>>>>>>>>>>>%@",flagStr);
-            self.flagStr = flagStr;
+    [ArticleStore getSwitchFlag:^(NSDictionary *flagDict, NSError *error) {
+        NSDictionary *dicInfo = [[NSBundle mainBundle] infoDictionary];
+        NSString *bundleStr = [dicInfo objectForKey:@"CFBundleShortVersionString"];
+        if (flagDict != nil) {
+            NSLog(@">>>>>>>>>>>>%@",bundleStr);
+            NSString *verStr = [NSString stringWithFormat:@"ios%@",bundleStr];
+            self.flagStr = flagDict[verStr];
         }
         [self loadWebView];
     }];
