@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C1650001E11079E00E4EC4C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C164FFF1E11079E00E4EC4C /* logo.png */; };
+		1C198E9A1E8A3C610029F853 /* logo_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C198E991E8A3C610029F853 /* logo_180.png */; };
 		1C2355691E1DE1C8000897B0 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2355531E1DE1C8000897B0 /* ShareSDK.framework */; };
 		1C23556A1E1DE1C8000897B0 /* ShareSDKConfigFile.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C2355561E1DE1C8000897B0 /* ShareSDKConfigFile.bundle */; };
 		1C23556B1E1DE1C8000897B0 /* ShareSDKConfigFile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2355571E1DE1C8000897B0 /* ShareSDKConfigFile.framework */; };
@@ -246,7 +246,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C164FFF1E11079E00E4EC4C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1C198E991E8A3C610029F853 /* logo_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_180.png; sourceTree = "<group>"; };
 		1C2355531E1DE1C8000897B0 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDK.framework; sourceTree = "<group>"; };
 		1C2355561E1DE1C8000897B0 /* ShareSDKConfigFile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKConfigFile.bundle; sourceTree = "<group>"; };
 		1C2355571E1DE1C8000897B0 /* ShareSDKConfigFile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConfigFile.framework; sourceTree = "<group>"; };
@@ -955,7 +955,7 @@
 		1C32C8CB1E0A2C3500182D95 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				1C164FFF1E11079E00E4EC4C /* logo.png */,
+				1C198E991E8A3C610029F853 /* logo_180.png */,
 				1C32CD801E0A673100182D95 /* 1.jpg */,
 				1C32CD811E0A673100182D95 /* 2.jpg */,
 				1C32CD821E0A673100182D95 /* 3.jpg */,
@@ -1733,7 +1733,6 @@
 				1C2355721E1DE1C8000897B0 /* README.txt in Resources */,
 				1C32CD201E0A325400182D95 /* PopUpView.xib in Resources */,
 				1C32CD8E1E0A673100182D95 /* 7.jpg in Resources */,
-				1C1650001E11079E00E4EC4C /* logo.png in Resources */,
 				1C32CD8B1E0A673100182D95 /* 4.jpg in Resources */,
 				1C32CD221E0A325400182D95 /* RefreshUIView.xib in Resources */,
 				1C32CD1D1E0A325400182D95 /* MHSheetView.xib in Resources */,
@@ -1754,6 +1753,7 @@
 				1C32C7EF1E0A2BBE00182D95 /* Assets.xcassets in Resources */,
 				1C32CD0C1E0A325400182D95 /* IQKeyboardManager.bundle in Resources */,
 				1C32CD191E0A325400182D95 /* MHSheetFoot.xib in Resources */,
+				1C198E9A1E8A3C610029F853 /* logo_180.png in Resources */,
 				1C32CCF61E0A325400182D95 /* CustomEmptyView.xib in Resources */,
 				1C32C7ED1E0A2BBE00182D95 /* Main.storyboard in Resources */,
 				1C2355711E1DE1C8000897B0 /* read_me.txt in Resources */,

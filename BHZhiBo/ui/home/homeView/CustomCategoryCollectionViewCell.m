@@ -30,7 +30,7 @@
         self.categoryTitleLabel.text = @"登录";
     }else if (item == 1){
         self.iconImgView.image = [UIImage imageNamed:@"2.jpg"];
-        self.categoryTitleLabel.text = @"直播";
+        self.categoryTitleLabel.text = @"交流";
     }else if (item == 2){
         self.iconImgView.image = [UIImage imageNamed:@"3.jpg"];
         self.categoryTitleLabel.text = @"活动";

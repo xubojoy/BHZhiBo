@@ -14,14 +14,17 @@
 
 @implementation TransactionViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self initHeadView];
+    [self loadSwitchData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.view.autoresizesSubviews = NO;
-    [self initHeadView];
-    [self loadSwitchData];
-    
-    
+
 }
 
 //加载菊花
@@ -70,9 +73,11 @@
     self.webView.delegate = self;
     self.webView.scrollView.delegate = self;
     if ([self.flagStr isEqualToString:@"false"]) {
-        NSString *contentStr = @"<p style=\"text-align: center;\"><img style=\"width:100%;\" src=\"http://www.zjwepan.com/images/j/jxltiqvzdfnauyts.jpg\" title=\"jxltiqvzdfnauyts.jpg\" alt=\"upfile\"/></p><p>特色服务功能：</p><p>1、老用户享有多种赠送体验劵活动，（100元/张）&nbsp;</p><p>2、内置在线直播交流室，供用户交流讨论做单策略。</p><p>3、内置即时财经数据，随时掌握第一手财经资讯</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1em; color: rgb(62, 62, 62); font-family: &#39;Hiragino Sans GB&#39;, &#39;Microsoft YaHei&#39;, Arial, sans-serif; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);\"><br/></p>";
-        
-        [self.webView loadHTMLString:contentStr baseURL:nil];
+//        NSString *contentStr = @"<p style=\"text-align: center;\"><img style=\"width:100%;\" src=\"http://www.zjwepan.com/images/j/jxltiqvzdfnauyts.jpg\" title=\"jxltiqvzdfnauyts.jpg\" alt=\"upfile\"/></p><p>特色服务功能：</p><p>1、老用户享有多种赠送体验劵活动，（100元/张）&nbsp;</p><p>2、内置在线直播交流室，供用户交流讨论做单策略。</p><p>3、内置即时财经数据，随时掌握第一手财经资讯</p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1em; color: rgb(62, 62, 62); font-family: &#39;Hiragino Sans GB&#39;, &#39;Microsoft YaHei&#39;, Arial, sans-serif; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);\"><br/></p>";
+//        
+//        [self.webView loadHTMLString:contentStr baseURL:nil];
+        NSURL *appUrl = [[NSURL alloc] initWithString:@"https://itunes.apple.com/cn/app/jin-rong-shuapp/id1147075616?mt=8"];
+        [[UIApplication sharedApplication] openURL:appUrl];
     }else{
         NSURL *nsurl =[NSURL URLWithString:@"http://shipan.zhongjiangguoji.com/Home/Login"];
         NSURLRequest *request =[NSURLRequest requestWithURL:nsurl];

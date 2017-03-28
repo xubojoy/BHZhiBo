@@ -35,7 +35,7 @@
             UINavigationController *thirdNavigationController = [[UINavigationController alloc]
                                                                  initWithRootViewController:thirdViewController];
             thirdNavigationController.delegate = self;
-            thirdNavigationController.title = @"直播";
+            thirdNavigationController.title = @"交流";
             [thirdNavigationController.navigationBar setHidden:YES];
             
             UIViewController *userViewController = [[FinanceViewController alloc] init];

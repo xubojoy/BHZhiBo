@@ -64,7 +64,7 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 
 //初始化自定义导航
 -(void)initHeadView{
-    self.headerView = [[HeaderView alloc] initWithTitle:@"中江国际直播" navigationController:self.navigationController];
+    self.headerView = [[HeaderView alloc] initWithTitle:@"黄金TD交流" navigationController:self.navigationController];
     self.headerView.backBut.hidden = YES;
     self.headerView.userInteractionEnabled = YES;
     [self.view addSubview:self.headerView];
