@@ -17,7 +17,10 @@
 @implementation FinanceViewController
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-     [self loadWebView];
+    if (self.webView != nil) {
+        [self.webView removeFromSuperview];
+    }
+    [self loadWebView];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

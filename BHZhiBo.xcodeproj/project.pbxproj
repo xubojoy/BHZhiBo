@@ -1691,7 +1691,7 @@
 				TargetAttributes = {
 					1C32C7DE1E0A2BBE00182D95 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = XB52QEXY99;
+						DevelopmentTeam = 475AM2DC65;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -2076,7 +2076,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 475AM2DC65;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2093,7 +2093,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BHZhiBo/third/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baihong.zhibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baihong.jiaoliu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2105,7 +2105,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 475AM2DC65;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2122,7 +2122,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/BHZhiBo/third/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.baihong.zhibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baihong.jiaoliu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
