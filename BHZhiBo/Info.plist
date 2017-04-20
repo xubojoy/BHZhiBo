@@ -24,7 +24,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.baihong.zhibo</string>
+			<string>com.baihong.jiaoliu</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>baihong</string>
@@ -37,7 +37,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wxb5013066f2cd67a4</string>
+				<string>wx1118411618a8268c</string>
 			</array>
 		</dict>
 	</array>
