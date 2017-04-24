@@ -122,7 +122,6 @@
 		1C32CB6C1E0A2C3600182D95 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA221E0A2C3500182D95 /* PinYinForObjc.m */; };
 		1C32CB6D1E0A2C3600182D95 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA241E0A2C3500182D95 /* PinyinHelper.m */; };
 		1C32CB6E1E0A2C3600182D95 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C32CA251E0A2C3500182D95 /* unicode_to_hanyu_pinyin.txt */; };
-		1C32CB6F1E0A2C3600182D95 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA281E0A2C3500182D95 /* Reachability.m */; };
 		1C32CB701E0A2C3600182D95 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA2B1E0A2C3500182D95 /* MKAnnotationView+WebCache.m */; };
 		1C32CB711E0A2C3600182D95 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA2D1E0A2C3500182D95 /* NSData+ImageContentType.m */; };
 		1C32CB721E0A2C3600182D95 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA2F1E0A2C3500182D95 /* SDImageCache.m */; };
@@ -463,8 +462,6 @@
 		1C32CA231E0A2C3500182D95 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
 		1C32CA241E0A2C3500182D95 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
 		1C32CA251E0A2C3500182D95 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
-		1C32CA271E0A2C3500182D95 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		1C32CA281E0A2C3500182D95 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1C32CA2A1E0A2C3500182D95 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		1C32CA2B1E0A2C3500182D95 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		1C32CA2C1E0A2C3500182D95 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -998,7 +995,6 @@
 				1C32C9E61E0A2C3500182D95 /* MJRefresh */,
 				1C32CA131E0A2C3500182D95 /* OpenUDID */,
 				1C32CA161E0A2C3500182D95 /* pinYin */,
-				1C32CA261E0A2C3500182D95 /* Reachability */,
 				1C32CA291E0A2C3500182D95 /* SDWebImage */,
 				1C32CA661E0A2C3600182D95 /* SVProgressHUD */,
 				1C32CA6C1E0A2C3600182D95 /* tabbar */,
@@ -1255,15 +1251,6 @@
 				1C32CA251E0A2C3500182D95 /* unicode_to_hanyu_pinyin.txt */,
 			);
 			path = pinYin;
-			sourceTree = "<group>";
-		};
-		1C32CA261E0A2C3500182D95 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CA271E0A2C3500182D95 /* Reachability.h */,
-				1C32CA281E0A2C3500182D95 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		1C32CA291E0A2C3500182D95 /* SDWebImage */ = {
@@ -1948,7 +1935,6 @@
 				1C32CB721E0A2C3600182D95 /* SDImageCache.m in Sources */,
 				1C32CAD61E0A2C3600182D95 /* Tag.m in Sources */,
 				1C32C7E41E0A2BBE00182D95 /* main.m in Sources */,
-				1C32CB6F1E0A2C3600182D95 /* Reachability.m in Sources */,
 				1C32CB161E0A2C3600182D95 /* UIRefreshControl+AFNetworking.m in Sources */,
 				1C32CD241E0A325400182D95 /* SDPhotoBrowser.m in Sources */,
 				1C32CB971E0A2C3600182D95 /* DeviceUtils.m in Sources */,

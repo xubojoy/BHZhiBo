@@ -11,35 +11,43 @@
 @implementation NetworkProcessor
 -(void) initNetWork{
     NSLog(@">>>>> init NetWork ");
+    //开启网络指示器，开始监听
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    // 检测网络连接的单例,网络变化时的回调方法
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
+        switch(status){
+                
+            case AFNetworkReachabilityStatusUnknown:{
+                
+                NSLog(@"未知网络状态");
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusNotReachable:{
+                
+                NSLog(@"网络不通");
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:{
+                
+                NSLog(@"2G/3G/4G/GPRS联网");
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi:{
+                NSLog(@"WiFi联网");
+            }
+                
+                break;
+                
+            default:
+                
+                break;
+        }
+
+    }];
     
-    //设置ASIHttpRequest，Http客户端组件
-    
-    //注册联网状态的通知监听器
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object: nil];
-    self.reachability = [Reachability reachabilityWithHostname:@"www.baidu.com"];
-    [self.reachability startNotifier];
-    
-}
-
-
-
-
-
--(void)reachabilityChanged:(NSNotification *) note{
-    //NSLog(@">>>>>>> reachability changed");
-    Reachability *curReachability = [note object];
-    NetworkStatus status = [curReachability currentReachabilityStatus];
-    [AppStatus sharedInstance].networkStatus = status;
-    if (status == NotReachable) {
-        NSLog(@"网络不通");
-    }else if(status == ReachableViaWiFi){
-        NSLog(@"WIFI联网");
-    }else if(status == ReachableViaWWAN){
-        NSLog(@"2G/3G/4G/GPRS联网");
-    }
-    if(status != NotReachable){
-        
-    }
 }
 
 @end

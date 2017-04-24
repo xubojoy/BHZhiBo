@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkProcessor : NSObject
-@property (nonatomic, strong) Reachability *reachability;
 
 -(void) initNetWork;
--(void)reachabilityChanged:(NSNotification *) note;
 @end

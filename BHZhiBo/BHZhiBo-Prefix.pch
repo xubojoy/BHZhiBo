@@ -29,7 +29,6 @@
 #import "JSONKit.h"
 #import "HttpRequestFacade.h"
 #import "OpenUDID.h"
-#import "Reachability.h"
 #import "Constant.h"
 #import "NSStringUtils.h"
 #import "ExceptionMsg.h"
