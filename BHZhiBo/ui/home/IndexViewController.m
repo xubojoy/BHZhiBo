@@ -31,16 +31,11 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
     self.view.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     [self initHeadView];
 //    self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
-//    if ([[AppStatus sharedInstance] isConnetInternet]) {
-        NSLog(@"--------联网成功");
-        self.imageArray = [NSMutableArray new];
-        self.articleArray = [NSMutableArray new];
-        self.bannerArray = [NSMutableArray new];
-        [self loadAppData];
-//    }else{
-//        NSLog(@"--------联网失败");
-//        [self initRefreshBtn];
-//    }
+    NSLog(@"--------联网成功");
+    self.imageArray = [NSMutableArray new];
+    self.articleArray = [NSMutableArray new];
+    self.bannerArray = [NSMutableArray new];
+    [self loadAppData];
 }
 
 - (void)initRefreshBtn{
