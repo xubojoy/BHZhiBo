@@ -18,7 +18,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object: nil];
     self.reachability = [Reachability reachabilityWithHostname:@"www.baidu.com"];
     [self.reachability startNotifier];
+    
 }
+
+
+
+
 
 -(void)reachabilityChanged:(NSNotification *) note{
     //NSLog(@">>>>>>> reachability changed");
