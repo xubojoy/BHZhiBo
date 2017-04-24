@@ -24,14 +24,17 @@
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor whiteColor];
     [self initShareSDK];
+    
+    
+    
+    
     //初始化App的底栏
     self.tabbar = [BHZhiBoTabbar new];
     self.tabbar.tabBarController.statusBarStyle = UIStatusBarStyleLightContent;
     self.window.rootViewController = self.tabbar.tabBarController;
+    
     self.netProcessor = [NetworkProcessor new];
     [self.netProcessor initNetWork];
-    
-    
     
     return YES;
 }

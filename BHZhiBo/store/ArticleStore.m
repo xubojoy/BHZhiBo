@@ -13,7 +13,6 @@
 + (void)getRecommendArticles:(void(^)(Page *page ,NSError *error))completionBlock pageSize:(int)pageSize{
     HttpRequestFacade *request = [HttpRequestFacade sharedInstance];
     NSString *url = [NSString stringWithFormat:@"%@/articles/search?pageSize=%d",[AppStatus sharedInstance].apiUrl,pageSize];
-    
     NSString *encoded = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *urlStr = [NSURL URLWithString:encoded];
     [request doIOSGet:urlStr completionBlock:^(id json, NSError *err) {

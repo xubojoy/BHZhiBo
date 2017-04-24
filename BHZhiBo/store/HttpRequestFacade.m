@@ -60,7 +60,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -111,7 +111,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -159,7 +159,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
 //        NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -221,7 +221,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -271,7 +271,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -321,7 +321,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -357,7 +357,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -397,7 +397,7 @@
         [exception readFromJSONDictionary:[errorResponse objectFromJSONString]];
         NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
         [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
-        NSError *err = [[NSError alloc] initWithDomain:@"doctor" code:exception.code userInfo:errUserInfo];
+        NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
         NSLog(@"err--------%d", (int)err.code);
         if ([self isRequestStatusCode:(int)err.code]) {
             [self pwdErrorHandle:(int)err.code];
@@ -416,7 +416,7 @@
     NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
     [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
     
-    NSError *err = [[NSError alloc] initWithDomain:@"crazydoctor" code:exception.code userInfo:errUserInfo];
+    NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
     return err;
 }
 
@@ -426,7 +426,7 @@
     NSMutableDictionary *errUserInfo = [[NSMutableDictionary alloc] init];
     [errUserInfo setObject:exception forKey:@"ExceptionMsg"];
     
-    NSError *err = [[NSError alloc] initWithDomain:@"crazydoctor" code:exception.code userInfo:errUserInfo];
+    NSError *err = [[NSError alloc] initWithDomain:@"baihong" code:exception.code userInfo:errUserInfo];
     return err;
 }
 

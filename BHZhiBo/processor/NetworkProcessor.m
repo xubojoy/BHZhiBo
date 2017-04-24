@@ -15,6 +15,7 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     // 检测网络连接的单例,网络变化时的回调方法
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
+        
         switch(status){
                 
             case AFNetworkReachabilityStatusUnknown:{
@@ -32,6 +33,12 @@
             case AFNetworkReachabilityStatusReachableViaWWAN:{
                 
                 NSLog(@"2G/3G/4G/GPRS联网");
+//                UIAlertView*alert=[[UIAlertView alloc]initWithTitle:nil message:@"正在使用蜂窝数据网络"delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
+//                
+//                [alert show];
+                
+                
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"NetWorkOk"object:nil];
             }
                 break;
                 
@@ -45,7 +52,7 @@
                 
                 break;
         }
-
+        [AppStatus sharedInstance].networkStatus = status;
     }];
     
 }

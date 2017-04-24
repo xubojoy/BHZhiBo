@@ -31,35 +31,72 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
     self.view.backgroundColor = [ColorUtils colorWithHexString:common_bg_color];
     [self initHeadView];
 //    self.imageArray = [NSMutableArray arrayWithObjects:@"12.jpg",@"13.jpg",@"14.jpg",@"15.jpg", nil];
-    self.imageArray = [NSMutableArray new];
-    self.articleArray = [NSMutableArray new];
-    self.bannerArray = [NSMutableArray new];
-    [self initMainScrollVew];
-    [self initPageScrollView];
-    [self initCategoryView];
-    [self initCollectView];
-    [self loadAppData];
+//    if ([[AppStatus sharedInstance] isConnetInternet]) {
+        NSLog(@"--------联网成功");
+        self.imageArray = [NSMutableArray new];
+        self.articleArray = [NSMutableArray new];
+        self.bannerArray = [NSMutableArray new];
+        [self loadAppData];
+//    }else{
+//        NSLog(@"--------联网失败");
+//        [self initRefreshBtn];
+//    }
+}
+
+- (void)initRefreshBtn{
+    UIButton *refreshBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    refreshBtn.frame = CGRectMake((screen_width-80)/2, (screen_height-30)/2, 80, 30);
+    refreshBtn.layer.cornerRadius = 2;
+    refreshBtn.layer.masksToBounds = YES;
+    refreshBtn.layer.borderWidth = splite_line_height;
+    refreshBtn.layer.borderColor = [ColorUtils colorWithHexString:splite_line_color].CGColor;
+    [refreshBtn setTitleColor:[ColorUtils colorWithHexString:gray_text_color] forState:UIControlStateNormal];
+    [refreshBtn setTitle:@"重新加载" forState:UIControlStateNormal];
+    [refreshBtn.titleLabel setFont:[UIFont systemFontOfSize:default_font_size]];
+    [refreshBtn addTarget:self action:@selector(refreshBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:refreshBtn];
+}
+
+- (void)refreshBtnClick{
+    if ([[AppStatus sharedInstance] isConnetInternet]) {
+        self.imageArray = [NSMutableArray new];
+        self.articleArray = [NSMutableArray new];
+        self.bannerArray = [NSMutableArray new];
+        [self initMainScrollVew];
+        [self initPageScrollView];
+        [self initCategoryView];
+        [self initCollectView];
+        [self loadAppData];
+    }else{
+        
+    }
 }
 
 - (void)loadAppData{
     [ArticleStore getRecommendArticles:^(Page *page, NSError *error) {
-        if (page != nil) {
-            for (NSDictionary *articleDic in page.items) {
-                self.article = [[Article alloc] initWithDictionary:articleDic error:nil];
-                if (self.article != nil) {
-                    if ([self.article.articleType isEqualToString:@"轮播图"]) {
-                        [self.imageArray addObject:self.article.articleLogo];
-                        [self.bannerArray addObject:self.article];
+        if (error == nil) {
+            if (page != nil) {
+                for (NSDictionary *articleDic in page.items) {
+                    self.article = [[Article alloc] initWithDictionary:articleDic error:nil];
+                    if (self.article != nil) {
+                        if ([self.article.articleType isEqualToString:@"轮播图"]) {
+                            [self.imageArray addObject:self.article.articleLogo];
+                            [self.bannerArray addObject:self.article];
+                        }
+                        [self.articleArray addObject:self.article];
                     }
-                    [self.articleArray addObject:self.article];
                 }
             }
+            NSLog(@">>>>>>>>>>所有文章>>>>>>>%@",self.articleArray);
+            [self refreshUI];
+            [self.collectionView reloadData];
+        }else{
+            ExceptionMsg *exception = [[error userInfo] objectForKey:@"ExceptionMsg"];
+            [self.view makeToast:exception.message duration:2.0 position:[NSValue valueWithCGPoint:self.view.center]];
+            [self initRefreshBtn];
         }
-        NSLog(@">>>>>>>>>>所有文章>>>>>>>%@",self.articleArray);
-        [self refreshUI];
-        [self.collectionView reloadData];
+        
     } pageSize:100];
-
 }
 
 //初始化自定义导航
@@ -92,6 +129,10 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 }
 
 - (void)refreshUI{
+    [self initMainScrollVew];
+    [self initPageScrollView];
+    [self initCategoryView];
+    [self initCollectView];
     self.cycleScrollView.imageURLStringsGroup = self.imageArray;
 }
 
