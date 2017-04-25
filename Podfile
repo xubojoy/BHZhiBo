@@ -7,7 +7,6 @@ target 'BHZhiBo' do
  pod 'MOBFoundation’
  pod 'ShareSDK3/ShareSDKPlatforms/WeChat',:git => ‘https://git.oschina.net/MobClub/ShareSDK-for-iOS.git'
  pod 'SDCycleScrollView', '~> 1.65'
- pod 'JSONKit', '~> 1.5pre'
  pod 'MJRefresh', '~> 3.1.12'
  pod 'SVProgressHUD', '~> 2.1.2'
 end

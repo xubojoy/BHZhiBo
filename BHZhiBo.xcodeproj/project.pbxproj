@@ -166,6 +166,7 @@
 		1C3AF8881E1F6C9B00BB7214 /* CommonContentWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3AF8871E1F6C9B00BB7214 /* CommonContentWebController.m */; };
 		1C3AF88C1E1F724A00BB7214 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3AF88A1E1F724A00BB7214 /* CustomCollectionViewCell.m */; };
 		1C3AF88D1E1F724A00BB7214 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3AF88B1E1F724A00BB7214 /* CustomCollectionViewCell.xib */; };
+		1C4A71641EAEF71800169C23 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4A71631EAEF71800169C23 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1CC59AAC1E0B8190006769F9 /* CommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */; };
 		D64EC87BC49B5D2E22CAE488 /* libPods-BHZhiBo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6DD8BA17CBFBCD1B1C6242 /* libPods-BHZhiBo.a */; };
 /* End PBXBuildFile section */
@@ -464,6 +465,8 @@
 		1C3AF8891E1F724A00BB7214 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
 		1C3AF88A1E1F724A00BB7214 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 		1C3AF88B1E1F724A00BB7214 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		1C4A71621EAEF71800169C23 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		1C4A71631EAEF71800169C23 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		1CC59AAA1E0B8190006769F9 /* CommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonWebViewController.h; sourceTree = "<group>"; };
 		1CC59AAB1E0B8190006769F9 /* CommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonWebViewController.m; sourceTree = "<group>"; };
 		73A0B32AD14D5733968F7390 /* Pods-BHZhiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BHZhiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BHZhiBo/Pods-BHZhiBo.release.xcconfig"; sourceTree = "<group>"; };
@@ -697,6 +700,7 @@
 		1C32C8EF1E0A2C3500182D95 /* third */ = {
 			isa = PBXGroup;
 			children = (
+				1C4A71611EAEF71800169C23 /* JSONKit */,
 				1C32C9CA1E0A2C3500182D95 /* JSONModel */,
 				1C32CA131E0A2C3500182D95 /* OpenUDID */,
 				1C32CA161E0A2C3500182D95 /* pinYin */,
@@ -1098,6 +1102,15 @@
 			path = homeView;
 			sourceTree = "<group>";
 		};
+		1C4A71611EAEF71800169C23 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A71621EAEF71800169C23 /* JSONKit.h */,
+				1C4A71631EAEF71800169C23 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
 		1CC59AA91E0B8176006769F9 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1293,6 +1306,7 @@
 				1C32CD081E0A325400182D95 /* IQBarButtonItem.m in Sources */,
 				1C32CD1A1E0A325400182D95 /* MHSheetHead.m in Sources */,
 				1C32CB9E1E0A2C3600182D95 /* UIImage+Resize.m in Sources */,
+				1C4A71641EAEF71800169C23 /* JSONKit.m in Sources */,
 				1C32CB941E0A2C3600182D95 /* ColorUtils.m in Sources */,
 				1C32CD0B1E0A325400182D95 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				1C32CB511E0A2C3600182D95 /* JSONKeyMapper.m in Sources */,

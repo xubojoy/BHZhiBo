@@ -14,14 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - JSONKit (1.5pre)
   - MJRefresh (3.1.12)
-  - MOBFoundation (2.2.17)
-  - SDCycleScrollView (1.65):
-    - SDWebImage (~> 3.7)
-  - SDWebImage (3.8.2):
-    - SDWebImage/Core (= 3.8.2)
-  - SDWebImage/Core (3.8.2)
+  - MOBFoundation (2.2.19)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - ShareSDK3 (3.6.3):
     - MOBFoundation
     - ShareSDK3/ShareSDK (= 3.6.3)
@@ -33,7 +32,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - JSONKit (~> 1.5pre)
   - MJRefresh (~> 3.1.12)
   - MOBFoundation
   - SDCycleScrollView (~> 1.65)
@@ -52,14 +50,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  JSONKit: bae313ce6a6c444f40489a6c0b023f399888871f
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  MOBFoundation: fa12570bb16a7655dca3b3472ce6cd962e7ff5e3
-  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
-  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  MOBFoundation: e962b2aee79e2b8f626e2d30c2f23e9f13e5331e
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: ff1fe64715c3d010d34c4622f160ba83dddfc08e
+PODFILE CHECKSUM: f063bc19871a9e8a6dcb900e88581d09d5f6b12e
 
 COCOAPODS: 1.1.1
