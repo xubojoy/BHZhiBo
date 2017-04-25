@@ -11,4 +11,5 @@ target 'BHZhiBo' do
  pod 'SVProgressHUD', '~> 2.1.2'
  pod 'JSONModel', '~> 1.7.0'
  pod 'OpenUDID', '~> 1.0.0'
+ pod 'PinYin4Objc', '~> 1.1.1'
 end

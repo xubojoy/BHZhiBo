@@ -3,7 +3,7 @@
 //
 //  Created by kimziv on 13-9-14.
 //
-#import <UIKit/UIKit.h>
+
 #ifndef _ChineseToPinyinResource_H_
 #define _ChineseToPinyinResource_H_
 

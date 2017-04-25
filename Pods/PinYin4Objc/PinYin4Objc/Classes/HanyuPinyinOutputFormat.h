@@ -1,8 +1,6 @@
 /**
  *	Created by kimziv on 13-9-14.
  */
-
-#import <UIKit/UIKit.h>
 #ifndef _HanyuPinyinOutputFormat_H_
 #define _HanyuPinyinOutputFormat_H_
 

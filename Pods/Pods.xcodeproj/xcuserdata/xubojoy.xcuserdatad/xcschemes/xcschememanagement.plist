@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PinYin4Objc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BHZhiBo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,6 +52,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00E78558E0FE542E4072196AE07506FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
 		<dict>
 			<key>primary</key>
@@ -57,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>339C6420C78C1ABC18A880954B1DA6FB</key>
+		<key>5463266D0446E33D09E69BF5BB074D1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74D58591AF256C24314EB7332EC16A05</key>
+		<key>58827DC52D6210C2F30AB6EE362BAE73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7924A74D669A5AEE7C87393C181BE63D</key>
+		<key>8CDAC94F403D48B62BBE0D008984EBF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9258297C84ED265C8652963EE7A97180</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F27483D36B6B0980297A67E9BB958BC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

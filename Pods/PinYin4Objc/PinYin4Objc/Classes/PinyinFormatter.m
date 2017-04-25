@@ -88,10 +88,10 @@ static unichar numericValues[] = {
     NSString *allUnmarkedVowelStr = @"aeiouv";
     NSString *allMarkedVowelStr = @"āáăàaēéĕèeīíĭìiōóŏòoūúŭùuǖǘǚǜü";
     if ([lowerCasePinyinStr matchesPatternRegexPattern:@"[a-z]*[1-5]"]) {
-        NSInteger tuneNumber = [PinyinFormatter getNumericValue:[lowerCasePinyinStr characterAtIndex:lowerCasePinyinStr.length -1]];
-      int indexOfA = (int)[lowerCasePinyinStr indexOf:charA];
-      int indexOfE = (int)[lowerCasePinyinStr indexOf:charE];
-      int ouIndex = (int)[lowerCasePinyinStr indexOfString:ouStr];
+        int tuneNumber = [PinyinFormatter getNumericValue:[lowerCasePinyinStr characterAtIndex:lowerCasePinyinStr.length -1]];
+      int indexOfA = [lowerCasePinyinStr indexOf:charA];
+      int indexOfE = [lowerCasePinyinStr indexOf:charE];
+      int ouIndex = [lowerCasePinyinStr indexOfString:ouStr];
       if (-1 != indexOfA) {
         indexOfUnmarkedVowel = indexOfA;
         unmarkedVowel = charA;
@@ -105,7 +105,7 @@ static unichar numericValues[] = {
         unmarkedVowel = [ouStr characterAtIndex:0];
       }
       else {
-        for (int i = (int)[lowerCasePinyinStr length] - 1; i >= 0; i--) {
+        for (int i = [lowerCasePinyinStr length] - 1; i >= 0; i--) {
           if ([[NSString valueOfChar:[lowerCasePinyinStr characterAtIndex:i]] matchesPatternRegexPattern:@"[aeiouv]"]) {
             indexOfUnmarkedVowel = i;
             unmarkedVowel = [lowerCasePinyinStr characterAtIndex:i];
@@ -114,8 +114,8 @@ static unichar numericValues[] = {
         }
       }
       if ((defautlCharValue != unmarkedVowel) && (defautlIndexValue != indexOfUnmarkedVowel)) {
-        int rowIndex = (int)[allUnmarkedVowelStr indexOf:unmarkedVowel];
-        int columnIndex = (int)tuneNumber - 1;
+        int rowIndex = [allUnmarkedVowelStr indexOf:unmarkedVowel];
+        int columnIndex = tuneNumber - 1;
         int vowelLocation = rowIndex * 5 + columnIndex;
         unichar markedVowel = [allMarkedVowelStr characterAtIndex:vowelLocation];
         NSMutableString *resultBuffer = [[NSMutableString alloc] init];

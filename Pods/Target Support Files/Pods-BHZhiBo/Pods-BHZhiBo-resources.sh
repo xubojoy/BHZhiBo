@@ -75,11 +75,13 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "PinYin4Objc/PinYin4Objc/Resources/unicode_to_hanyu_pinyin.txt"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
   install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
 fi

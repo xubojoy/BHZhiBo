@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5463266D0446E33D09E69BF5BB074D1C'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = '58827DC52D6210C2F30AB6EE362BAE73'
+               BlueprintName = 'PinYin4Objc'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSDWebImage.a'>
+               BuildableName = 'libPinYin4Objc.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
