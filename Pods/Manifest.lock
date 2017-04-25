@@ -17,6 +17,7 @@ PODS:
   - JSONModel (1.7.0)
   - MJRefresh (3.1.12)
   - MOBFoundation (2.2.19)
+  - OpenUDID (1.0.0)
   - SDCycleScrollView (1.66):
     - SDWebImage (~> 4.0.0)
   - SDWebImage (4.0.0):
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - JSONModel (~> 1.7.0)
   - MJRefresh (~> 3.1.12)
   - MOBFoundation
+  - OpenUDID (~> 1.0.0)
   - SDCycleScrollView (~> 1.65)
   - ShareSDK3 (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
   - ShareSDK3/ShareSDKPlatforms/WeChat (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
@@ -55,11 +57,12 @@ SPEC CHECKSUMS:
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: e962b2aee79e2b8f626e2d30c2f23e9f13e5331e
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: f97a00aef0411c8caa7b5c69f417dddf4e583dd1
+PODFILE CHECKSUM: b409219f866759db088e7fe3dbe6763fc390a508
 
 COCOAPODS: 1.1.1

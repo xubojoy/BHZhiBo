@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OpenUDID.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BHZhiBo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>05585A385A6E2620D39E919D8EDD073D</key>
+		<key>2A839CF5447E9DD9F12D53D8128DED7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>29114D11E62FF2F6991B789B23FE621F</key>
+		<key>339C6420C78C1ABC18A880954B1DA6FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>74D58591AF256C24314EB7332EC16A05</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7924A74D669A5AEE7C87393C181BE63D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DFC8A3C2663B17870D6090C3AF8CF92C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E6C0D4230B555EFDF8EC15D506517DF5</key>
+		<key>F27483D36B6B0980297A67E9BB958BC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

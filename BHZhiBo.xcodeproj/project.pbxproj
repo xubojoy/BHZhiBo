@@ -54,7 +54,6 @@
 		1C32CB011E0A2C3600182D95 /* ArticleStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E01E0A2C3500182D95 /* ArticleStore.m */; };
 		1C32CB041E0A2C3600182D95 /* HttpRequestFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8E61E0A2C3500182D95 /* HttpRequestFacade.m */; };
 		1C32CB081E0A2C3600182D95 /* UserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32C8EE1E0A2C3500182D95 /* UserStore.m */; };
-		1C32CB661E0A2C3600182D95 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA151E0A2C3500182D95 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1C32CB671E0A2C3600182D95 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA181E0A2C3500182D95 /* ChineseInclude.m */; };
 		1C32CB681E0A2C3600182D95 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA1A1E0A2C3500182D95 /* ChineseToPinyinResource.m */; };
 		1C32CB691E0A2C3600182D95 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C32CA1C1E0A2C3500182D95 /* HanyuPinyinOutputFormat.m */; };
@@ -249,8 +248,6 @@
 		1C32C8E61E0A2C3500182D95 /* HttpRequestFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestFacade.m; sourceTree = "<group>"; };
 		1C32C8ED1E0A2C3500182D95 /* UserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStore.h; sourceTree = "<group>"; };
 		1C32C8EE1E0A2C3500182D95 /* UserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStore.m; sourceTree = "<group>"; };
-		1C32CA141E0A2C3500182D95 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
-		1C32CA151E0A2C3500182D95 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		1C32CA171E0A2C3500182D95 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
 		1C32CA181E0A2C3500182D95 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
 		1C32CA191E0A2C3500182D95 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
@@ -667,20 +664,10 @@
 			isa = PBXGroup;
 			children = (
 				1C4A71611EAEF71800169C23 /* JSONKit */,
-				1C32CA131E0A2C3500182D95 /* OpenUDID */,
 				1C32CA161E0A2C3500182D95 /* pinYin */,
 				1C32CA6C1E0A2C3600182D95 /* tabbar */,
 			);
 			path = third;
-			sourceTree = "<group>";
-		};
-		1C32CA131E0A2C3500182D95 /* OpenUDID */ = {
-			isa = PBXGroup;
-			children = (
-				1C32CA141E0A2C3500182D95 /* OpenUDID.h */,
-				1C32CA151E0A2C3500182D95 /* OpenUDID.m */,
-			);
-			path = OpenUDID;
 			sourceTree = "<group>";
 		};
 		1C32CA161E0A2C3500182D95 /* pinYin */ = {
@@ -1244,7 +1231,6 @@
 				1C32CB6C1E0A2C3600182D95 /* PinYinForObjc.m in Sources */,
 				1C32CCEF1E0A325400182D95 /* AQTool.m in Sources */,
 				1C32CB6D1E0A2C3600182D95 /* PinyinHelper.m in Sources */,
-				1C32CB661E0A2C3600182D95 /* OpenUDID.m in Sources */,
 				1C32CB961E0A2C3600182D95 /* DateUtils.m in Sources */,
 				1C32CB9C1E0A2C3600182D95 /* NSStringUtils.m in Sources */,
 				1C32CD011E0A325400182D95 /* IQUITextFieldView+Additions.m in Sources */,
