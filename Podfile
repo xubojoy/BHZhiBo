@@ -9,4 +9,5 @@ target 'BHZhiBo' do
  pod 'SDCycleScrollView', '~> 1.65'
  pod 'MJRefresh', '~> 3.1.12'
  pod 'SVProgressHUD', '~> 2.1.2'
+ pod 'JSONModel', '~> 1.7.0'
 end
