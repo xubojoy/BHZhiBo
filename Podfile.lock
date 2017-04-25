@@ -1,0 +1,65 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - JSONKit (1.5pre)
+  - MJRefresh (3.1.12)
+  - MOBFoundation (2.2.17)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - ShareSDK3 (3.6.3):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 3.6.3)
+  - ShareSDK3/ShareSDK (3.6.3):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.3):
+    - MOBFoundation
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - JSONKit (~> 1.5pre)
+  - MJRefresh (~> 3.1.12)
+  - MOBFoundation
+  - SDCycleScrollView (~> 1.65)
+  - ShareSDK3 (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (from `https://git.oschina.net/MobClub/ShareSDK-for-iOS.git`)
+  - SVProgressHUD (~> 2.1.2)
+
+EXTERNAL SOURCES:
+  ShareSDK3:
+    :git: https://git.oschina.net/MobClub/ShareSDK-for-iOS.git
+
+CHECKOUT OPTIONS:
+  ShareSDK3:
+    :commit: 3b8c723a9d3af20e0318a53101696de0850716e9
+    :git: https://git.oschina.net/MobClub/ShareSDK-for-iOS.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JSONKit: bae313ce6a6c444f40489a6c0b023f399888871f
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MOBFoundation: fa12570bb16a7655dca3b3472ce6cd962e7ff5e3
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: ff1fe64715c3d010d34c4622f160ba83dddfc08e
+
+COCOAPODS: 1.1.1
