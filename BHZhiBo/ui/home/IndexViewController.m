@@ -255,15 +255,18 @@ static NSString *customCategoryCollectionViewCellId = @"CustomCollectionViewCell
 
     NSLog(@">>>>>>>>>itemitemitem>>>>>点击了第%d",(int)item);
     if (item == 0) {
-        BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
-        [tabBar.tabBarController setSelectedIndex:1];
+//        BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
+//        [tabBar.tabBarController setSelectedIndex:1];
+        NSURL *appUrl = [[NSURL alloc] initWithString:@"https://itunes.apple.com/cn/app/jin-rong-shuapp/id1147075616?mt=8"];
+        [[UIApplication sharedApplication] openURL:appUrl];
+
     }else if (item == 1) {
         BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
-        [tabBar.tabBarController setSelectedIndex:2];
+        [tabBar.tabBarController setSelectedIndex:1];
 
     }else if (item == 4) {
         BHZhiBoTabbar *tabBar = [(AppDelegate*)[UIApplication sharedApplication].delegate tabbar];
-        [tabBar.tabBarController setSelectedIndex:3];
+        [tabBar.tabBarController setSelectedIndex:2];
 
     }else{
         if (self.articleArray.count > 0) {

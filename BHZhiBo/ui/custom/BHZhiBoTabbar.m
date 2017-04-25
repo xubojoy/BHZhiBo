@@ -24,13 +24,13 @@
             firstNavigationController.title = @"首页";
             [firstNavigationController.navigationBar setHidden:YES];
             
-            UIViewController *secondViewController = [[TransactionViewController alloc] init];
-            UINavigationController *secondNavigationController = [[UINavigationController alloc]
-                                                                  initWithRootViewController:secondViewController];
-            secondNavigationController.delegate = self;
-            secondNavigationController.title = @"登录";
-            [secondNavigationController.navigationBar setHidden:YES];
-            
+//            UIViewController *secondViewController = [[TransactionViewController alloc] init];
+//            UINavigationController *secondNavigationController = [[UINavigationController alloc]
+//                                                                  initWithRootViewController:secondViewController];
+//            secondNavigationController.delegate = self;
+//            secondNavigationController.title = @"登录";
+//            [secondNavigationController.navigationBar setHidden:YES];
+        
             UIViewController *thirdViewController = [[LiveViewController alloc] init];
             UINavigationController *thirdNavigationController = [[UINavigationController alloc]
                                                                  initWithRootViewController:thirdViewController];
@@ -46,7 +46,7 @@
             [userNavigationController.navigationBar setHidden:YES];
             
             self.tabBarController = [[RDVTabBarController alloc] init];
-            [self.tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
+            [self.tabBarController setViewControllers:@[firstNavigationController,
                                                         thirdNavigationController,userNavigationController]];
         self.tabBarController.delegate = self;
         //设置各个item的图像
@@ -59,7 +59,8 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
 //    UIImage *finishedImage = [UIImage imageNamed:@"under_bar"];
 //    UIImage *unfinishedImage = [UIImage imageNamed:@"under_bar"];
-    NSArray *tabBarItemImages = @[@"home_fill",@"sponsor_fill",@"mark_fill",@"rank_fill"];
+//    @"sponsor_fill",
+    NSArray *tabBarItemImages = @[@"home_fill",@"mark_fill",@"rank_fill"];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
 //        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
